@@ -10,7 +10,7 @@ function Navbar({ navigation }) {
   return (
     <header className="absolute inset-x-0 top-0 z-50">
       <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
-        <div className="flex lg:flex-1">
+        <div className="flex items-center">
           <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Crazy Rich Finance</span>
             <Image
@@ -25,9 +25,9 @@ function Navbar({ navigation }) {
             <button
                 type="button"
                 className="-m-2.5 rounded-md p-2.5 text-gray-700"
-                onClick={() => setMobileMenuOpen(false)}
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 >
-                <span className="sr-only">Close menu</span>
+                <span className="sr-only">Open menu</span>
                 <Bars3Icon className="h-6 w-6" aria-hidden="true" />
             </button>
         </div>
