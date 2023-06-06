@@ -9,12 +9,12 @@ function Navbar({ navigation }) {
 
   return (
     <header className="absolute inset-x-0 top-0 z-50">
-      <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+      <nav className="h-16 bg-black flex items-center justify-between p-6 lg:px-8 border-b-2 border-gray-300" aria-label="Global">
         <div className="flex items-center">
           <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Crazy Rich Finance</span>
             <Image
-              src="/images/iceCream.png"
+              src="/images/boba.png"
               alt=""
               width={40}
               height={40}
@@ -28,13 +28,13 @@ function Navbar({ navigation }) {
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 >
                 <span className="sr-only">Open menu</span>
-                <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+                <Bars3Icon className="h-6 w-6 text-white" aria-hidden="true" />
             </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-5">
           {navigation.map((item) => (
             <Link href={item.href} key={item.name} passHref>
-              <button className="bg-blue-200 hover:bg-blue-300 text-gray-900 font-semibold hover:text-white py-1.5 px-4 border border-bg-black rounded-full shadow-md" onClick={() => console.log(item.name)}>
+              <button className="text-white hover:text-blue-300 font-bold py-1.5 px-4" onClick={() => console.log(item.name)}>
                   {item.name}
               </button>
             </Link>
