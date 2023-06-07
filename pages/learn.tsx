@@ -1085,6 +1085,270 @@ const products: Product[] = [
     },
   ]
 
+  const products4: Product[] = [
+    {
+      id: 1,
+      name: 'Getting Started',
+      href: '#',
+      imageSrc: '/images/keys-on-hand.png',
+      imageAlt: "hand holding a key to a house",
+      step: '1',
+      description: 'Your home buying journey at a glance',
+      hasTabs: true,
+      cardContent: (
+        <Tabs>
+          <TabList>
+            <Tab>Intro</Tab>
+            <Tab>Pre-approval</Tab>
+            <Tab>Contingencies</Tab>
+            <Tab>Closing Costs</Tab>
+            <Tab>Escrow</Tab>
+          </TabList>
+          <TabPanel>
+            <p className="mt-4 mb-2">The home buying journey can be an exciting, but overwhelming and stressful experience.</p>
+
+            <div className="card-paragraph mb-2">
+              <p>Here&apos;s what you can expect when getting started:</p>
+              <ul className="list-decimal ml-6">
+                <li>Set criteria for what you are looking for. Consider what your goal is for buying the property, your price range, the number of bedrooms and bathrooms you want, your timeline, and location you want to buy in. Other considerations include the age
+                  of the home, square footage, HOA fees and regulations (if any), nearby school districts, and noise levels.</li>
+                <li>Once you have a good idea of what you are looking for, reach out to a lender to get a mortgage pre-approval. Without a pre-approval letter, your offer will be much less competitive.</li>
+                <li>With your pre-approval letter in hand, you can start your search for your dream home. While not required, having the right real estate agent will help make your home buying journey smoother and easier to navigate. Most real-estate agents have in-depth
+                  knowledge of the local market, including current trends, pricing, and inventory. They are also skilled negotiators who can advocate on your behalf and provide access to a host of professionals and resources.</li>
+              </ul>
+            </div>
+          </TabPanel>
+
+          <TabPanel>
+            <p className="mt-4 mb-2">The pre approval process from a mortgage broker is your first step before you begin your home search - 85% of sellers prefer to accept an offer from a buyer that is pre-approved.</p>
+            <p className="mt-4 mb-2">After you submit an application, the lender will review your financial information to determine if you are eligible for a loan and how much they are willing to lend you. This can give you better an idea of what price range of homes you
+            should be looking at and also gives sellers confidence that you will be able to obtain financing.</p>
+            <p className="mt-4 mb-2">To get pre-approved, lenders will look at your credit score, employment history, income and debts. They may also require some additional documentation such as tax returns or bank statements.</p>
+          </TabPanel>
+
+          <TabPanel>
+            <p className="mt-4 mb-2">When you&apos;re buying a home, there are a lot of things that can happen that are out of your control. That&apos;s why it&apos;s important to have contingencies in place to protect yourself and your home.</p>
+            <p className="mt-4 mb-2">Contingencies are time periods agreed upon in the purchase agreement that allow you to investigate the property, obtain the necessary financing, verify the property&apos;s value (appraisal), and exit the contract if necessary.</p>
+            <p className="mt-4 mb-2">Think of contingencies as a plan for what to do if something goes wrong. For example, let&apos;s say you&apos;re buying a home and the general inspection reveals some major problems with the property. If you don&apos;t have contingencies
+            in place, you could be stuck with those repairs - or worse, stuck living in a house that isn&apos;t up to your standards.</p>
+            <p className="mt-4 mb-2">But if you do have a contingency plan, then you can back out of the deal without losing any money (or at least very little money). Contingencies give you an "out" if things aren&apos;t going as planned, and they help to keep everyone happy -
+            buyers and sellers alike.</p>
+          </TabPanel>
+
+          <TabPanel>
+            <p className="mt-4 mb-2">When you purchase a home, there are additional costs outside a property&apos;s sale price that must be paid in order to complete the transaction. These are typically referred to as &quot;closing costs.&quot; Closing costs can vary significantly,
+            but typically range from 2% - 5% of the total purchase price.</p>
+            <p className="mt-4 mb-2">The largest closing cost is usually the loan origination fee, which is charged by the lender for processing your loan application. Other common closing costs include appraisal fees, title insurance, and escrow fees. In some cases, you may also
+            be responsible for paying property taxes and homeowners insurance at closing.</p>
+          </TabPanel>
+
+          <TabPanel>
+            <p className="mt-4 mb-2">Escrow is a process where a neutral third party holds and regulates the exchange of money or documents between two parties from when your offer gets accepted through closing. An escrow company ensures that both buyers and sellers uphold their
+            end of the deal in the transaction. Using escrow protects both parties and gives peace of mind to everyone involved since it takes away the risk of one party not following through on their obligations.</p>
+            <p className="mt-4 mb-2">In order for escrow to get established, both parties must agree to use it and sign an escrow agreement. Once this happens, the buyer will deposit money with the escrow company (or agent), who will then hold onto it until all conditions of sale
+            are met by both sides.</p>
+            <p className="mt-4 mb-2">When everything is completed satisfactorily, the funds are released to the seller. If either party backs out or doesn&apos;t fulfill their obligations, the other may be protected financially.</p>
+          </TabPanel>
+        </Tabs>
+      ),
+    },
+    {
+      id: 2,
+      name: 'Breaking Down the Home-Buying Process',
+      href: '#',
+      imageSrc: '/images/modern-home.png',
+      imageAlt: "outdoor lamps turned on outside of home",
+      step: '2',
+      description: 'The phases of buying a home',
+      hasTabs: true,
+      cardContent: (
+        <Tabs>
+          <TabList>
+            <Tab>Phase 1</Tab>
+            <Tab>Phase 2</Tab>
+            <Tab>Phase 3</Tab>
+            <Tab>Phase 4</Tab>
+            <Tab>Phase 5</Tab>
+          </TabList>
+          <TabPanel>
+            <div className="card-paragraph mb-2">
+              <p className="font-medium">Defining Your Goals</p>
+              <ul className="list-decimal ml-6">
+                <li>What is your motivation for buying?</li>
+                <li>What is your timeframe?</li>
+                <li>What type of property are you looking for?</li>
+                <li>What are the ideal features of your home and non-negotiables?</li>
+                <li>What neighborhood attributes are you looking for?</li>
+              </ul>
+            </div>
+
+            <div className="card-paragraph mb-2">
+              <p className="font-medium">Financials</p>
+              <p>Before looking for homes, you should get your finances in order and understand your purchasing power. Reach out to a lender to do a full analysis of what you can realistically afford,
+              issue pre-approval, and determine your price range.</p>
+            </div>
+
+            <div className="card-paragraph mb-2">
+              <p className="font-medium">Market Analysis</p>
+              <p>Research which neighborhoods you are interested in. Spend some time walking or driving around your desired neighborhoods to get a feel for the environment and community.</p>
+              <p className="mt-4 mb-2">Analyze active, pending, and sold homes in your neighborhoods of interest. This will give you a better sense of the comparables and how the market is doing.</p>
+              <p className="mt-4 mb-2">Pay attention to seasonal nuances. For example, the market typically slows down around Thanksgiving and Christmas so there will be less inventory available. But, you may also face less competition
+              from other buyers in the market.</p>
+            </div>
+          </TabPanel>
+
+          <TabPanel>
+            <div className="card-paragraph mb-2">
+              <p className="font-medium">Begin the Home Search</p>
+              <ul className="list-decimal ml-6">
+                <li>If you are working with an agent, set communication expectations, including frequency of updates, preferred method of communication, communication cadence, etc.</li>
+                <li>Go on sites like Zillow, Realtor.com, and Redfin to create a collection of potential homes that meet your needs.</li>
+                <li>View properties together with your agent, including private showings and open houses.</li>
+              </ul>
+            </div>
+
+            <div className="card-paragraph mb-2">
+              <p className="font-medium">Finding Your Dream Home</p>
+              <ul className="list-decimal ml-6">
+                <li>Once you find your dream home, discuss your main objectives with your agent and the steps of putting an offer in.</li>
+                <li>Review the purchase contract, market conditions advisory, comparables report, etc.</li>
+                <li>See if your agent can work with the listing agent to negotiate the best deal for you.</li>
+              </ul>
+            </div>
+          </TabPanel>
+
+          <TabPanel>
+            <p className="font-medium">Escrow Process</p>
+            <p className="mt-4 mb-2">If the seller accepts your offer, you are expected to deliver the earnest deposit money (EMD) to the escrow company agreed up on in the purchase agreement within 3 days of acceptance. Typically, the
+            initial deposit is 3% of the total purchase price. </p>
+            <p className="mt-4 mb-2">This deposit is held by an the escrow agent until all conditions of the sale are met. Once everything is in order and both parties are satisfied, the funds are released and exchanged accordingly.</p>
+            <p className="mt-4 mb-2">After reviewing the contract, the escrow officer will prepare the escrow instructions and generate packages for both parties to sign and complete. Your agent will help with connecting with escrow,
+            notifying your lender, getting the appraisal, verifying all documents, and reviewing reports and disclosures with you.</p>
+          </TabPanel>
+
+          <TabPanel>
+            <p className="font-medium">Inspections and Disclosures</p>
+            <p className="mt-4 mb-2">Upon opening escrow, go over all inspections and disclosures for the property. A home inspection is an objective examination of the physical structure and systems of a house, from the roof to
+            the foundation. A qualified inspector will take note of any major defects or problems, as well as any necessary repairs or maintenance items. </p>
+            <p className="mt-4 mb-2">In addition to a home inspection, there are also other types of inspections that may be required depending on the subject property, such as pest inspections and pool/spa inspections.</p>
+            <p className="mt-4 mb-2">Your agent will obtain the preliminary title report and full disclosures from the seller about anything that could potentially affect your decision to purchase the property. This includes things like
+            outstanding liens or code violations, which could become your responsibility if not disclosed upfront.</p>
+            <p className="mt-4 mb-2">Based on the inspection findings, you can either approve the property condition as is or use this information to negotiate with the seller for repair credits or a reduction in price before moving
+            forward with the purchase.</p>
+          </TabPanel>
+
+          <TabPanel>
+            <p className="font-medium">Closing</p>
+            <p className="mt-4 mb-2">Review the closing statement by escrow and meet with them to sign all final documents, including the loan agreement, deed of trust/mortgage, and any other necessary paperwork. The closing process involves
+            signing a lot of paperwork, so review all documents thoroughly before signing anything. If you have any questions, ask your agent or the escrow officer for clarification.</p>
+            <p className="mt-4 mb-2">Have your down payment ready. You will need to bring your down payment (usually in the form of a cashier&apos;s check) with you on the closing day. Be sure to get this money together well in advance so
+            that there are no last-minute surprises.</p>
+            <p className="mt-4 mb-2">Conduct a final walk-through at the property to verify the property condition and ensure that everything is as expected prior to officially taking possession of the property. You should also schedule
+            a transfer of utilities to your new home.</p>
+            <p className="mt-4 mb-2">Once the title records, escrow will notify you. Your agent will coordinate key delivery and then you can celebrate - you are officially a Homeowner! </p>
+          </TabPanel>
+        </Tabs>
+      ),
+    },
+    {
+      id: 3,
+      name: 'First-Time Homebuyers Programs',
+      href: '#',
+      imageSrc: '/images/white-wooden-dresser.png',
+      imageAlt: "",
+      step: '3',
+      description: 'Achieve your goal of owning a home',
+      hasTabs: true,
+      cardContent: (
+        <Tabs>
+          <TabList>
+            <Tab>Intro</Tab>
+            <Tab>FHA Loans</Tab>
+            <Tab>VA Loans</Tab>
+            <Tab>State and Local</Tab>
+            <Tab>Conventional Loans</Tab>
+            <Tab>Down Payment Assistance</Tab>
+          </TabList>
+          <TabPanel>
+            <p className="mt-4 mb-2">Buying a home is a big commitment and often requires a large upfront cost in the form of a down payment. Generally, the recommended down payment is 20% of the cost of the home. But there are several types of
+            first-time homebuyers programs available that can help you achieve your goal of homeownership even without a 20% down payment.</p>
+          </TabPanel>
+
+          <TabPanel>
+            <p className="mt-4 mb-2">The FHA offers loans specifically designed for first-time homebuyers. These loans are insured by the FHA, allowing lenders to offer more lenient qualification criteria, lower down payment requirements (as low
+            as 3.5% of the purchase price), and competitive interest rates. FHA loans are a popular choice for individuals with limited savings or lower credit scores.</p>
+          </TabPanel>
+
+          <TabPanel>
+            <p className="mt-4 mb-2">VA loans are available to eligible veterans, active-duty service members, and surviving spouses. These loans are guaranteed by the U.S. Department of Veterans Affairs and provide various benefits, including
+            no down payment requirement, flexible credit requirements, and limited closing costs. VA loans are a great option for those who have served or are serving in the military.</p>
+          </TabPanel>
+
+          <TabPanel>
+            <p className="mt-4 mb-2">Many states and local governments provide assistance programs specifically tailored for first-time homebuyers. These programs vary widely by location and can include down payment assistance, closing cost
+            assistance, or low-interest loans. Some programs also offer educational resources, counseling, and workshops to help buyers navigate the homebuying process.</p>
+          </TabPanel>
+
+          <TabPanel>
+            <p className="mt-4 mb-2">Conventional loan programs are offered by private lenders and backed by government-sponsored enterprises like Fannie Mae and Freddie Mac. Some conventional loan programs provide options for first-time homebuyers,
+            such as low down payment requirements (as low as 3% of the purchase price) and more flexible credit criteria. These programs often require private mortgage insurance (PMI) for borrowers with a down payment less than 20%.</p>
+          </TabPanel>
+
+          <TabPanel>
+            <p className="mt-4 mb-2">Many organizations, nonprofits, and employers offer down payment assistance programs to help first-time homebuyers overcome the hurdle of saving for a down payment. These programs may provide grants, forgivable
+            loans, or deferred payment loans that can be used toward the down payment or closing costs. Down payment assistance programs vary widely in eligibility requirements, funding availability, and geographical limitations.</p>
+          </TabPanel>
+        </Tabs>
+      ),
+    },
+    {
+      id: 4,
+      name: 'Now What?',
+      href: '#',
+      imageSrc: '/images/brown-wooden-framed.png',
+      imageAlt: "Modern minimalist home design",
+      step: '4',
+      description: 'Final tips as a new homeowner',
+      hasTabs: true,
+      cardContent: (
+        <Tabs>
+          <TabList>
+            <Tab>Intro</Tab>
+            <Tab>Keep Saving</Tab>
+            <Tab>Maintenance</Tab>
+            <Tab>Focus</Tab>
+            <Tab>Diversify</Tab>
+          </TabList>
+          <TabPanel>
+            <p className="mt-4 mb-2">Congratulations on becoming a homeowner! While you may have completed the initial steps of buying a home, there are still important considerations to ensure a successful homeownership experience. Beyond the upfront
+            expenses like down payments and monthly mortgage payments, it&apos;s crucial to be aware of ongoing homeownership costs and take steps to protect your investment.</p>
+          </TabPanel>
+
+          <TabPanel>
+            <p className="mt-4 mb-2">Owning a home can bring unexpected expenses, such as roof repairs or replacing essential appliances. It&apos;s essential to proactively plan for these inevitable costs by establishing an emergency fund dedicated to
+            your home. By consistently saving for unforeseen repairs and maintenance, you can avoid financial surprises and ensure that you&apos;re well-prepared to handle any unexpected home-related expenses that may arise.</p>
+          </TabPanel>
+
+          <TabPanel>
+            <p className="mt-4 mb-2">By implementing a routine maintenance schedule, you can minimize repair expenses and address issues promptly while they are still small and manageable. Regular maintenance not only helps to preserve the value and
+            functionality of your home but also reduces the likelihood of costly repairs down the line. By staying proactive and attentive to the upkeep of your home, you can enjoy long-term savings and a well-maintained living space.</p>
+          </TabPanel>
+
+          <TabPanel>
+            <p className="mt-4 mb-2">Instead of fixating on the ever-changing housing market, keep your eye on the bigger picture. By having the flexibility to choose the optimal time to sell, rather than being compelled by external factors like job
+            changes or financial difficulties, you have a greater chance of maximizing your investment and achieving a solid profit. Remember that your long-term goals and personal circumstances should guide your decision to sell, allowing you to make
+            strategic choices that align with your financial objectives.</p>
+          </TabPanel>
+
+          <TabPanel>
+            <p className="mt-4 mb-2">While owning a home can be a valuable asset, you should not solely rely on selling it to fund your retirement. Instead, focus on maximizing contributions to your retirement accounts on a consistent basis. While the
+            housing market can be unpredictable, banking on a significant windfall from selling your home is not a guaranteed retirement strategy.</p>
+          </TabPanel>
+        </Tabs>
+      ),
+    },
+  ]
+
 export default function HomePage() {
   const navigation = [
     { name: 'Learn', href: 'learn' },
@@ -1181,6 +1445,44 @@ export default function HomePage() {
           <h2 className="text-2xl font-bold tracking-tight text-gray-900 mt-20">Breaking Down Credit</h2>
           <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
             {products3.map((product) => (
+            <div
+              key={product.id}
+              className="group relative cursor-pointer rounded-lg overflow-hidden shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
+              onClick={(e) => {
+                e.preventDefault(); // prevent the default behavior of the hyperlink
+                setSelectedProduct(product);
+              }}
+            >
+              <div className="min-h-80 aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+                <Image
+                  src={product.imageSrc}
+                  alt={product.imageAlt}
+                  width={400}
+                  height={500}
+                  className="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                />
+              </div>
+
+              <div className="mt-4 px-4 pb-2 flex justify-between">
+                <div>
+                  <h3 className="text-md text-gray-700 font-semibold">
+                    <a href={product.href}>
+                      <span aria-hidden="true" className="absolute inset-0" />
+                      {product.name}
+                    </a>
+                  </h3>
+                  <p className="mt-1 text-sm text-gray-500">{product.description}</p>
+                </div>
+                <p className="text-sm font-medium text-gray-900">{product.step}</p>
+              </div>
+            </div>
+            ))}
+          </div>
+
+          {/* The First-Time Homebuyer's Journey */}
+          <h2 className="text-2xl font-bold tracking-tight text-gray-900 mt-20">The First-Time Homebuyer's Journey</h2>
+          <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+            {products4.map((product) => (
             <div
               key={product.id}
               className="group relative cursor-pointer rounded-lg overflow-hidden shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
