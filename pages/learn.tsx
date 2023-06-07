@@ -85,7 +85,6 @@ const products: Product[] = [
         </div>
         </TabPanel>
       </Tabs>
-
     ),
   },
   {
@@ -175,7 +174,6 @@ const products: Product[] = [
           <TabList>
             <Tab>Intro</Tab>
             <Tab>Credit Score Factors</Tab>
-            <Tab>Measuring Credit Scores</Tab>
             <Tab>Steps to Build Good Credit</Tab>
           </TabList>
           <TabPanel>
@@ -192,6 +190,18 @@ const products: Product[] = [
                   <li>Credit check approval for rental applications</li>
                 </ul>
             </div>
+
+            <div className="card-paragraph mb-2">
+              <p>Credit scores range from 300-850 points, though specific scores, such as for auto loans have different ranges.
+                FICO credit scores fall within 1 of 5 ranges:</p>
+                <ul className="list-decimal ml-6">
+                  <li>Excellent/Exceptional: 800-850</li>
+                  <li>Very Good: 740-799</li>
+                  <li>Good: 670-739</li>
+                  <li>Fair: 580-669</li>
+                  <li>Poor: 300-579</li>
+                </ul>
+            </div>
           </TabPanel>
 
           <TabPanel>
@@ -203,11 +213,6 @@ const products: Product[] = [
               <p>Your record of when and how often you pay your bills on time.
                 Each bill payment stays on your credit history for 7 years. Make on-time payments in full each month to build your credit.
                 Missing a single payment or making a late payment, especially early on in your credit journey, can significantly hurt your credit.</p>
-            </div>
-            <div className="card-paragraph mb-2">
-              <p>Waiting even 5 or 10 years to start saving can make a significant difference in your wealth trajectory.
-                For example, if you set aside $1,000 today in an index fund like VOO or SPY, 20 years from now, that $1,000 would be worth ~$3,869.68.
-                However, if you wait 10 years before investing the $1,000, you would only have $1,967.15, a nearly ~50% reduction!</p>
             </div>
             <div className="card-paragraph mb-2">
               <p className="font-medium">Balance Owed — 30%: </p>
@@ -223,23 +228,6 @@ const products: Product[] = [
                 If we compare your credit history to applying for a job, you want to impress lenders like you would a potential
                 employer by showing you can manage credit responsibly.
                 As an indicator of your creditworthiness, the longer your credit history is, the better.</p>
-            </div>
-          </TabPanel>
-
-          <TabPanel>
-            <div className="card-paragraph mb-2">
-              <p>Credit scores range from 300-850 points, though specific scores, such as for auto loans have different ranges.
-                FICO credit scores fall within 1 of 5 ranges:</p>
-                <ul className="list-decimal ml-6">
-                  <li>Excellent/Exceptional: 800-850</li>
-                  <li>Very Good: 740-799</li>
-                  <li>Good: 670-739</li>
-                  <li>Fair: 580-669</li>
-                  <li>Poor: 300-579</li>
-                </ul>
-              <p>FICO reports that the average U.S. credit score is 716, falling under the “Good” credit range.
-                Even moving from the “Fair” to “Good” credit range by earning a score of 670 will lead to much more favorable
-                financial offerings for various types of loans and rewards credit cards.</p>
             </div>
           </TabPanel>
 
@@ -513,7 +501,6 @@ const products: Product[] = [
           </TabPanel>
 
           <TabPanel>
-            <p className='font-medium'>Needs</p>
             <div className="card-paragraph mb-2">
               <p>Needs are things that you absolutely cannot live without, your “must-haves.”
                 They include rent or mortgage payments, groceries, healthcare, insurance, utilities, etc.
@@ -527,7 +514,6 @@ const products: Product[] = [
           </TabPanel>
 
           <TabPanel>
-            <p className='font-medium'>Wants</p>
             <div className="card-paragraph mb-2">
               <p>Next up on the list is wants. That will include anything you can reasonably live without, such as video games,
                 new clothes, plane tickets, streaming services, amusement parks, etc.
@@ -538,11 +524,9 @@ const products: Product[] = [
           </TabPanel>
 
           <TabPanel>
-            <p className='font-medium'>Savings and Debt</p>
             <div className="card-paragraph mb-2">
-              <p>Finally, there are savings and debt.
-                In terms of savings, this encompasses retirement accounts, emergency funds, and investment accounts.
-                Debt would include anything that has charges interest, such as credit card debt or student loans.
+              <p>Finally, there are savings and debt. In terms of savings, this encompasses retirement accounts, emergency funds, and
+                investment accounts. Debt would include anything that has charges interest, such as credit card debt or student loans.
                 You can budget your income between savings and debt however you&apos;d like depending on your financial circumstances.</p>
             </div>
             <p className="mt-4 mb-2">Financial experts recommend keeping 3-6 months of your expenses in an emergency fund as a general
@@ -724,7 +708,7 @@ const products: Product[] = [
       imageSrc: '/images/budgetApps.png',
       imageAlt: "Person holding a phone showing expenses",
       step: '6',
-      description: 'An old-school approach to budgeting',
+      description: 'Track your budget hassle-free',
       hasTabs: true,
       cardContent: (
         <Tabs>
@@ -789,6 +773,312 @@ const products: Product[] = [
                 One option is to build your own spreadsheet or look for one online on a site like Reddit or Etsy.
                 With spreadsheets, you can go all out and customize it to your liking.</p>
             </div>
+          </TabPanel>
+        </Tabs>
+      ),
+    },
+  ]
+
+  const products3: Product[] = [
+    {
+      id: 1,
+      name: 'Types of Credit',
+      href: '#',
+      imageSrc: '/images/hand-holding-credit-cards.png',
+      imageAlt: "hand holding 4 credit cards",
+      step: '1',
+      description: 'The different types of credit',
+      hasTabs: true,
+      cardContent: (
+        <Tabs>
+          <TabList>
+            <Tab>Intro</Tab>
+            <Tab>Revolving Credit</Tab>
+            <Tab>Installment Credit</Tab>
+            <Tab>Service Credit</Tab>
+          </TabList>
+          <TabPanel>
+            <p className="mt-4 mb-2">The word &quot;credit&quot; has many meanings, with the most common being a contractual arrangement where
+            a borrower receives funds or assets and agrees to repay the lender later, often with interest.</p>
+
+            <div className="card-paragraph mb-2">
+              <p>Common forms of credit include:</p>
+              <ul className="list-decimal ml-6">
+                <li>Credit cards</li>
+                <li>Car loans</li>
+                <li>Personal loans</li>
+                <li>Mortgages</li>
+                <li>Student loans</li>
+                <li>Lines of credit</li>
+              </ul>
+            </div>
+          </TabPanel>
+
+          <TabPanel>
+            <p className="mt-4 mb-2">Revolving credit allows borrowers to access funds up to a predetermined credit limit and make flexible repayments based on their
+            outstanding balance. Credit cards and lines of credit are common examples of revolving credit. With revolving credit, borrowers can repeatedly borrow and
+            repay within the credit limit. Minimum monthly payments are typically required, but the borrower has the option to carry a balance and pay interest on the
+            remaining debt. It is best suited for short-term borrowing and managing fluctuating expenses.</p>
+          </TabPanel>
+
+          <TabPanel>
+            <p className="mt-4 mb-2">Installment credit involves borrowing a fixed amount of money and repaying it in regular installments over a predetermined period. Examples
+            of installment credit include auto loans, mortgages, and personal loans. The loan amount, interest rate, and repayment term are agreed upon upfront. Borrowers make
+            fixed monthly payments that include both principal and interest, ensuring that the debt is fully repaid by the end of the term. It is commonly used for long-term
+            financing needs</p>
+          </TabPanel>
+
+          <TabPanel>
+            <p className="mt-4 mb-2">Service credit refers to the credit agreements individuals have with service providers such as gas and electric utilities, cable and internet
+            providers, cell phone companies, and gyms. These agreements involve receiving services on a monthly basis with the expectation of payment afterward. While service payment
+            history can impact credit scores, note that not all service payments are automatically reported to credit bureaus.</p>
+          </TabPanel>
+        </Tabs>
+      ),
+    },
+    {
+      id: 2,
+      name: 'Credit Scores',
+      href: '#',
+      imageSrc: '/images/darts-on-target.jpg',
+      imageAlt: "target with darts on it",
+      step: '2',
+      description: 'Explaining what credit scores are',
+      hasTabs: true,
+      cardContent: (
+        <Tabs>
+          <TabList>
+            <Tab>Intro</Tab>
+            <Tab>Factors</Tab>
+            <Tab>Range</Tab>
+            <Tab>Building Credit</Tab>
+          </TabList>
+          <TabPanel>
+            <p className="mt-4 mb-2">Your credit score holds significant importance in your financial life. It serves as a measure of your creditworthiness
+            and plays a crucial role in determining your eligibility for loans, credit cards, and other forms of credit. Lenders use your credit score to assess
+            the risk associated with lending you money and to determine the interest rates and terms they offer.</p>
+
+            <p className="mt-4 mb-2">The higher your credit score, the higher your chances of being approved for various financial products. It can also help you
+            secure more favorable terms, such as lower interest rates and higher credit limits. Moreover, a solid credit score can positively impact other aspects
+            of your life, such as renting an apartment, getting insurance coverage, or even landing certain job opportunities.</p>
+          </TabPanel>
+
+          <TabPanel>
+            <div className="card-paragraph mb-2">
+              <p>The 5 factors that make up your credit score include:</p>
+              <ul className="list-decimal ml-6">
+                <li>Payment history (35%): Your payment history includes details about whether you have made timely payments on your credit accounts, including
+                  loans and credit cards. Consistently making your payments on time and in full will help you build credit while late or missed payments will cause
+                  your credit score to drop.</li>
+                <li>Credit utilization (30%): Your credit utilization ratio is the percentage of your total available credit you use. Keeping your credit utilization
+                  ratio low, ideally below 30%, demonstrates responsible credit management and can boost your score.</li>
+                <li>Length of credit history (15%): The length of time you have held various credit accounts plays a role in determining your creditworthiness.
+                  A longer credit history provides more data for lenders to assess your borrowing habits and repayment patterns.</li>
+                <li>Credit mix (10%): Having a diverse mix of credit types, such as a combination of credit cards, loans, and a mortgage, indicates that you can
+                  handle different forms of credit responsibly.</li>
+                <li>New credit (10%): Opening multiple new credit accounts within a short period can raise concerns for lenders, as it may indicate financial
+                  instability. Additionally, lenders will pull a hard inquiry on your credit each time you apply for a new loan,  which can ding your score up to 5 points.</li>
+              </ul>
+            </div>
+          </TabPanel>
+
+          <TabPanel>
+          <p className="mt-4 mb-2">There are multiple credit scoring models, including FICO, VantageScore, and others. Credit score ranges may vary
+          slightly depending on the credit scoring model used. Additionally, lenders may have additional criteria for evaluating creditworthiness.</p>
+            <div className="card-paragraph mb-2">
+              <p>Here is the general range of credit scores:</p>
+              <ul className="list-disc ml-6">
+                <li>Excellent (800-850): Individuals with an excellent credit score have demonstrated exceptional credit management. They have a history of consistently making
+                  on-time payments, maintaining low credit utilization, and managing diverse credit accounts responsibly. They are likely to have access to the best interest
+                  rates, financial offerings, and terms and conditions.</li>
+                <li>Very Good (740-799): Individuals with a very good credit score have a solid credit history. They have shown responsible financial behavior, with few late
+                  payments and a low credit utilization ratio. Lenders consider them low risk and offer competitive interest rates and favorable terms.</li>
+                <li>Good (670-739): Individuals with a good credit score have a satisfactory credit history. They have managed their credit responsibly, although there might be
+                  a few minor delinquencies or higher credit utilization. They can still qualify for loans and credit cards, but interest rates may be slightly higher.</li>
+                <li>Fair (580-669): Individuals with a fair credit score have a less-than-ideal credit history. They may have occasional late payments, higher credit card balances,
+                  or limited credit history. Access to credit becomes more challenging, and interest rates are higher.</li>
+                <li>Poor (300-579): Individuals with a poor credit score have significant credit issues, such as multiple delinquencies, defaults, or bankruptcy. They face difficulty
+                  obtaining credit and may require specialized credit products or secured loans. Rebuilding credit through responsible financial practices is essential.</li>
+              </ul>
+            </div>
+          </TabPanel>
+
+          <TabPanel>
+            <p className="mt-4 mb-2">Your credit score affects many aspects of your life, from qualifying for a mortgage to getting an auto loan at a favorable rate. Whether you are
+            searching for your forever home or simply applying for a new credit card, having good credit is key to your financial success.</p>
+
+            <div className="card-paragraph mb-2">
+              <p className="mt-4 mb-2">If your credit score is lower than you&apos;d like, there are several steps you can take to build your credit back up:</p>
+              <ul className="list-disc ml-6">
+                <li>If you have the means to pay off some of your debt, tackle your revolving debt first, such as your credit card debt. Usually, revolving balances come with
+                  higher interest rates, which can quickly accumulate in a short amount of time.</li>
+                <li>A single late payment can damage your credit score by up to 110 points! If you generally make your payments on time and forgot to pay once or twice, ask your
+                  issuer if they can forgive your mistakes and not report it to the credit bureaus.</li>
+                <li>Review your credit report at least 1x per year at AnnualCreditReport.com. If you see any inaccurate information or fraudulent activity, you have a right to dispute
+                  it and get the data removed. If your dispute gets approved, this can significantly improve your credit score.</li>
+                <li>Your credit utilization makes up a large chunk of your credit score, so it&apos;s crucial to keep it low. You can either pay down your balances or request a credit line
+                  increase to raise your total avaiable credit.</li>
+                <li>If you have multiple credit cards, it may be hard to keep track of all of them. If you do not use your card for more than 6-12 months, your card issuer may close
+                  your account, thus lowering the average age of your credit cards. To avoid this, you should use each of your cards at least 1x every couple of months to keep it active.</li>
+                <li>If you do not have the resources to pay off your debt, consider getting a 0% APR credit card with a balance transfer option. That will buy you 12-16 months to pay off your debt
+                  before the interest starts accruing again.</li>
+              </ul>
+            </div>
+          </TabPanel>
+        </Tabs>
+      ),
+    },
+    {
+      id: 3,
+      name: 'Credit Cards',
+      href: '#',
+      imageSrc: '/images/amex-airfrance-card.png',
+      imageAlt: "person holding amex card",
+      step: '3',
+      description: 'Making the most of your credit cards',
+      hasTabs: true,
+      cardContent: (
+        <Tabs>
+          <TabList>
+            <Tab>Intro</Tab>
+            <Tab>Types of Credit Card</Tab>
+            <Tab>Credit Card Churning</Tab>
+            <Tab>Responsible Usage</Tab>
+          </TabList>
+          <TabPanel>
+            <p className="mt-4 mb-2">Credit cards are a widely used financial tool that offer convenience and flexibility in making purchases, both in-person and online.  When used responsibly, credit
+            cards provide a convenient way to manage expenses, build credit history, and access various benefits and rewards.</p>
+            <p className="mt-4 mb-2">To obtain a credit card, you must apply with a card issuer like American Express or Chase. The issuer assesses your creditworthiness by reviewing your credit history,
+            income, and other relevant factors. Based on this evaluation, the issuer determines the credit limit and the terms of the card. The credit limit is the maximum amount you can borrow using the card</p>
+            <p className="mt-4 mb-2">Once approved and issued, the cardholder can use the credit card to make purchases at participating merchants, both online and offline. The card includes a unique card number,
+            an expiration date, and a security code that ensures secure transactions.</p>
+            <p className="mt-4 mb-2">Credit card activity is recorded during a billing cycle, typically lasting around 30 days. At the end of the billing cycle, you will receive a statement summarizing the
+            transactions made during that period, the outstanding balance, the minimum payment due, and the due date for payment. You have the flexibiilty to choose how much to pay towards your credit card balance.
+            If you do not pay the full balance, the outstanding amount will start acrruing interest beyond the grace period (usually 21 days from the statement date).</p>
+            <p className="mt-4 mb-2">Many credit cards offer rewards programs and benefits. Cardholders can earn cashback, points, or airline miles based on their spending, which can be redeemed for various rewards,
+            such as travel, merchandise, or statement credits. Additionally, credit cards often provide additional perks like travel insurance, purchase protection, extended warranties, and access to exclusive events.</p>
+          </TabPanel>
+
+          <TabPanel>
+            <div className="card-paragraph mb-2">
+              <p className="mt-4 mb-2">There are many different types of credit cards. Here are some of the most common ones:</p>
+              <ul className="list-disc ml-6">
+                <li>Travel Credit Cards: Designed for frequent travelers, these cards provide travel-related perks like airline miles, hotel discounts, airport lounge access, and travel insurance. They often offer bonus
+                  rewards on travel-related expenses and may have partnerships with specific airlines or hotel chains.</li>
+                <li>Cashback Credit Cards: These cards offer a percentage of the cardholder&apos;s spending as cashback. Cashback can be received as a statement credit, a direct deposit to a bank account, or a physical check.
+                  They are a popular choice for individuals who prefer straightforward rewards or want rewards for everyday spending.</li>
+                <li>Balance Transfer Credit Cards: These cards allow cardholders to transfer high-interest credit card debt to a new card with a lower or zero introductory interest rate (typically 12-18 months). This can
+                  help individuals save on interest charges and pay off their debt more quickly.</li>
+                <li>Secured Credit Cards: Designed for individuals with limited or poor credit history, secured cards require a security deposit that serves as collateral. They help individuals build or rebuild their
+                  credit by demonstrating responsible card usage. Over time, with consistent and timely payments, individuals may qualify for unsecured credit cards.</li>
+                <li>Student Credit Cards: Tailored for college students or young adults, these cards are designed to help students build credit responsibly. They often have lower credit limits and may offer features like
+                  rewards for student-related expenses or tools to monitor spending habits.</li>
+                <li>Business Credit Cards: Specifically designed for business owners, these cards offer features tailored to business needs. They provide tools for expense tracking, employee card management, and may offer
+                  rewards on business-related spending categories. Business credit cards help separate personal and business expenses while providing financial flexibility for business operations.</li>
+              </ul>
+            </div>
+          </TabPanel>
+
+          <TabPanel>
+            <p className="mt-4 mb-2">Credit card churning is a technique people use to extract maximum benefits from credit card rewards programs. The basic concept involves opening new credit card accounts, meeting the
+            spending requirements to earn lucrative sign-up bonuses, and then closing the accounts before annual fees or interest charges apply. By continuously cycling through different credit cards, churners aim to amass
+            a significant number of rewards points, miles, or cash back.</p>
+            <p className="mt-4 mb-2">To effectively churn credit cards, individuals typically develop strategies to meet the spending thresholds within the required time frame. This may involve timing major purchases, prepaying
+            expenses, or utilizing manufactured spending techniques. Churners also carefully monitor and keep track of their rewards programs, staying updated on promotional offers, bonus categories, and redemption options.</p>
+            <p className="mt-4 mb-2">While credit card churning can be financially rewarding for those who can responsibly manage their credit and spending, there are potential downsides to consider. Some issuers may have specific
+            terms and restrictions, such as limitations on eligibility for sign-up bonuses based on previous card relationships. Frequent credit card applications can also lead to inquiries on credit reports, which may temporarily
+            lower credit scores. Moreover, keeping track of multiple cards, payment due dates, and potential fees is time-consuming.</p>
+            <p className="mt-4 mb-2">It&apos;s worth noting that credit card churning is a controversial practice, and some credit card issuers actively discourage or restrict it. They may implement policies such as limiting sign-up
+            bonuses to once per lifetime or imposing penalties for abusing rewards programs. Therefore, you should review the terms and conditions of each credit card agreement and remain informed about any policy changes.</p>
+          </TabPanel>
+
+          <TabPanel>
+            <div className="card-paragraph mb-2">
+              <p>Responsible credit card usage is crucial for maintaining a healthy financial life and maximizing the benefits of credit cards while minimizing potential risks. Here are some key principles to follow:</p>
+              <ul className="list-disc ml-6">
+                <li>Pay your bills on time to avoid late fees, penalties, and negative impacts on your credit score. Set up automatic payments or reminders to ensure you never miss a due date.</li>
+                <li>Aim to keep your credit card balances well below the credit limit. High credit utilization can negatively affect your credit score.</li>
+                <li>Ideally, pay your credit card balance in full each month to avoid accruing interest charges. If you can&apos;t pay the full balance, at least pay the minimum amount required.</li>
+                <li>Use your credit cards wisely and avoid excessive spending. Only charge what you can afford to pay off within a reasonable timeframe.</li>
+                <li>Regularly review your credit card statements to track your spending, identify any errors or unauthorized charges, and detect any potential fraudulent activity. Report any discrepancies to your credit card issuer promptly.</li>
+                <li>Familiarize yourself with the terms and conditions of your credit card, including interest rates, fees, and rewards programs. This knowledge will help you make informed decisions and avoid unexpected surprises.</li>
+                <li>Having multiple credit cards can be beneficial for managing expenses and earning rewards, but it&apos;s essential to keep the number of cards manageable.</li>
+                <li>Safeguard your credit card details and personal information. Be cautious when making online purchases, and only provide your card information on secure and trusted websites. Report any lost or stolen cards immediately to
+                  your card issuer so you do not get charged for purchases you didn&apos;t make.</li>
+                <li>Obtain free copies of your credit report from the major credit bureaus (Equifax, Experian, and TransUnion) and review them for accuracy. Report any errors or discrepancies promptly to have them corrected.</li>
+              </ul>
+            </div>
+          </TabPanel>
+        </Tabs>
+      ),
+    },
+    {
+      id: 4,
+      name: 'Leveraging Credit',
+      href: '#',
+      imageSrc: '/images/brown-leather-wallet.png',
+      imageAlt: "hand holding leather wallet with credit card",
+      step: '4',
+      description: 'Maximze wealth creation',
+      hasTabs: true,
+      cardContent: (
+        <Tabs>
+          <TabList>
+            <Tab>Intro</Tab>
+            <Tab>Credit Cards</Tab>
+            <Tab>Insurance Premiums</Tab>
+            <Tab>Refinancing</Tab>
+            <Tab>Real Estate</Tab>
+          </TabList>
+          <TabPanel>
+            <p className="mt-4 mb-2">When using credit, there is good debt and bad debt. Good debt helps you generate income and increase your net worth down the line. Examples include higher education, real estate, and business loans. On the other
+            hand, bad debt is typically used for depreciating assets or consumption, such as an expensive car or credit card debt.</p>
+            <p className="mt-4 mb-2">When you have a very good or excellent credit score (750+), you are more likely to get better terms and conditions when applying for credit. This can include perks like higher credit limits, lower interest rates,
+            and access to a broader range of financial tools.</p>
+          </TabPanel>
+
+          <TabPanel>
+            <p className="mt-4 mb-2">If you can manage your debt responsibly, use your credit cards for all your purchases. They can be a great way to build your credit history while getting paid for your everyday expenses.</p>
+            <p className="mt-4 mb-2">To make the most of your credit cards, maximize your welcome bonuses. Before applying for a credit card, make sure you can meet the minimum spend requireement and pay off the balance in a reasonable amount of time.
+            Depending on your monthly expenses, you may need to strategically plan ahead.</p>
+            <p className="mt-4 mb-2">When choosing credit cards, evaluate the rewards structure and benefits carefully. Ideally, you want to choose credit cards that fit into your lifestyle. For example, if you spend a lot of money on restaurants and
+            takeout, choose a card that awards you for dining. Note that while some credit cards come with hefty annual fees, their benefits may help you recoup most, if not all, of the costs.</p>
+          </TabPanel>
+
+          <TabPanel>
+            <p className="mt-4 mb-2">When you sign up for an insurance policy, such as for healthcare or life insurance, your insurer charges you a premium. This premium is how much you have to pay for the policy, which can vary depending on your age,
+            coverage, location, and other factors.</p>
+            <p className="mt-4 mb-2">If you have been spending a lot of time rebuilding your credit and it is now much higher than it was when you first purchased your current policies, you can renegotate the price with your insurance companies. But,
+            before going to your agent, shop around and get quotes from other insurance companies so you can find the best rate.</p>
+          </TabPanel>
+
+          <TabPanel>
+            <div className="card-paragraph mb-2">
+              <p className="font-medium">Auto Loans</p>
+              <p>The rates for auto loans can vary anywhere from 0% to 20%. If you have a credit score above 750 and are paying 10% or more in interest, reach out to your lender to see if you can refinance to a lower rate. That way,
+              you can cut down your interest significantly while putting the extra money towards other financial goals.</p>
+            </div>
+
+            <div className="card-paragraph mb-2">
+              <p className="font-medium">Student Loans</p>
+              <p>There is no limit to how many times you can refinance student loans. If any of your student loans have high interest rates, consider refinancing them to potentially save thousands of dollars over the life of your loan.</p>
+            </div>
+
+            <div className="card-paragraph mb-2">
+              <p className="font-medium">Mortgages</p>
+              <p>If you currently have a 30-year mortgage, you may want to refinance to a 15-year mortgage to lower your interest payments and pay off your balance quicker. If the current market is more favorable than when you first took out the mortgage,
+                you may want to refinance to a lower interest rate to lower your monthly payments. If you started with an adjustable-rate mortgage (ARM), you may want to switch to a fixed mortgage to stabilize your interest rates. Or, if your home&apos;s value
+                has significantly increased since you purchased it, you can do a cash-out refinance and use the money for home renovations or debt consolidation.</p>
+            </div>
+          </TabPanel>
+
+          <TabPanel>
+            <p className="mt-4 mb-2">Purchasing real estate is a tried and true strategy to acquire assets that appreciate over time and gradually build wealth.</p>
+            <p className="mt-4 mb-2">Becoming a homeowner allows you to build equity while the value of your house appreciates over time. Unlike renting, where you pay your landlord, once you pay off your mortgage, the house is yours to keep. By then, its value
+            will probably have appreciated significantly.</p>
+            <p className="mt-4 mb-2">Buying investment properties can give you extra cash flow for generating wealth. If you are new to the investment property business, conduct research on how to purchase investment properties and grow your capital sustainably.</p>
+            <p className="mt-4 mb-2">If you can manage your finances well, consider opening a home equity line of credit (HELOC) for emergencies. A HELOC is secured by your home equity and you can typically borrow 60-85% of the assessed value of your home minus the
+            amount owed on your mortgage.</p>
           </TabPanel>
         </Tabs>
       ),
@@ -887,6 +1177,44 @@ export default function HomePage() {
             ))}
           </div>
 
+          {/* Credit 101 */}
+          <h2 className="text-2xl font-bold tracking-tight text-gray-900 mt-20">Breaking Down Credit</h2>
+          <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+            {products3.map((product) => (
+            <div
+              key={product.id}
+              className="group relative cursor-pointer rounded-lg overflow-hidden shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
+              onClick={(e) => {
+                e.preventDefault(); // prevent the default behavior of the hyperlink
+                setSelectedProduct(product);
+              }}
+            >
+              <div className="min-h-80 aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+                <Image
+                  src={product.imageSrc}
+                  alt={product.imageAlt}
+                  width={400}
+                  height={500}
+                  className="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                />
+              </div>
+
+              <div className="mt-4 px-4 pb-2 flex justify-between">
+                <div>
+                  <h3 className="text-md text-gray-700 font-semibold">
+                    <a href={product.href}>
+                      <span aria-hidden="true" className="absolute inset-0" />
+                      {product.name}
+                    </a>
+                  </h3>
+                  <p className="mt-1 text-sm text-gray-500">{product.description}</p>
+                </div>
+                <p className="text-sm font-medium text-gray-900">{product.step}</p>
+              </div>
+            </div>
+            ))}
+          </div>
+
           {selectedProduct && selectedProduct.hasTabs !== undefined && selectedProduct.hasTabs && (
             <Dialog
               open={selectedProduct !== null}
@@ -910,7 +1238,6 @@ export default function HomePage() {
                       Close
                     </button>
                   </div>
-
                 </div>
               </div>
             </Dialog>
