@@ -374,7 +374,6 @@ const definitionsD: Definition[] = [
             quickly and at desired prices. Highly liquid assets, such as major stocks or currency pairs, are often preferred by day traders.</li>
           <li>Day trading involves inherent risks due to the short-term nature of trades and potential rapid price movements. Effective risk management is crucial to protect against significant losses. Strategies
             such as setting stop-loss orders, diversifying trades, and using risk-reward ratios help day traders limit losses and preserve capital.</li>
-          <li></li>
         </ul>
       </>
     ),
