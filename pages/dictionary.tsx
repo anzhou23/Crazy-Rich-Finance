@@ -2,6 +2,7 @@ import React, { useState} from 'react'
 import 'tailwindcss/tailwind.css'
 import { Dialog } from '@headlessui/react'
 import Navbar from "../components/Navbar"
+import DefinitionList from "../components/DefinitionList"
 import Footer from "../components/Footer"
 
 interface Definition {
@@ -1162,7 +1163,7 @@ const definitionsP: Definition[] = [
         <p className="mt-4 mb-2">Passive income refers to earnings that are generated with minimal effort or active involvement. It is income earned from investments, business ventures, or assets that generate ongoing cash flow without requiring constant or direct participation.</p>
         <p className="font-medium">Key Takeaways</p>
         <ul className="list-disc ml-6">
-          <li>: Passive income allows individuals to earn money without being actively involved in day-to-day operations or trading their time for money. Instead, it involves setting up systems, investments, or businesses that generate income with little ongoing effort.</li>
+          <li>Passive income allows individuals to earn money without being actively involved in day-to-day operations or trading their time for money. Instead, it involves setting up systems, investments, or businesses that generate income with little ongoing effort.</li>
           <li>Passive income can be generated from various sources, such as rental properties, dividend-paying stocks, interest from savings accounts or bonds, royalties from intellectual property, affiliate marketing, online businesses, or investments in real estate crowdfunding
             or peer-to-peer lending platforms.</li>
           <li>While passive income may require less ongoing effort, it often requires significant upfront effort, time, or investment to establish the income-generating asset or system. For example, purchasing rental properties requires upfront capital and property management
@@ -2167,551 +2168,32 @@ export default function HomePage() {
       </div>
 
       <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-        <div id="section-a" className="py-8 flex items-center flex-col">
-          <h2 className="text-2xl font-bold text-gray-800">A</h2>
-          <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-            {definitionsA.map((definition) => (
-            <div
-              key={definition.id}
-              className="group relative cursor-pointer rounded-lg overflow-hidden shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
-              onClick={() => setSelectedDefinition(definition)}
-            >
-              <div className="mt-4 px-4 pb-2 flex items-center justify-center">
-                <div>
-                  <h3 className="text-md text-gray-700 font-semibold text-center">
-                      {definition.name}
-                  </h3>
-                </div>
-              </div>
-            </div>
-            ))}
-          </div>
-        </div>
-
-        <div id="section-b" className="py-8 flex items-center flex-col">
-          <h2 className="text-2xl font-bold text-gray-800">B</h2>
-          <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-            {definitionsB.map((definition) => (
-            <div
-              key={definition.id}
-              className="group relative cursor-pointer rounded-lg overflow-hidden shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
-              onClick={() => setSelectedDefinition(definition)}
-            >
-              <div className="mt-4 px-4 pb-2 flex justify-center items-center">
-                <div>
-                  <h3 className="text-md text-gray-700 font-semibold text-center">
-                      {definition.name}
-                  </h3>
-                </div>
-              </div>
-            </div>
-            ))}
-          </div>
-        </div>
-
-        <div id="section-c" className="py-8 flex items-center flex-col">
-          <h2 className="text-2xl font-bold text-gray-800">C</h2>
-          <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-            {definitionsC.map((definition) => (
-            <div
-              key={definition.id}
-              className="group relative cursor-pointer rounded-lg overflow-hidden shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
-              onClick={() => setSelectedDefinition(definition)}
-            >
-              <div className="mt-4 px-4 pb-2 flex justify-center items-center">
-                <div>
-                  <h3 className="text-md text-gray-700 font-semibold text-center">
-                      {definition.name}
-                  </h3>
-                </div>
-              </div>
-            </div>
-            ))}
-          </div>
-        </div>
-
-        <div id="section-d" className="py-8 flex items-center flex-col">
-          <h2 className="text-2xl font-bold text-gray-800">D</h2>
-          <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 xl:gap-x-8">
-            {definitionsD.map((definition) => (
-            <div
-              key={definition.id}
-              className="group relative cursor-pointer rounded-lg overflow-hidden shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
-              onClick={() => setSelectedDefinition(definition)}
-            >
-              <div className="mt-4 px-4 pb-2 flex justify-center items-center">
-                <div>
-                  <h3 className="text-md text-gray-700 font-semibold text-center">
-                      {definition.name}
-                  </h3>
-                </div>
-              </div>
-            </div>
-            ))}
-          </div>
-        </div>
-
-        <div id="section-e" className="py-8 flex items-center flex-col">
-          <h2 className="text-2xl font-bold text-gray-800">E</h2>
-          <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 xl:gap-x-8">
-            {definitionsE.map((definition) => (
-            <div
-              key={definition.id}
-              className="group relative cursor-pointer rounded-lg overflow-hidden shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
-              onClick={() => setSelectedDefinition(definition)}
-            >
-              <div className="mt-4 px-4 pb-2 flex justify-center items-center">
-                <div>
-                  <h3 className="text-md text-gray-700 font-semibold text-center">
-                      {definition.name}
-                  </h3>
-                </div>
-              </div>
-            </div>
-            ))}
-          </div>
-        </div>
-
-        <div id="section-f" className="py-8 flex items-center flex-col">
-          <h2 className="text-2xl font-bold text-gray-800">F</h2>
-          <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 xl:gap-x-8">
-            {definitionsF.map((definition) => (
-              <div
-                key={definition.id}
-                className="group relative cursor-pointer rounded-lg overflow-hidden shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
-                onClick={() => setSelectedDefinition(definition)}
-              >
-                <div className="mt-4 px-4 pb-2 flex justify-center items-center">
-                  <div>
-                    <h3 className="text-md text-gray-700 font-semibold text-center">
-                        {definition.name}
-                    </h3>
-                  </div>
-                </div>
-              </div>
-              ))}
-          </div>
-        </div>
-
-        <div id="section-g" className="py-8 flex items-center flex-col">
-          <h2 className="text-2xl font-bold text-gray-800">G</h2>
-          <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 xl:gap-x-8">
-          {definitionsG.map((definition) => (
-            <div
-              key={definition.id}
-              className="group relative cursor-pointer rounded-lg overflow-hidden shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
-              onClick={() => setSelectedDefinition(definition)}
-            >
-              <div className="mt-4 px-4 pb-2 flex justify-center items-center">
-                <div>
-                  <h3 className="text-md text-gray-700 font-semibold text-center">
-                      {definition.name}
-                  </h3>
-                </div>
-              </div>
-            </div>
-            ))}
-          </div>
-        </div>
-
-        <div id="section-h" className="py-8 flex items-center flex-col">
-          <h2 className="text-2xl font-bold text-gray-800">H</h2>
-          <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-          {definitionsH.map((definition) => (
-            <div
-              key={definition.id}
-              className="group relative cursor-pointer rounded-lg overflow-hidden shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
-              onClick={() => setSelectedDefinition(definition)}
-            >
-              <div className="mt-4 px-4 pb-2 flex justify-center items-center">
-                <div>
-                  <h3 className="text-md text-gray-700 font-semibold text-center">
-                      {definition.name}
-                  </h3>
-                </div>
-              </div>
-            </div>
-            ))}
-          </div>
-        </div>
-
-        <div id="section-i" className="py-8 flex items-center flex-col">
-          <h2 className="text-2xl font-bold text-gray-800">I</h2>
-          <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 xl:gap-x-8">
-          {definitionsI.map((definition) => (
-            <div
-              key={definition.id}
-              className="group relative cursor-pointer rounded-lg overflow-hidden shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
-              onClick={() => setSelectedDefinition(definition)}
-            >
-              <div className="mt-4 px-4 pb-2 flex justify-center items-center">
-                <div>
-                  <h3 className="text-md text-gray-700 font-semibold text-center">
-                      {definition.name}
-                  </h3>
-                </div>
-              </div>
-            </div>
-            ))}
-          </div>
-        </div>
-
-        <div id="section-j" className="py-8 flex items-center flex-col">
-          <h2 className="text-2xl font-bold text-gray-800">J</h2>
-          <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 xl:gap-x-8">
-          {definitionsJ.map((definition) => (
-            <div
-              key={definition.id}
-              className="group relative cursor-pointer rounded-lg overflow-hidden shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
-              onClick={() => setSelectedDefinition(definition)}
-            >
-              <div className="mt-4 px-4 pb-2 flex justify-center items-center">
-                <div>
-                  <h3 className="text-md text-gray-700 font-semibold text-center">
-                      {definition.name}
-                  </h3>
-                </div>
-              </div>
-            </div>
-            ))}
-          </div>
-        </div>
-
-        <div id="section-k" className="py-8 flex items-center flex-col">
-          <h2 className="text-2xl font-bold text-gray-800">K</h2>
-          <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 xl:gap-x-8">
-          {definitionsK.map((definition) => (
-            <div
-              key={definition.id}
-              className="group relative cursor-pointer rounded-lg overflow-hidden shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
-              onClick={() => setSelectedDefinition(definition)}
-            >
-              <div className="mt-4 px-4 pb-2 flex justify-center items-center">
-                <div>
-                  <h3 className="text-md text-gray-700 font-semibold text-center">
-                      {definition.name}
-                  </h3>
-                </div>
-              </div>
-            </div>
-            ))}
-          </div>
-        </div>
-
-        <div id="section-l" className="py-8 flex items-center flex-col">
-          <h2 className="text-2xl font-bold text-gray-800">L</h2>
-          <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
-          {definitionsL.map((definition) => (
-            <div
-              key={definition.id}
-              className="group relative cursor-pointer rounded-lg overflow-hidden shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
-              onClick={() => setSelectedDefinition(definition)}
-            >
-              <div className="mt-4 px-4 pb-2 flex justify-center items-center">
-                <div>
-                  <h3 className="text-md text-gray-700 font-semibold text-center">
-                      {definition.name}
-                  </h3>
-                </div>
-              </div>
-            </div>
-            ))}
-          </div>
-        </div>
-
-        <div id="section-m" className="py-8 flex items-center flex-col">
-          <h2 className="text-2xl font-bold text-gray-800">M</h2>
-          <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-          {definitionsM.map((definition) => (
-            <div
-              key={definition.id}
-              className="group relative cursor-pointer rounded-lg overflow-hidden shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
-              onClick={() => setSelectedDefinition(definition)}
-            >
-              <div className="mt-4 px-4 pb-2 flex justify-center items-center">
-                <div>
-                  <h3 className="text-md text-gray-700 font-semibold text-center">
-                      {definition.name}
-                  </h3>
-                </div>
-              </div>
-            </div>
-            ))}
-          </div>
-        </div>
-
-        <div id="section-n" className="py-8 flex items-center flex-col">
-          <h2 className="text-2xl font-bold text-gray-800">N</h2>
-          <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
-          {definitionsN.map((definition) => (
-            <div
-              key={definition.id}
-              className="group relative cursor-pointer rounded-lg overflow-hidden shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
-              onClick={() => setSelectedDefinition(definition)}
-            >
-              <div className="mt-4 px-4 pb-2 flex justify-center items-center">
-                <div>
-                  <h3 className="text-md text-gray-700 font-semibold text-center">
-                      {definition.name}
-                  </h3>
-                </div>
-              </div>
-            </div>
-            ))}
-          </div>
-        </div>
-
-        <div id="section-o" className="py-8 flex items-center flex-col">
-          <h2 className="text-2xl font-bold text-gray-800">O</h2>
-          <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-          {definitionsO.map((definition) => (
-            <div
-              key={definition.id}
-              className="group relative cursor-pointer rounded-lg overflow-hidden shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
-              onClick={() => setSelectedDefinition(definition)}
-            >
-              <div className="mt-4 px-4 pb-2 flex justify-center items-center">
-                <div>
-                  <h3 className="text-md text-gray-700 font-semibold text-center">
-                      {definition.name}
-                  </h3>
-                </div>
-              </div>
-            </div>
-            ))}
-          </div>
-        </div>
-
-        <div id="section-p" className="py-8 flex items-center flex-col">
-          <h2 className="text-2xl font-bold text-gray-800">P</h2>
-          <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-          {definitionsP.map((definition) => (
-            <div
-              key={definition.id}
-              className="group relative cursor-pointer rounded-lg overflow-hidden shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
-              onClick={() => setSelectedDefinition(definition)}
-            >
-              <div className="mt-4 px-4 pb-2 flex justify-center items-center">
-                <div>
-                  <h3 className="text-md text-gray-700 font-semibold text-center">
-                      {definition.name}
-                  </h3>
-                </div>
-              </div>
-            </div>
-            ))}
-          </div>
-        </div>
-
-        <div id="section-q" className="py-8 flex items-center flex-col">
-          <h2 className="text-2xl font-bold text-gray-800">Q</h2>
-          <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 xl:gap-x-8">
-          {definitionsQ.map((definition) => (
-            <div
-              key={definition.id}
-              className="group relative cursor-pointer rounded-lg overflow-hidden shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
-              onClick={() => setSelectedDefinition(definition)}
-            >
-              <div className="mt-4 px-4 pb-2 flex justify-center items-center">
-                <div>
-                  <h3 className="text-md text-gray-700 font-semibold text-center">
-                      {definition.name}
-                  </h3>
-                </div>
-              </div>
-            </div>
-            ))}
-          </div>
-        </div>
-
-        <div id="section-r" className="py-8 flex items-center flex-col">
-          <h2 className="text-2xl font-bold text-gray-800">R</h2>
-          <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-          {definitionsR.map((definition) => (
-            <div
-              key={definition.id}
-              className="group relative cursor-pointer rounded-lg overflow-hidden shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
-              onClick={() => setSelectedDefinition(definition)}
-            >
-              <div className="mt-4 px-4 pb-2 flex justify-center items-center">
-                <div>
-                  <h3 className="text-md text-gray-700 font-semibold text-center">
-                      {definition.name}
-                  </h3>
-                </div>
-              </div>
-            </div>
-            ))}
-          </div>
-        </div>
-
-        <div id="section-s" className="py-8 flex items-center flex-col">
-          <h2 className="text-2xl font-bold text-gray-800">S</h2>
-          <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-          {definitionsS.map((definition) => (
-            <div
-              key={definition.id}
-              className="group relative cursor-pointer rounded-lg overflow-hidden shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
-              onClick={() => setSelectedDefinition(definition)}
-            >
-              <div className="mt-4 px-4 pb-2 flex justify-center items-center">
-                <div>
-                  <h3 className="text-md text-gray-700 font-semibold text-center">
-                      {definition.name}
-                  </h3>
-                </div>
-              </div>
-            </div>
-            ))}
-          </div>
-        </div>
-
-        <div id="section-t" className="py-8 flex items-center flex-col">
-          <h2 className="text-2xl font-bold text-gray-800">T</h2>
-          <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-          {definitionsT.map((definition) => (
-            <div
-              key={definition.id}
-              className="group relative cursor-pointer rounded-lg overflow-hidden shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
-              onClick={() => setSelectedDefinition(definition)}
-            >
-              <div className="mt-4 px-4 pb-2 flex justify-center items-center">
-                <div>
-                  <h3 className="text-md text-gray-700 font-semibold text-center">
-                      {definition.name}
-                  </h3>
-                </div>
-              </div>
-            </div>
-            ))}
-          </div>
-        </div>
-
-        <div id="section-u" className="py-8 flex items-center flex-col">
-          <h2 className="text-2xl font-bold text-gray-800">U</h2>
-          <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-          {definitionsU.map((definition) => (
-            <div
-              key={definition.id}
-              className="group relative cursor-pointer rounded-lg overflow-hidden shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
-              onClick={() => setSelectedDefinition(definition)}
-            >
-              <div className="mt-4 px-4 pb-2 flex justify-center items-center">
-                <div>
-                  <h3 className="text-md text-gray-700 font-semibold text-center">
-                      {definition.name}
-                  </h3>
-                </div>
-              </div>
-            </div>
-            ))}
-          </div>
-        </div>
-
-        <div id="section-v" className="py-8 flex items-center flex-col">
-          <h2 className="text-2xl font-bold text-gray-800">V</h2>
-          <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
-          {definitionsV.map((definition) => (
-            <div
-              key={definition.id}
-              className="group relative cursor-pointer rounded-lg overflow-hidden shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
-              onClick={() => setSelectedDefinition(definition)}
-            >
-              <div className="mt-4 px-4 pb-2 flex justify-center items-center">
-                <div>
-                  <h3 className="text-md text-gray-700 font-semibold text-center">
-                      {definition.name}
-                  </h3>
-                </div>
-              </div>
-            </div>
-            ))}
-          </div>
-        </div>
-
-        <div id="section-w" className="py-8 flex items-center flex-col">
-          <h2 className="text-2xl font-bold text-gray-800">W</h2>
-          <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-          {definitionsW.map((definition) => (
-            <div
-              key={definition.id}
-              className="group relative cursor-pointer rounded-lg overflow-hidden shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
-              onClick={() => setSelectedDefinition(definition)}
-            >
-              <div className="mt-4 px-4 pb-2 flex justify-center items-center">
-                <div>
-                  <h3 className="text-md text-gray-700 font-semibold text-center">
-                      {definition.name}
-                  </h3>
-                </div>
-              </div>
-            </div>
-            ))}
-          </div>
-        </div>
-
-        <div id="section-x" className="py-8 flex items-center flex-col">
-          <h2 className="text-2xl font-bold text-gray-800">X</h2>
-          <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-1 xl:gap-x-8">
-          {definitionsX.map((definition) => (
-            <div
-              key={definition.id}
-              className="group relative cursor-pointer rounded-lg overflow-hidden shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
-              onClick={() => setSelectedDefinition(definition)}
-            >
-              <div className="mt-4 px-4 pb-2 flex justify-center items-center">
-                <div>
-                  <h3 className="text-md text-gray-700 font-semibold text-center">
-                      {definition.name}
-                  </h3>
-                </div>
-              </div>
-            </div>
-            ))}
-          </div>
-        </div>
-
-        <div id="section-y" className="py-8 flex items-center flex-col">
-          <h2 className="text-2xl font-bold text-gray-800">Y</h2>
-          <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
-          {definitionsY.map((definition) => (
-            <div
-              key={definition.id}
-              className="group relative cursor-pointer rounded-lg overflow-hidden shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
-              onClick={() => setSelectedDefinition(definition)}
-            >
-              <div className="mt-4 px-4 pb-2 flex justify-center items-center">
-                <div>
-                  <h3 className="text-md text-gray-700 font-semibold text-center">
-                      {definition.name}
-                  </h3>
-                </div>
-              </div>
-            </div>
-            ))}
-          </div>
-        </div>
-
-        <div id="section-z" className="py-8 flex items-center flex-col">
-          <h2 className="text-2xl font-bold text-gray-800">Z</h2>
-          <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
-          {definitionsZ.map((definition) => (
-            <div
-              key={definition.id}
-              className="group relative cursor-pointer rounded-lg overflow-hidden shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
-              onClick={() => setSelectedDefinition(definition)}
-            >
-              <div className="mt-4 px-4 pb-2 flex justify-center items-center">
-                <div>
-                  <h3 className="text-md text-gray-700 font-semibold text-center">
-                      {definition.name}
-                  </h3>
-                </div>
-              </div>
-            </div>
-            ))}
-          </div>
-        </div>
+        <DefinitionList title="A" definitions={definitionsA} setSelectedDefinition={setSelectedDefinition} />
+        <DefinitionList title="B" definitions={definitionsB} setSelectedDefinition={setSelectedDefinition} />
+        <DefinitionList title="C" definitions={definitionsC} setSelectedDefinition={setSelectedDefinition} />
+        <DefinitionList title="D" definitions={definitionsD} setSelectedDefinition={setSelectedDefinition} />
+        <DefinitionList title="E" definitions={definitionsE} setSelectedDefinition={setSelectedDefinition} />
+        <DefinitionList title="F" definitions={definitionsF} setSelectedDefinition={setSelectedDefinition} />
+        <DefinitionList title="G" definitions={definitionsG} setSelectedDefinition={setSelectedDefinition} />
+        <DefinitionList title="H" definitions={definitionsH} setSelectedDefinition={setSelectedDefinition} />
+        <DefinitionList title="I" definitions={definitionsI} setSelectedDefinition={setSelectedDefinition} />
+        <DefinitionList title="J" definitions={definitionsJ} setSelectedDefinition={setSelectedDefinition} />
+        <DefinitionList title="K" definitions={definitionsK} setSelectedDefinition={setSelectedDefinition} />
+        <DefinitionList title="L" definitions={definitionsK} setSelectedDefinition={setSelectedDefinition} />
+        <DefinitionList title="M" definitions={definitionsM} setSelectedDefinition={setSelectedDefinition} />
+        <DefinitionList title="N" definitions={definitionsN} setSelectedDefinition={setSelectedDefinition} />
+        <DefinitionList title="O" definitions={definitionsO} setSelectedDefinition={setSelectedDefinition} />
+        <DefinitionList title="P" definitions={definitionsP} setSelectedDefinition={setSelectedDefinition} />
+        <DefinitionList title="Q" definitions={definitionsQ} setSelectedDefinition={setSelectedDefinition} />
+        <DefinitionList title="R" definitions={definitionsR} setSelectedDefinition={setSelectedDefinition} />
+        <DefinitionList title="S" definitions={definitionsS} setSelectedDefinition={setSelectedDefinition} />
+        <DefinitionList title="T" definitions={definitionsT} setSelectedDefinition={setSelectedDefinition} />
+        <DefinitionList title="U" definitions={definitionsU} setSelectedDefinition={setSelectedDefinition} />
+        <DefinitionList title="V" definitions={definitionsV} setSelectedDefinition={setSelectedDefinition} />
+        <DefinitionList title="W" definitions={definitionsW} setSelectedDefinition={setSelectedDefinition} />
+        <DefinitionList title="X" definitions={definitionsX} setSelectedDefinition={setSelectedDefinition} />
+        <DefinitionList title="Y" definitions={definitionsY} setSelectedDefinition={setSelectedDefinition} />
+        <DefinitionList title="Z" definitions={definitionsZ} setSelectedDefinition={setSelectedDefinition} />
 
         {selectedDefinition && (
           <Dialog
@@ -2727,12 +2209,13 @@ export default function HomePage() {
               <div className="bg-white rounded-lg max-w-5xl mx-auto p-6 shadow-lg">
                 <Dialog.Title id="dialog-title" className="text-lg font-medium text-gray-900">{selectedDefinition.name}</Dialog.Title>
 
-                <div className="mt-4 flex justify-between">
-                  <p className="text-sm text-gray-500">{selectedDefinition.cardContent}</p>
+                <div className="flex justify-between">
+                  <p className="text-gray-500">{selectedDefinition.cardContent}</p>
                 </div>
 
-                <div className="mt-4 flex justify-end">
-                  <button type="button" className="inline-flex justify-center px-4 py-2 text-sm font-medium text-white bg-blue-600 border border-transparent rounded-md hover:bg-blue-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500" onClick={() => setSelectedDefinition(null)}>
+                <div className="mt-2 flex justify-end">
+                  <button type="button" className="inline-flex justify-center px-4 py-2 text-sm font-medium text-white bg-blue-600 border border-transparent rounded-md hover:bg-blue-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
+                  onClick={() => setSelectedDefinition(null)}>
                     Close
                   </button>
                 </div>

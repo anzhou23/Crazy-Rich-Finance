@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import "react-tabs/style/react-tabs.css";
+import React, { useState, useEffect } from 'react'
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
+import "react-tabs/style/react-tabs.css"
 import { Dialog } from '@headlessui/react'
 import 'tailwindcss/tailwind.css'
 import Navbar from '../components/Navbar'
@@ -2189,7 +2189,13 @@ export default function HomePage() {
                   </div>
 
                   <div className="mt-4 flex justify-end">
-                    <button type="button" className="inline-flex justify-center px-4 py-2 text-sm font-medium text-white bg-blue-600 border border-transparent rounded-md hover:bg-blue-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500" onClick={() => setSelectedProduct(null)}>
+                    <button
+                      type="button"
+                      className="inline-flex justify-center px-4 py-2 text-sm font-medium text-white bg-blue-600 border border-transparent rounded-md hover:bg-blue-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
+                      onClick={() => {
+                        setSelectedProduct(null);
+                      }}
+                    >
                       Close
                     </button>
                   </div>
@@ -2197,7 +2203,6 @@ export default function HomePage() {
               </div>
             </Dialog>
           )}
-
         </div>
       </div>
 
