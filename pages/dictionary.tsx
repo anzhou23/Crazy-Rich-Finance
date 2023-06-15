@@ -1,113 +1,197 @@
 import React, { useState} from 'react'
 import 'tailwindcss/tailwind.css'
 import { Dialog } from '@headlessui/react'
-import Navbar from "../components/Navbar"
-import DefinitionList from "../components/DefinitionList"
-import Footer from "../components/Footer"
+import Navbar from '../components/Navbar'
+import DefinitionList from '../components/DefinitionList'
+import Footer from '../components/Footer'
 
 interface Definition {
   id: number;
   name: string;
-  cardContent?: JSX.Element;
+  content?: JSX.Element;
 }
 
 const definitionsA: Definition[] = [
   {
     id: 1,
     name: 'Accredited Investor',
-    cardContent: (
+    content: (
       <>
-        <p className="mt-4 mb-2">An accredited investor is an individual or entity that meets specific financial criteria defined by regulatory bodies,
-        such as the Securities and Exchange Commission (SEC), allowing them to participate in certain investment opportunities that are restricted to
-        accredited investors.</p>
-        <p className="font-medium">Key Takeaways</p>
+        <p className="mt-2">An accredited investor is an individual or entity that meets specific financial criteria defined by regulatory bodies, such as the Securities and Exchange
+        Commission (SEC), allowing them to participate in certain investment opportunities that are restricted to accredited investors.</p>
+        <p className="font-medium mt-4">Key Takeaways</p>
         <ul className="list-disc ml-6">
-          <li>Criteria for becoming an accredited investor may include minimum income levels, minimum net worth, or professional experience in the
-            financial industry. The exact requirements can vary by jurisdiction, but they are designed to ensure that accredited investors have sufficient financial means or expertise to understand and bear the risks associated with certain types of investments.</li>
-          <li>Accredited investors have access to a broader range of investment opportunities that are typically unavailable to non-accredited investors. These opportunities may include private equity offerings, hedge funds, venture capital funds, private placements,
-            and other types of investments that are considered higher risk, illiquid, or have higher minimum investment requirements.</li>
-          <li>Regulatory bodies impose certain rules and regulations on investment offerings to accredited investors to promote investor protection and maintain fair and transparent markets. Accredited investors may be subject to additional disclosure requirements,
-            filing obligations, or restrictions when participating in certain investment opportunities.</li>
-          <li>Being an accredited investor comes with the responsibility of ongoing evaluation and due diligence. Accredited investors should continuously assess their investment strategies, monitor the performance of their investments, and stay informed about changes
-            in market conditions or regulations that may affect their investment decisions.</li>
+          <li>Criteria for becoming an accredited investor may include minimum income levels, minimum net worth, or professional experience in the financial industry. The exact requirements can vary
+          by jurisdiction, but they are designed to ensure that accredited investors have sufficient financial means or expertise to understand and bear the risks associated with certain types of investments.</li>
+          <li>Accredited investors have access to a broader range of investment opportunities that are typically unavailable to non-accredited investors. These opportunities may include private equity offerings,
+          hedge funds, venture capital funds, private placements, and other types of investments that are considered higher risk, illiquid, or have higher minimum investment requirements.</li>
+          <li>Regulatory bodies impose certain rules and regulations on investment offerings to accredited investors to promote investor protection and maintain fair and transparent markets. Accredited investors may
+          be subject to additional disclosure requirements, filing obligations, or restrictions when participating in certain investment opportunities.</li>
+          <li>Being an accredited investor comes with the responsibility of ongoing evaluation and due diligence. Accredited investors should continuously assess their investment strategies, monitor the performance
+          of their investments, and stay informed about changes in market conditions or regulations that may affect their investment decisions.</li>
         </ul>
       </>
     ),
   },
   {
     id: 2,
-    name: 'Annuities',
-    cardContent: (
+    name: 'Amortization',
+    content: (
       <>
-        <p className="mt-4 mb-2">Annuities are financial products that provide a steady stream of income over a
-        specified period or for the remainder of a person&apos;s life. They are typically offered by insurance
-        companies and can serve as a means of long-term financial planning, particularly for retirement.</p>
-        <p className="font-medium">Key Takeaways</p>
+        <p className="mt-2">Amortization is the process of gradually reducing or paying off a debt over a specific period through regular payments. It involves breaking down the total amount borrowed into a series of
+        scheduled payments that cover both the principal (the original amount borrowed) and the interest (the cost of borrowing).</p>
+        <p className="font-medium mt-4">Key Takeaways</p>
         <ul className="list-disc ml-6">
-          <li>Annuities are structured as contracts between an individual and an insurance company, where the
-            individual makes either a lump sum payment or a series of payments to the insurer.</li>
-          <li>Annuities offer the benefit of tax-deferred growth, meaning that earnings within the annuity account
-            are not taxed until withdrawals get made.</li>
-          <li>There are different types of annuities, including fixed annuities, variable annuities, and indexed annuities,
-            each with its own features and investment options.</li>
-          <li>Fixed annuities provide a guaranteed rate of return and a fixed income stream, while variable annuities allow
-            the investor to choose from a range of investment options. Indexed annuities provide returns based on the
-            performance of a specific market index, offering a potential for higher returns while protecting against market downturns.</li>
-          <li>Annuities often come with fees and expenses, including mortality and expense charges, administrative fees, and
-            investment management fees, which can vary depending on the specific annuity contract.</li>
-          <li>Annuities can be either immediate, where income payments start immediately after purchase, or deferred, where income payments
-            are postponed until a later date.</li>
-          <li>Withdrawals from annuities before reaching a certain age (typically 59 1/2) may be subject to penalties and taxes.</li>
-          <li>Annuities can offer a reliable income stream during retirement, providing financial security, but it&apos;s essential to carefully
-            consider the terms, fees, and features before purchasing an annuity to ensure it aligns with individual financial goals
-            and circumstances.</li>
+          <li>In an amortizing loan, such as a mortgage or car loan, each payment made consists of the principal plus interest. Initially, a larger portion of the payment goes towards paying off the interest, while a
+          smaller portion is applied towards the principal. As the loan progresses, the balance shifts, and a larger portion of each payment is allocated towards reducing the principal.</li>
+          <li>The amortization process is based on a predetermined schedule, typically provided by the lender. This schedule outlines the total number of payments, the payment amount, and the breakdown between principal
+          and interest. It allows borrowers to know exactly how much they need to pay each period and how the loan balance will be reduced over time.</li>
+          <li>Through amortization, you can spread out the cost of a large purchase over an extended period, making it more affordable. It also ensures the loan is fully repaid by the end of the term, assuming all
+          payments are made as scheduled.</li>
+          <li>Amortization schedules are calculated using various factors, including the loan amount, interest rate, loan term, and the frequency of payments (monthly, biweekly, etc.).</li>
+          <li>Amortization schedules vary depending on the type of loan and the terms agreed upon. While most people associate amortization with loans, such as mortgages, it can also apply to other financial instruments,
+          such as bonds or installment loans.</li>
         </ul>
       </>
     ),
   },
+
   {
     id: 3,
     name: 'Angel Investing',
-    cardContent: (
+    content: (
       <>
-        <p className="mt-4 mb-2">Angel investing refers to the practice of high-net-worth individuals or groups providing capital to
-        early-stage startups in exchange for equity ownership. Angels typically offer more than just funding, often providing mentorship,
-        industry connections, and expertise to help the startups grow. It&apos;s a high-risk, high-reward investment strategy with the
-        potential for substantial returns if the startups succeed.</p>
-        <p className="font-medium">Key Takeaways</p>
+        <p className="mt-2">Angel investing refers to the practice of high-net-worth individuals or groups providing capital to early-stage startups in exchange for equity ownership. Angels typically offer more than just funding,
+        often providing mentorship, industry connections, and expertise to help the startups grow. It&apos;s a high-risk, high-reward investment strategy with the potential for substantial returns if the startups succeed.</p>
+        <p className="font-medium mt-4">Key Takeaways</p>
         <ul className="list-disc ml-6">
-          <li>Angel investments typically require a longer time horizon, as it can take several years for startups to reach maturity or
-            generate significant returns.</li>
-          <li>Angel investing carries the risk of potential losses, as not all startups will succeed. It&apos;s essential to be prepared
-            for the possibility of losing the entire investment or a significant portion of it.</li>
-          <li>Given the high-risk nature of angel investing, it&apos;s important to diversify your portfolio by investing in multiple
-            startups and other asset types. Additionally, thorough due diligence is crucial to assess each startup&apos;s market potential,
-            team, and business model before investing.</li>
-          <li>Engaging with other angel investors and joining angel networks or communities can provide valuable learning experiences, deal
-            flow, and opportunities for collaboration. Networking can also lead to co-investment possibilities and shared due diligence efforts.</li>
+          <li>Angel investments typically require a longer time horizon, as it can take several years for startups to reach maturity or generate significant returns.</li>
+          <li>Angel investing carries the risk of potential losses, as not all startups will succeed. It&apos;s essential to be prepared for the possibility of losing the entire investment or a significant portion of it.</li>
+          <li>Given the high-risk nature of angel investing, it&apos;s important to diversify your portfolio by investing in multiple startups and other asset types. Additionally, thorough due diligence is crucial to assess each
+          startup&apos;s market potential, team, and business model before investing.</li>
+          <li>Engaging with other angel investors and joining angel networks or communities can provide valuable learning experiences, deal flow, and opportunities for collaboration. Networking can also lead to co-investment
+          possibilities and shared due diligence efforts.</li>
         </ul>
       </>
     ),
   },
   {
     id: 4,
-    name: 'Annual Report',
-    cardContent: (
+    name: 'Annual Percentage Rate',
+    content: (
       <>
-        <p className="mt-4 mb-2">An annual report is a comprehensive document that provides shareholders and other stakeholders with a
-        detailed overview of a company&apos;s financial performance, operations, and achievements over the past year. It typically includes
-        financial statements, management&apos;s discussion and analysis, corporate governance information, and future outlook. Annual
-        reports are essential for transparency, accountability, and informed decision-making by investors and interested parties.</p>
-        <p className="font-medium">Key Takeaways</p>
+        <p className="mt-2">Annual Percentage Rate (APR) represents the annualized cost of borrowing, including both the interest rate and any additional fees or charges associated with a loan or credit product, such as upfront fees,
+        points, or closing costs. It is expressed as a percentage and helps borrowers compare the true cost of different financial offers.</p>
+        <p className="font-medium mt-4">Key Takeaways</p>
         <ul className="list-disc ml-6">
-          <li>Annual reports provide a snapshot of a company&apos;s financial health, including revenue, expenses, profitability, and cash
-            flow. Understanding the financial performance helps investors assess the company&apos;s stability and growth potential.</li>
-          <li>Annual reports provide details on the company&apos;s governance structure, board composition, executive compensation, and risk
-            management practices.</li>
-          <li>Annual reports fulfill legal and regulatory obligations, ensuring that the company meets reporting standards and provides
-            accurate and timely information to shareholders and regulatory authorities.</li>
-          <li>Additional information like auditor&apos;s reports, notes to financial statements, and sustainability
-            or CSR reports may be included, providing a comprehensive view of the company&apos;s financial and non-financial performance.</li>
+          <li>Lenders are required by law in many countries to disclose the APR to borrowers so they can understand the complete cost of credit. When comparing loan offers, borrowers should consider the APR rather than just the nominal
+          interest rate, as it gives a more comprehensive picture of the total borrowing expenses.</li>
+          <li>APRs may vary depending on the type of loan or credit product. For example, mortgages, personal loans, credit cards, and auto loans may have different APR structures due to the specific terms and conditions associated with
+          each type of financing.</li>
+          <li>APR does not include compounding, which is the effect of earning or paying interest on previously accrued interest. Instead, APR represents a simple interest rate that allows for easier comparison between different loan offers.</li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    id: 5,
+    name: 'Annual Percentage Yield',
+    content: (
+      <>
+        <p className="mt-2">Annual Percentage Yield (APY) represents the total return on an investment or savings account over a one-year period, taking into account compound interest. It is expressed as a percentage and helps investors and savers
+        understand the true earning potential of their funds.</p>
+        <p className="font-medium mt-4">Key Takeaways</p>
+        <ul className="list-disc ml-6">
+          <li>Unlike the Annual Percentage Rate (APR), APY takes the compounding effect into consideration, meaning the interest earned is reinvested and starts earning additional interest.</li>
+          <li>APY reflects both the stated interest rate and the frequency of compounding. The more frequently interest is compounded, the higher the APY will be compared to the nominal interest rate. For example, if interest is compounded monthly,
+          the APY will be higher than if it is compounded annually.</li>
+          <li>APY is particularly useful when comparing different investment or savings options. It allows investors to understand the potential returns they can expect from various financial products and make informed decisions about where to
+          allocate their funds.</li>
+          <li>APY assumes that the investment or savings account remains untouched for the entire year and that the interest is reinvested. Any additional contributions, withdrawals, or changes in interest rates during the year can affect the actual returns.</li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    id: 6,
+    name: 'Annual Report',
+    content: (
+      <>
+        <p className="mt-2">An annual report is a comprehensive document that provides shareholders and other stakeholders with a detailed overview of a company&apos;s financial performance, operations, and achievements over the past year. It typically includes
+        financial statements, management&apos;s discussion and analysis, corporate governance information, and future outlook. Annual reports are essential for transparency, accountability, and informed decision-making by investors and interested parties.</p>
+        <p className="font-medium mt-4">Key Takeaways</p>
+        <ul className="list-disc ml-6">
+          <li>Annual reports provide a snapshot of a company&apos;s financial health, including revenue, expenses, profitability, and cash flow. Understanding the financial performance helps investors assess the company&apos;s stability and growth potential.</li>
+          <li>Annual reports provide details on the company&apos;s governance structure, board composition, executive compensation, and risk management practices.</li>
+          <li>Annual reports fulfill legal and regulatory obligations, ensuring that the company meets reporting standards and provides accurate and timely information to shareholders and regulatory authorities.</li>
+          <li>Additional information like auditor&apos;s reports, notes to financial statements, and sustainability or CSR reports may be included, providing a comprehensive view of the company&apos;s financial and non-financial performance.</li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    id: 7,
+    name: 'Annuities',
+    content: (
+      <>
+        <p className="mt-2">Annuities are financial products that provide a steady stream of income over a specified period or for the remainder of a person&apos;s life. They are typically offered by insurance
+        companies and can serve as a means of long-term financial planning, particularly for retirement.</p>
+        <p className="font-medium mt-4 ">Key Takeaways</p>
+        <ul className="list-disc ml-6">
+          <li>Annuities are structured as contracts between an individual and an insurance company, where the individual makes either a lump sum payment or a series of payments to the insurer.</li>
+          <li>Annuities offer the benefit of tax-deferred growth, meaning that earnings within the annuity account are not taxed until withdrawals get made.</li>
+          <li>There are different types of annuities, including fixed annuities, variable annuities, and indexed annuities, each with its own features and investment options.</li>
+          <li>Fixed annuities provide a guaranteed rate of return and a fixed income stream, while variable annuities allow the investor to choose from a range of investment options. Indexed annuities provide returns
+          based on the performance of a specific market index, offering a potential for higher returns while protecting against market downturns.</li>
+          <li>Annuities often come with fees and expenses, including mortality and expense charges, administrative fees, and investment management fees, which can vary depending on the specific annuity contract.</li>
+          <li>Annuities can be either immediate, where income payments start immediately after purchase, or deferred, where income payments are postponed until a later date.</li>
+          <li>Withdrawals from annuities before reaching a certain age (typically 59 1/2) may be subject to penalties and taxes.</li>
+          <li>Annuities can offer a reliable income stream during retirement, providing financial security, but it&apos;s essential to carefully
+            consider the terms, fees, and features before purchasing an annuity to ensure it aligns with individual financial goals and circumstances.</li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    id: 8,
+    name: 'Appreciation',
+    content: (
+      <>
+        <p className="mt-2">Appreciation refers to an increase in an asset&apos;s value or worth over time. It is the opposite of depreciation, which signifies a decrease in value. Appreciation can occur in various types of assets,
+        such as real estate, stocks, bonds, and other investments.</p>
+        <p className="font-medium mt-4">Key Takeaways</p>
+        <ul className="list-disc ml-6">
+          <li>In real estate, appreciation may result from factors such as improvements in the surrounding neighborhood, increased demand for housing, economic growth, or inflation. Over time, these factors can contribute to an increase
+          in the property&apos;s value.</li>
+          <li>In the case of stocks and bonds, appreciation can be influenced by factors such as the company&apos;s financial performance, industry trends, market conditions, and investor sentiment. Positive developments, such as revenue
+          growth, increased profitability, or favorable economic conditions, can drive the appreciation of these assets.</li>
+          <li>Commodities, such as gold, oil, or agricultural products, can also experience appreciation due to factors like supply and demand dynamics, geopolitical events, or changes in market conditions.</li>
+          <li>Appreciation represents the potential for capital gains. Investors seek assets that have the potential to appreciate over time, allowing them to sell the asset at a higher price than their initial investment and realize a profit.</li>
+          <li>Appreciation is not guaranteed and can be influenced by numerous factors, including market fluctuations, economic conditions, and unforeseen events. Additionally, the rate and extent of appreciation can vary widely across
+          different assets and timeframes.</li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    id: 9,
+    name: 'Asset',
+    content: (
+      <>
+        <p className="mt-2">An asset refers to something of value that an individual, company, or organization owns or controls, with the expectation that it will provide future economic benefits. Assets can take various forms and
+        encompass both tangible and intangible items.</p>
+        <p className="font-medium mt-4">Key Takeaways</p>
+        <ul className="list-disc ml-6">
+          <li>Tangible assets are physical objects that can be touched, seen, and measured. Examples of tangible assets include real estate properties, vehicles, machinery, equipment, inventory, and cash.</li>
+          <li>Intangible assets lack physical substance but still hold value. They include intellectual property, such as patents, copyrights, trademarks, and trade secrets. Other examples of intangible assets are goodwill, brand recognition,
+          customer relationships, software, and licenses.</li>
+          <li>Current assets are those that are expected to be converted into cash or used up within one year or the operating cycle of a business. Common current assets include cash and cash equivalents, accounts receivable, inventory, and
+          short-term investments.</li>
+          <li>Fixed assets, also known as property, plant, and equipment (PP&E), are long-term assets held for productive use in the business. These assets have a useful life of more than one year and include items such as buildings, land,
+          vehicles, machinery, and furniture.</li>
+          <li>Financial assets are instruments representing ownership of an entity or a contractual right to receive future cash flows. Examples include stocks, bonds, mutual funds, derivatives, bank deposits, and other securities.</li>
+          <li>Assets play a crucial role in financial analysis, as they contribute to an entity&apos;s net worth, liquidity, and ability to generate income. Individuals and businesses aim to acquire and manage assets effectively to build
+          wealth, generate returns, and support their operational activities.</li>
         </ul>
       </>
     ),
@@ -117,33 +201,78 @@ const definitionsA: Definition[] = [
 const definitionsB: Definition[] = [
   {
     id: 1,
-    name: 'Bear Market',
-    cardContent: (
+    name: 'Balance Sheet',
+    content: (
       <>
-        <p className="mt-4 mb-2">A bear market refers to a period of declining prices and pessimism in the financial markets, typically associated
-        with a downward trend in stock prices. It is characterized by widespread selling and a lack of confidence in the market.
-        Bear markets are often driven by economic downturns, negative sentiment, or significant geopolitical events.</p>
-        <p className="font-medium">Key Takeaways</p>
+        <p className="mt-2">A balance sheet is a financial statement that provides a snapshot of an entity&apos;s financial position at a specific point in time. It presents the company&apos;s assets, liabilities, and shareholders&apos;
+        equity, providing a comprehensive overview of its financial health.</p>
+        <p className="font-medium mt-4">Key Takeaways</p>
         <ul className="list-disc ml-6">
-          <li>During bear markets, it&apos; important to manage emotions, avoid panic selling, and maintain a long-term perspective.</li>
-          <li>Diversification, risk management, and a focus on high-quality assets can help navigate the challenges of a bear market.</li>
-          <li>While bear markets can be difficult, they also present opportunities for long-term investors. Lower stock prices may offer attractive
-            entry points for quality companies, and potential bargains can be found in undervalued sectors.</li>
-          <li>Understanding your investment horizon and risk tolerance is crucial in bear markets. Short-term investors with imminent financial goals
-            may need to reassess their investment plans, while long-term investors may choose to stay invested and ride out the market volatility.</li>
+          <li>Assets represent what the company owns or controls and include both tangible and intangible items. Tangible assets include cash, inventory, property, plant, and equipment, while intangible assets include patents,
+          trademarks, and goodwill.</li>
+          <li>Liabilities represent what the company owes to external parties, such as creditors and lenders. Examples of liabilities include accounts payable, loans, accrued expenses, and deferred revenues.</li>
+          <li>Shareholders&apos; equity, also known as owners&apos; equity or net worth, represents the residual interest in the assets of the company after deducting liabilities. It includes issued share capital, retained earnings,
+          and additional paid-in capital.</li>
+          <li>The balance sheet follows the fundamental accounting equation: Assets = Liabilities + Shareholders&apos; Equity. This equation ensures that the balance sheet remains in balance, where the total assets equal the total
+          liabilities plus shareholders&apos; equity.</li>
+          <li>Balance sheets are important for various stakeholders, including investors, creditors, and management. They provide insights into a company&apos;s financial position, its ability to meet short-term obligations, and
+          the level of shareholder investment. Comparing balance sheets over time allows stakeholders to analyze trends, assess financial stability, and make informed investment or lending decisions.</li>
+          <li>Note that a balance sheet does not provide information on changes in financial position or performance over a period. For a comprehensive understanding of a company&apos;s financial performance, balance sheets
+          are often analyzed in conjunction with income statements and cash flow statements.</li>
         </ul>
       </>
     ),
   },
   {
     id: 2,
-    name: 'Bonds',
-    cardContent: (
+    name: 'Bankruptcy',
+    content: (
       <>
-        <p className="mt-4 mb-2">Bonds are debt instruments issued by governments, municipalities, and corporations to raise capital. When an investor
+        <p className="mt-2">Bankruptcy is a legal process where individuals or businesses who are unable to repay their debts seek relief from their financial obligations. It provides a structured framework for
+        managing and resolving debts when they become overwhelming.</p>
+        <p className="font-medium mt-4">Key Takeaways</p>
+        <ul className="list-disc ml-6">
+          <li>One of the main goals of bankruptcy is to discharge certain debts and protect debtors from aggressive collection efforts. A debt that is discharged is no longer legally enforceable, and the debtor is
+          released from the obligation to repay it. However, not all debts are dischargeable, such as certain tax debts, student loans (in most cases), child support, and alimony obligations.</li>
+          <li>There are different types of bankruptcy proceedings. Often referred to as &quot;liquidation bankruptcy,&quot; Chapter 7 involves the sale of non-exempt assets to repay creditors. Certain debts may be discharged,
+          providing a fresh start to the debtor. Primarily used by businesses, Chapter 11 allows for the reorganization and restructuring of debts while the business continues operations. It provides an opportunity to
+          develop a plan to repay creditors over time. Designed for individuals with regular income, Chapter 13 enables the debtor to create a repayment plan to gradually pay off their debts over 3-5 years.</li>
+          <li>When a bankruptcy petition is filed, an automatic stay goes into effect, providing temporary relief for debtors. This legally prohibits creditors from taking further collection actions against the debtor,
+          including lawsuits, wage garnishments, or foreclosure proceedings.</li>
+          <li>In bankruptcy cases, a trustee is appointed to oversee the process. The trustee&apos;s role varies depending on the bankruptcy chapter and includes reviewing the debtor&apos;s financial situation, liquidating
+          assets if necessary, and ensuring compliance with bankruptcy laws.</li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    id: 3,
+    name: 'Bear Market',
+    content: (
+      <>
+        <p className="mt-2">A bear market refers to a period of declining prices and pessimism in the financial markets, typically associated with a downward trend in stock prices. It is characterized by
+        widespread selling and a lack of confidence in the market. Bear markets are often driven by economic downturns, negative sentiment, or significant geopolitical events.</p>
+        <p className="font-medium mt-4">Key Takeaways</p>
+        <ul className="list-disc ml-6">
+          <li>During bear markets, it&apos; important to manage emotions, avoid panic selling, and maintain a long-term perspective.</li>
+          <li>Diversification, risk management, and a focus on high-quality assets can help navigate the challenges of a bear market.</li>
+          <li>While bear markets can be difficult, they also present opportunities for long-term investors. Lower stock prices may offer attractive entry points for quality companies, and potential bargains
+          can be found in undervalued sectors.</li>
+          <li>Understanding your investment horizon and risk tolerance is crucial in bear markets. Short-term investors with imminent financial goals may need to reassess their investment plans, while long-term
+          investors may choose to stay invested and ride out the market volatility.</li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    id: 4,
+    name: 'Bonds',
+    content: (
+      <>
+        <p className="mt-2">Bonds are debt instruments issued by governments, municipalities, and corporations to raise capital. When an investor
         buys a bond, they are essentially lending money to the issuer in exchange for regular interest payments and the return of the principal amount
         at maturity. Bonds are generally considered low-risk investments and provide a fixed income stream for investors.</p>
-        <p className="font-medium">Key Takeaways</p>
+        <p className="font-medium mt-4">Key Takeaways</p>
         <ul className="list-disc ml-6">
           <li>Bonds provide stability and predictable cash flow, making them attractive for income-oriented investors or those seeking more stable returns.</li>
           <li>Bonds can play a crucial role in diversification. They often exhibit lower volatility compared to stocks and can help reduce overall portfolio risk.</li>
@@ -157,21 +286,20 @@ const definitionsB: Definition[] = [
           <li>Higher-risk bonds, such as those issued by less creditworthy entities, offer higher yields to compensate investors for the additional
             risk. Credit analysis is important in assessing the issuer&apos;s ability to meet interest payments and repay the principal.</li>
           <li>The interest earned on bonds is generally taxable, although certain types of bonds, such as municipal bonds, may offer tax advantages
-            depending on the investor&apos;s jurisdiction. Understanding the tax implications of bond investments is important for maximizing
-            after-tax returns.</li>
+            depending on the investor&apos;s jurisdiction. Understanding the tax implications of bond investments is important for maximizing after-tax returns.</li>
         </ul>
       </>
     ),
   },
   {
-    id: 3,
+    id: 5,
     name: 'Brokerage',
-    cardContent: (
+    content: (
       <>
-        <p className="mt-4 mb-2">A brokerage is a financial institution or company that facilitates the buying and selling of financial securities,
+        <p className="mt-2">A brokerage is a financial institution or company that facilitates the buying and selling of financial securities,
         such as stocks, bonds, and mutual funds. They act as intermediaries between buyers and sellers, executing trades and
         providing various services, including investment advice, research, and account management.</p>
-        <p className="font-medium">Key Takeaways</p>
+        <p className="font-medium mt-4">Key Takeaways</p>
         <ul className="list-disc ml-6">
           <li>Brokerages often provide a range of investment services, including research and analysis, investment advice, portfolio management, and
             retirement planning.</li>
@@ -181,20 +309,19 @@ const definitionsB: Definition[] = [
           <li>Brokerages are typically regulated entities, subject to rules and regulations set by financial authorities. This regulatory oversight
             helps protect investors&apos; interests and ensures a certain level of professionalism, security, and transparency in the brokerage industry.</li>
           <li>Many brokerages offer customer support services to assist investors with their inquiries, account management, and technical issues. They
-            may also provide educational resources, webinars, and seminars to help investors improve their understanding of investing and make
-            informed decisions.</li>
+            may also provide educational resources, webinars, and seminars to help investors improve their understanding of investing and make informed decisions.</li>
         </ul>
       </>
     ),
   },
   {
-    id: 4,
+    id: 6,
     name: 'Budget',
-    cardContent: (
+    content: (
       <>
-        <p className="mt-4 mb-2">A budget is a financial plan that outlines projected income and expenses over a specific period, typically on a monthly or
+        <p className="mt-2">A budget is a financial plan that outlines projected income and expenses over a specific period, typically on a monthly or
         annual basis. It serves as a tool for managing and allocating resources to meet financial goals, track spending, and make informed financial decisions.</p>
-        <p className="font-medium">Key Takeaways</p>
+        <p className="font-medium mt-4">Key Takeaways</p>
         <ul className="list-disc ml-6">
           <li>Budgeting enables individuals to track their expenses and identify areas of overspending or potential savings. By setting limits or targets for each
             expense category, individuals can exercise control over their spending habits and make adjustments as needed.</li>
@@ -209,14 +336,14 @@ const definitionsB: Definition[] = [
     ),
   },
   {
-    id: 5,
+    id: 7,
     name: 'Bull Market',
-    cardContent: (
+    content: (
       <>
-        <p className="mt-4 mb-2">A bull market refers to a period of rising prices and optimism in the financial markets, typically associated with an upward trend in
+        <p className="mt-2">A bull market refers to a period of rising prices and optimism in the financial markets, typically associated with an upward trend in
         stock prices. It is characterized by widespread buying, investor confidence, and expectations of future growth. Bull markets are often fueled by positive economic
         indicators, favorable market conditions, or significant developments in industries or sectors.</p>
-        <p className="font-medium">Key Takeaways</p>
+        <p className="font-medium mt-4">Key Takeaways</p>
         <ul className="list-disc ml-6">
           <li>Investors typically experience gains and see the value of their investments increase during a bull market. Stocks and other growth-oriented assets tend to
             perform well during this phase, rewarding investors who have positioned their portfolios accordingly.</li>
@@ -232,14 +359,14 @@ const definitionsB: Definition[] = [
     ),
   },
   {
-    id: 6,
+    id: 8,
     name: 'Buy and Hold',
-    cardContent: (
+    content: (
       <>
-        <p className="mt-4 mb-2">Buy and hold is an investment strategy where investors buy securities, such as stocks or bonds, and hold them for an extended period without
+        <p className="mt-2">Buy and hold is an investment strategy where investors buy securities, such as stocks or bonds, and hold them for an extended period without
         frequent buying or selling. The strategy is based on the belief that over the long term, the value of the investments will appreciate, generating positive returns.
         It emphasizes patience, long-term perspective, and minimizing trading activity.</p>
-        <p className="font-medium">Key Takeaways</p>
+        <p className="font-medium mt-4">Key Takeaways</p>
         <ul className="list-disc ml-6">
           <li>The goal of buying and holding is to benefit from the potential growth and compounding of investments over time, rather than trying to time market fluctuations
             or make quick profits.</li>
@@ -260,13 +387,63 @@ const definitionsB: Definition[] = [
 const definitionsC: Definition[] = [
   {
     id: 1,
-    name: 'Certificate of Deposit',
-    cardContent: (
+    name: 'Capital Gain',
+    content: (
       <>
-        <p className="mt-4 mb-2">A certificate of deposit (CD) is a time deposit offered by banks and financial institutions where investors deposit a fixed amount of money for a
+        <p className="mt-2">Capital gain is the increase in a capital asset&apos;s value when it is sold or disposed of for a higher price than its original purchase price. It is the
+        profit realized from selling the asset.</p>
+        <p className="font-medium mt-4">Key Takeaways</p>
+        <ul className="list-disc ml-6">
+          <li>A capital asset can be any property or investment held by an individual or business, such as stocks, bonds, real estate, or valuable personal possessions. It is typically
+          held for investment purposes or for personal use and not meant for regular business operations.</li>
+          <li>The capital gain is calculated by subtracting the original purchase price or &quot;cost basis&quot; of the asset from the selling price or &quot;proceeds&quot; received from its sale
+          (Capital Gain = Selling Price - Purchase Price).</li>
+          <li>Capital gains can be categorized as either long-term or short-term, depending on how long you hold the asset for. If the asset is held for more than a certain period, usually
+          1+ years, the resulting gain is considered a long-term capital gain. Long-term capital gains often receive preferential tax treatment, with lower tax rates than ordinary income.
+          If the asset is held for less than the specified period, typically less than 1 year, the gain is considered a short-term capital gain. Short-term capital gains are generally taxed
+          at the individual&apos;s ordinary income tax rates.</li>
+          <li>Capital gains are subject to taxation in most jurisdictions. The tax rates and rules regarding capital gains vary depending on the country and the holding period. Governments
+          often provide different tax rates for long-term and short-term capital gains to incentivize long-term investments.</li>
+          <li>If the selling price of an asset is lower than its original purchase price, it results in a capital loss. Capital losses can be used to offset capital gains, thereby reducing
+          the overall tax liability. The net capital gain (capital gains minus capital losses) is the amount subject to taxation.</li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    id: 2,
+    name: 'Cash Flow',
+    content: (
+      <>
+        <p className="mt-2">Cash flow is the movement of money into and out of a business or individual&apos;s finances over a specific period. It represents the inflow and outflow of cash,
+        capturing the actual cash transactions rather than accounting for accrued revenues or expenses.</p>
+        <p className="font-medium mt-4">Key Takeaways</p>
+        <ul className="list-disc ml-6">
+          <li>Cash flow includes all sources of incoming cash, such as revenue from sales, loans, investments, or any other form of income. It also includes outgoing cash payments, such as
+          expenses, operating costs, taxes, loan repayments, and any other cash outflows.</li>
+          <li>Operating cash flow refers to the cash generated or consumed by a company&apos;s core business operations. It reflects the cash generated from sales, minus the operating expenses
+          required to maintain and run the business.</li>
+          <li>Investing cash flow represents the cash used for acquiring or selling long-term assets, such as property, equipment, or investments. It includes cash spent on purchasing assets and
+          cash received from the sale of assets.</li>
+          <li>Financing cash flow relates to the cash activities associated with raising capital or repaying debts. It includes cash received from issuing stock or borrowing, as well as cash paid
+          for dividends, loan repayments, or buying back shares.</li>
+          <li>A positive cash flow occurs when the cash inflows exceed the outflows, indicating a surplus of cash. Conversely, a negative cash flow occurs when cash outflows exceed the inflows,
+          indicating a deficit or financial strain.</li>
+          <li>Cash flow is crucial for individuals and businesses to meet their financial obligations, cover operating expenses, and invest in growth opportunities. It provides a clear picture of
+          a company&apos;s ability to generate cash and its overall financial health. Positive cash flow is generally desirable, as it provides financial stability and flexibility.</li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    id: 3,
+    name: 'Certificate of Deposit',
+    content: (
+      <>
+        <p className="mt-2">A certificate of deposit (CD) is a time deposit offered by banks and financial institutions where investors deposit a fixed amount of money for a
         specific term, typically ranging from a few months to several years. CDs generally offer a fixed interest rate and guarantee the return of the principal amount at maturity.
         They are considered low-risk investments suitable for individuals seeking a stable and predictable return.</p>
-        <p className="font-medium">Key Takeaways</p>
+        <p className="font-medium mt-4">Key Takeaways</p>
         <ul className="list-disc ml-6">
           <li>CDs are generally considered low-risk investments because they offer principal protection. The bank or financial institution guarantees the return of the initial
             investment amount at maturity, making CDs a more conservative option compared to other investment vehicles such as stocks or crypto.</li>
@@ -284,14 +461,14 @@ const definitionsC: Definition[] = [
     ),
   },
   {
-    id: 2,
+    id: 4,
     name: 'Commodities',
-    cardContent: (
+    content: (
       <>
-        <p className="mt-4 mb-2">Commodities are raw materials or primary goods that are interchangeable with other goods of the same type. They include products such as metals (gold,
+        <p className="mt-2">Commodities are raw materials or primary goods that are interchangeable with other goods of the same type. They include products such as metals (gold,
         silver), energy resources (crude oil, natural gas), agricultural products (wheat, corn), and others. Commodities can be traded on commodity exchanges and are often subject to
         price fluctuations driven by supply and demand dynamics.</p>
-        <p className="font-medium">Key Takeaways</p>
+        <p className="font-medium mt-4">Key Takeaways</p>
         <ul className="list-disc ml-6">
           <li>Commodities often have a low correlation with traditional asset classes, such as stocks and bonds, which can help reduce overall portfolio risk. Additionally, commodities
             can act as a hedge against inflation, as their prices may rise in response to inflationary pressures.</li>
@@ -301,21 +478,20 @@ const definitionsC: Definition[] = [
           <li>There are several ways to invest in commodities, including direct ownership, futures contracts, exchange-traded funds (ETFs), and commodity-focused mutual funds. Each approach
             has its advantages and considerations, and investors should choose the method that aligns with their investment goals, risk tolerance, and preferred level of involvement.</li>
           <li> Investing in commodities provides exposure to global markets and allows investors to participate in the economic activities of various countries and industries.</li>
-          <li>Make sure to understand market fundamentals, including factors that impact supply and demand, production cycles, storage capacity, transportation networks,
-            and regulatory considerations.</li>
+          <li>Make sure to understand market fundamentals, including factors that impact supply and demand, production cycles, storage capacity, transportation networks, and regulatory considerations.</li>
         </ul>
       </>
     ),
   },
   {
-    id: 3,
+    id: 5,
     name: 'Compound Interest',
-    cardContent: (
+    content: (
       <>
-        <p className="mt-4 mb-2">Compound interest is the interest calculated on the initial principal amount as well as any accumulated interest from previous periods. It allows investments or
+        <p className="mt-2">Compound interest is the interest calculated on the initial principal amount as well as any accumulated interest from previous periods. It allows investments or
         loans to grow at an accelerating rate over time. The key concept of compound interest is that interest is earned not only on the initial amount but also on the interest that has
         already been earned.</p>
-        <p className="font-medium">Key Takeaways</p>
+        <p className="font-medium mt-4">Key Takeaways</p>
         <ul className="list-disc ml-6">
           <li>Compound interest takes advantage of the time value of money. By allowing interest to compound over longer periods, even small initial investments can grow significantly over time.
             Similarly, compound interest on loans can result in substantial interest payments over extended repayment periods.</li>
@@ -331,14 +507,27 @@ const definitionsC: Definition[] = [
     ),
   },
   {
-    id: 4,
-    name: 'Credit Score',
-    cardContent: (
+    id: 6,
+    name: 'Cost Basis',
+    content: (
       <>
-        <p className="mt-4 mb-2">A credit score is a numerical representation of an individual&apos;s creditworthiness, indicating their likelihood of repaying debts and managing credit responsibly. It is calculated
+        <p className="mt-2"></p>
+        <p className="font-medium mt-4">Key Takeaways</p>
+        <ul className="list-disc ml-6">
+          <li></li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    id: 7,
+    name: 'Credit Score',
+    content: (
+      <>
+        <p className="mt-2">A credit score is a numerical representation of an individual&apos;s creditworthiness, indicating their likelihood of repaying debts and managing credit responsibly. It is calculated
         based on various factors, including payment history, credit utilization, length of credit history, types of credit used, and recent credit inquiries. A higher credit score generally signifies a lower credit
         risk and can result in easier access to credit and better borrowing terms.</p>
-        <p className="font-medium">Key Takeaways</p>
+        <p className="font-medium mt-4">Key Takeaways</p>
         <ul className="list-disc ml-6">
           <li>Credit scores are determined by considering various factors. Payment history, which reflects the individual&apos;s track record of making on-time payments, is one of the most significant factors. Credit
             utilization, the percentage of available credit being used, is another important factor. Length of credit history, types of credit used (such as credit cards, loans, and mortgages), and recent credit
@@ -361,12 +550,12 @@ const definitionsD: Definition[] = [
   {
     id: 1,
     name: 'Day Trading',
-    cardContent: (
+    content: (
       <>
-        <p className="mb-2">Day trading refers to the practice of buying and selling financial instruments, such as stocks, currencies, or derivatives, within the same trading day to capitalize on short-term
+        <p className="mt-2">Day trading refers to the practice of buying and selling financial instruments, such as stocks, currencies, or derivatives, within the same trading day to capitalize on short-term
         price fluctuations. Day traders aim to make profits by taking advantage of intraday market volatility. It is a high-risk and high-reward trading strategy that requires active monitoring, quick
         decision-making, and in-depth knowledge of market dynamics.</p>
-        <p className="font-medium">Key Takeaways</p>
+        <p className="font-medium mt-4">Key Takeaways</p>
         <ul className="list-disc ml-6">
           <li>With daytrading, positions typically get closed out before the market closes, aiming to capitalize on small price movements that occur within a short time frame.</li>
           <li>Day traders engage in frequent buying and selling transactions, often executing multiple trades within a single day. They closely monitor market movements, use technical analysis tools and indicators,
@@ -382,17 +571,20 @@ const definitionsD: Definition[] = [
   {
     id: 2,
     name: 'Debt',
-    cardContent: (
+    content: (
       <>
-        <p className="mb-2">Debt refers to an obligation or a liability that arises when one party borrows money or receives goods or services on credit from another party. It is a form of financial obligation that must be repaid over time, typically with interest.</p>
-        <p className="font-medium">Key Takeaways</p>
+        <p className="mt-2">Debt refers to an obligation or a liability that arises when one party borrows money or receives goods or services on credit from another party. It is a form of financial obligation that must
+        be repaid over time, typically with interest.</p>
+        <p className="font-medium mt-4">Key Takeaways</p>
         <ul className="list-disc ml-6">
-          <li>When an individual, business, or government borrows money, they incur a debt to the lender. The borrowed funds can be used for financing a purchase, funding operations, investing in projects, etc.. The borrower is legally obligated to repay
-          the debt according to agreed-upon terms, which usually include repayment schedule, interest rate, and any other applicable fees or conditions.</li>
-          <li>Debt can take different forms, including loans, bonds, credit card balances, mortgages, and lines of credit. Each type of debt has its own terms and conditions, such as repayment period, interest rate, and collateral requirements.</li>
-          <li>While debt can provide a way to finance activities and achieve goals, it also carries financial obligations and risks. Failure to repay debts on time can result in penalties, higher interest costs, damage to creditworthiness, and potential legal consequences.</li>
-          <li>Debt can be categorized into 2 main types. Consumer debt includes personal loans, credit card debt, student loans, and other forms of borrowing by individuals for personal or household purposes. Sovereign debt is incurred by national governments
-          through issuing bonds or obtaining loans to finance government expenditures and projects.</li>
+          <li>When an individual, business, or government borrows money, they incur a debt to the lender. The borrowed funds can be used for financing a purchase, funding operations, investing in projects, etc.. The borrower
+          is legally obligated to repay the debt according to agreed-upon terms, which usually include repayment schedule, interest rate, and any other applicable fees or conditions.</li>
+          <li>Debt can take different forms, including loans, bonds, credit card balances, mortgages, and lines of credit. Each type of debt has its own terms and conditions, such as repayment period, interest rate, and
+          collateral requirements.</li>
+          <li>While debt can provide a way to finance activities and achieve goals, it also carries financial obligations and risks. Failure to repay debts on time can result in penalties, higher interest costs, damage to
+          creditworthiness, and potential legal consequences.</li>
+          <li>Debt can be categorized into 2 main types. Consumer debt includes personal loans, credit card debt, student loans, and other forms of borrowing by individuals for personal or household purposes. Sovereign debt
+          is incurred by national governments through issuing bonds or obtaining loans to finance government expenditures and projects.</li>
         </ul>
       </>
     ),
@@ -400,10 +592,10 @@ const definitionsD: Definition[] = [
   {
     id: 3,
     name: 'Default',
-    cardContent: (
+    content: (
       <>
-        <p className="mb-2">A default refers to the failure to fulfill a legal obligation or financial agreement. It occurs when a borrower or debtor fails to make timely payments or meet the terms and conditions outlined in a loan agreement, bond, or other contractual arrangement.</p>
-        <p className="font-medium">Key Takeaways</p>
+        <p className="mt-2">A default refers to the failure to fulfill a legal obligation or financial agreement. It occurs when a borrower or debtor fails to make timely payments or meet the terms and conditions outlined in a loan agreement, bond, or other contractual arrangement.</p>
+        <p className="font-medium mt-4">Key Takeaways</p>
         <ul className="list-disc ml-6">
           <li>In the context of debt, default typically refers to the failure to make scheduled payments. This can happen when a borrower misses 1+ payments, fails to pay the required amount, or consistently falls behind on their payment obligations. Defaulting on a debt can
           have serious consequences, as it indicates a breach of the agreed-upon terms and may result in penalties, fees, and legal actions by the lender or creditor.</li>
@@ -418,11 +610,11 @@ const definitionsD: Definition[] = [
   {
     id: 4,
     name: 'Dividend',
-    cardContent: (
+    content: (
       <>
-        <p className="mb-2"> Dividends are payments made by corporations to their shareholders to distribute their profits. They are typically paid in cash, but they can also be issued as additional shares of
+        <p className="mt-2"> Dividends are payments made by corporations to their shareholders to distribute their profits. They are typically paid in cash, but they can also be issued as additional shares of
         stock or other forms of property. Dividends are a way for companies to share their financial success with shareholders and provide investors with a source of passive income.</p>
-        <p className="font-medium">Key Takeaways</p>
+        <p className="font-medium mt-4">Key Takeaways</p>
         <ul className="list-disc ml-6">
           <li>Dividend payments can provide a steady stream of income, which can be especially beneficial for retirees or individuals seeking passive income.</li>
           <li>Dividends are commonly paid in cash, with shareholders receiving a specific amount of money per share owned. However, companies may also distribute dividends in the form of additional shares of stock,
@@ -446,22 +638,22 @@ const definitionsE: Definition[] = [
   {
     id: 1,
     name: 'Economy',
-    cardContent: (
+    content: (
       <>
-        <p className="mb-2">The economy refers to the system of production, distribution, and consumption of goods and services within a region or a country. It encompasses all the activities and interactions related to producing, exchanging, and using resources
-        to satisfy human wants and needs.</p>
+        <p className="mb-2">The economy refers to the system of production, distribution, and consumption of goods and services within a region or a country. It encompasses all the activities and interactions related to
+        producing, exchanging, and using resources to satisfy human wants and needs.</p>
         <p className="font-medium">Key Takeaways</p>
         <ul className="list-disc ml-6">
-          <li>The economy involves creating goods and services through various economic activities, such as manufacturing, agriculture, construction, and services like healthcare, education, and finance. These activities involve using resources such as labor,
-          capital, and natural resources.</li>
+          <li>The economy involves creating goods and services through various economic activities, such as manufacturing, agriculture, construction, and services like healthcare, education, and finance. These activities
+          involve using resources such as labor, capital, and natural resources.</li>
           <li>Individuals, businesses, and governments engage in consumption by using goods and services to satisfy their needs and desires. Consumer spending plays a crucial role in driving economic growth and overall economic activity.</li>
           <li>The distribution of goods and services involves the movement of products from producers to consumers. This includes transportation, logistics, marketing, and retail activities that facilitate the exchange of goods and services.</li>
-          <li>The economy provides employment opportunities, where individuals work to earn income that enables them to participate in economic activities and consume goods and services. Employment levels and wages are important indicators of the overall health
-          and performance of the economy.</li>
-          <li>Economies can operate under different economic systems, such as market economies, command economies, mixed economies, or traditional economies. These systems determine the roles of government, private sector, and individuals in economic decision-making
-          and resource allocation.</li>
-          <li>Various economic indicators, such as gross domestic product (GDP), inflation rates, unemployment rates, and consumer confidence, are used to assess the performance, growth, and stability of the economy. These indicators provide insights into the overall
-          health of the economy and help guide economic policies and decision-making.</li>
+          <li>The economy provides employment opportunities, where individuals work to earn income that enables them to participate in economic activities and consume goods and services. Employment levels and wages are important
+          indicators of the overall health and performance of the economy.</li>
+          <li>Economies can operate under different economic systems, such as market economies, command economies, mixed economies, or traditional economies. These systems determine the roles of government, private sector,
+          and individuals in economic decision-making and resource allocation.</li>
+          <li>Various economic indicators, such as gross domestic product (GDP), inflation rates, unemployment rates, and consumer confidence, are used to assess the performance, growth, and stability of the economy. These
+          indicators provide insights into the overall health of the economy and help guide economic policies and decision-making.</li>
         </ul>
       </>
     ),
@@ -469,11 +661,11 @@ const definitionsE: Definition[] = [
   {
     id: 2,
     name: 'Emergency Fund',
-    cardContent: (
+    content: (
       <>
-        <p className="mb-2">An emergency fund is a designated amount of money set aside to cover unexpected expenses or financial emergencies. It acts as a financial safety net, providing individuals or households
+        <p className="mt-2">An emergency fund is a designated amount of money set aside to cover unexpected expenses or financial emergencies. It acts as a financial safety net, providing individuals or households
         with a reserve to handle unforeseen circumstances without relying on credit cards or incurring debt.</p>
-        <p className="font-medium">Key Takeaways</p>
+        <p className="font-medium mt-4">Key Takeaways</p>
         <ul className="list-disc ml-6">
           <li>An emergency fund serves as a backup for situations such as medical emergencies, job loss, home repairs, or major car repairs. Having an emergency fund can help prevent a financial crisis and provide peace
             of mind during challenging times.</li>
@@ -492,10 +684,10 @@ const definitionsE: Definition[] = [
   {
     id: 3,
     name: 'Equity',
-    cardContent: (
+    content: (
       <>
-        <p className="mb-2">Equity refers to the ownership interest or claim that individuals or entities have in an asset or business. It represents the residual value of an asset after deducting liabilities.</p>
-        <p className="font-medium">Key Takeaways</p>
+        <p className="mt-2">Equity refers to the ownership interest or claim that individuals or entities have in an asset or business. It represents the residual value of an asset after deducting liabilities.</p>
+        <p className="font-medium mt-4">Key Takeaways</p>
         <ul className="list-disc ml-6">
           <li>In finance and investing, equity represents ownership in a company or the value of an individual&apos;s ownership stake in an asset. For example, if you own shares of a publicly traded company, you have equity
           in that company proportional to the number of shares you hold. The value of equity can fluctuate based on the company&apos;s performance, market conditions, and investor sentiment.</li>
@@ -511,11 +703,11 @@ const definitionsE: Definition[] = [
   {
     id: 4,
     name: 'Exchange-Traded Fund',
-    cardContent: (
+    content: (
       <>
-        <p className="mb-2">An exchange-traded fund (ETF) is a type of investment fund that trades on stock exchanges, representing a basket of underlying assets such as stocks, bonds, commodities, or other securities.
+        <p className="mt-2">An exchange-traded fund (ETF) is a type of investment fund that trades on stock exchanges, representing a basket of underlying assets such as stocks, bonds, commodities, or other securities.
         ETFs offer investors diversification, flexibility, and the ability to trade them throughout the trading day like individual stocks.</p>
-        <p className="font-medium">Key Takeaways</p>
+        <p className="font-medium mt-4">Key Takeaways</p>
         <ul className="list-disc ml-6">
           <li>By investing in a single ETF, investors gain exposure to multiple underlying assets, which can help spread risk and reduce the impact of individual security performance.</li>
           <li>Many ETFs are designed to track specific indexes, such as the S&P 500 or the NASDAQ. These are known as index ETFs and aim to replicate the performance of the underlying index. Other ETFs may follow specific
@@ -533,19 +725,20 @@ const definitionsF: Definition[] = [
   {
     id: 1,
     name: 'Fiscal Policy',
-    cardContent: (
+    content: (
       <>
-        <p className="mb-2">Fiscal policy is the government&apos;s use of taxation and spending to influence the overall state of the economy. It involves the decisions policymakers make regarding how much money the government should collect in taxes and how
-        it should allocate those funds through government spending.</p>
-        <p className="font-medium">Key Takeaways</p>
+        <p className="mt-2">Fiscal policy is the government&apos;s use of taxation and spending to influence the overall state of the economy. It involves the decisions policymakers make regarding how much money the government
+        should collect in taxes and how it should allocate those funds through government spending.</p>
+        <p className="font-medium mt-4">Key Takeaways</p>
         <ul className="list-disc ml-6">
-          <li>The government can adjust tax rates, implement new taxes, or modify existing tax laws to generate revenue. Additionally, they allocates funds to various sectors such as infrastructure, healthcare, education, defense, and social welfare programs.
-          Government spending can stimulate economic growth by creating jobs, boosting consumption, and supporting specific industries.</li>
-          <li>One of the primary objectives is to stabilize the economy. During times of recession or economic downturns, the government may increase its spending and reduce taxes to stimulate aggregate demand and encourage economic activity. Conversely, during
-          periods of high inflation or economic overheating, the government may decrease spending and increase taxes to reduce aggregate demand and control inflation.</li>
-          <li>Fiscal policy decisions can result in budget deficits or surpluses. A budget deficit occurs when government spending exceeds tax revenue, leading to borrowing and an increase in national debt. On the other hand, a budget surplus occurs when tax revenue exceeds
-          government spending, allowing for debt reduction or increased savings.</li>
-          <li>Sustainable fiscal policies aim to strike a balance between short-term economic stabilization and long-term fiscal responsibility. Excessive borrowing and persistent budget deficits can lead to an unsustainable debt burden and potentially hinder economic growth.</li>
+          <li>The government can adjust tax rates, implement new taxes, or modify existing tax laws to generate revenue. Additionally, they allocates funds to various sectors such as infrastructure, healthcare, education, defense,
+          and social welfare programs. Government spending can stimulate economic growth by creating jobs, boosting consumption, and supporting specific industries.</li>
+          <li>One of the primary objectives is to stabilize the economy. During times of recession or economic downturns, the government may increase its spending and reduce taxes to stimulate aggregate demand and encourage economic
+          activity. Conversely, during periods of high inflation or economic overheating, the government may decrease spending and increase taxes to reduce aggregate demand and control inflation.</li>
+          <li>Fiscal policy decisions can result in budget deficits or surpluses. A budget deficit occurs when government spending exceeds tax revenue, leading to borrowing and an increase in national debt. On the other hand, a budget
+          surplus occurs when tax revenue exceeds government spending, allowing for debt reduction or increased savings.</li>
+          <li>Sustainable fiscal policies aim to strike a balance between short-term economic stabilization and long-term fiscal responsibility. Excessive borrowing and persistent budget deficits can lead to an unsustainable debt
+          burden and potentially hinder economic growth.</li>
         </ul>
       </>
     ),
@@ -553,17 +746,18 @@ const definitionsF: Definition[] = [
   {
     id: 2,
     name: 'Foreclosure',
-    cardContent: (
+    content: (
       <>
-        <p className="mb-2">Foreclosure is a legal process where a lender seizes and sells a property to recover the outstanding balance on a mortgage loan when the borrower fails to make the required mortgage payments. It is typically initiated by the lender when the
-        borrower is in default, meaning they have missed multiple mortgage payments.</p>
-        <p className="font-medium">Key Takeaways</p>
+        <p className="mt-2">Foreclosure is a legal process where a lender seizes and sells a property to recover the outstanding balance on a mortgage loan when the borrower fails to make the required mortgage payments. It is typically
+        initiated by the lender when the borrower is in default, meaning they have missed multiple mortgage payments.</p>
+        <p className="font-medium mt-4">Key Takeaways</p>
         <ul className="list-disc ml-6">
           <li>The specific number of missed payments required to initiate foreclosure can vary based on local laws and the terms of the mortgage contract.</li>
-          <li>Before initiating foreclosure proceedings, the lender typically sends a formal notice of default to the borrower. This notice informs the borrower about the delinquency, the amount owed, and provides a specific time period the borrower has to take corrective
-          action to prevent foreclosure.</li>
+          <li>Before initiating foreclosure proceedings, the lender typically sends a formal notice of default to the borrower. This notice informs the borrower about the delinquency, the amount owed, and provides a specific time period
+          the borrower has to take corrective action to prevent foreclosure.</li>
           <li>If the borrower fails to resolve the delinquency or reach a foreclosure alternative (such as loan modification or short sale), the lender will file a lawsuit or legal action to obtain a court order to foreclose on the property.</li>
-          <li>Once the court grants the foreclosure order, the property is typically sold at a public auction to recover the outstanding loan balance. If the property fails to sell at auction, it becomes bank-owned or real estate owned (REO) and may be listed for sale by the lender.</li>
+          <li>Once the court grants the foreclosure order, the property is typically sold at a public auction to recover the outstanding loan balance. If the property fails to sell at auction, it becomes bank-owned or real estate owned (REO)
+          and may be listed for sale by the lender.</li>
           <li>After the foreclosure sale, the new owner or lender may need to initiate an eviction process to remove any occupants from the property who have not voluntarily vacated.</li>
           <li>Foreclosure has a significant negative impact on the borrower&apos;s credit history and credit score. It can make it challenging to obtain future loans and credit at favorable terms for several years.</li>
         </ul>
@@ -573,11 +767,11 @@ const definitionsF: Definition[] = [
   {
     id: 3,
     name: 'Forex',
-    cardContent: (
+    content: (
       <>
-        <p className="mb-2">Forex, or foreign exchange, refers to the global decentralized market where currencies are bought, sold, and exchanged. It involves the trading of one currency for another with the aim of profiting from fluctuations
+        <p className="mt-2">Forex, or foreign exchange, refers to the global decentralized market where currencies are bought, sold, and exchanged. It involves the trading of one currency for another with the aim of profiting from fluctuations
             in exchange rates. Forex trading is conducted electronically over-the-counter (OTC) and operates 24 hours a day, 5 days a week.</p>
-        <p className="font-medium">Key Takeaways</p>
+        <p className="font-medium mt-4">Key Takeaways</p>
         <ul className="list-disc ml-6">
           <li>Forex trading involves trading currency pairs, which are quoted exchange rates representing the value of one currency relative to another. The most commonly traded currency pairs are known as the major pairs, such as EUR/USD (Euro/US Dollar),
             GBP/USD (British Pound/US Dollar), and USD/JPY (US Dollar/Japanese Yen).</li>
@@ -598,11 +792,11 @@ const definitionsF: Definition[] = [
   {
     id: 4,
     name: 'Fundamental Analysis',
-    cardContent: (
+    content: (
       <>
-        <p className="mb-2">Fundamental analysis is a method used to evaluate the intrinsic value of a security or investment based on various factors, including financial statements, economic indicators, industry trends,
+        <p className="mt-2">Fundamental analysis is a method used to evaluate the intrinsic value of a security or investment based on various factors, including financial statements, economic indicators, industry trends,
         and company management. It involves analyzing qualitative and quantitative data to assess the financial health, competitive position, growth prospects, and overall value of an investment.</p>
-        <p className="font-medium">Key Takeaways</p>
+        <p className="font-medium mt-4">Key Takeaways</p>
         <ul className="list-disc ml-6">
           <li>Tools like discounted cash flow (DCF) analysis, price-to-earnings (P/E) ratio, price-to-sales (P/S) ratio, price-to-book (P/B) ratio, and other financial ratios can be used to asset whether an
             asset is undervalued, overvalued, or fairly valued.</li>
@@ -622,19 +816,20 @@ const definitionsG: Definition[] = [
   {
     id: 1,
     name: 'Golden Handcuffs',
-    cardContent: (
+    content: (
       <>
-        <p className="mb-2">Golden handcuffs are financial incentives or benefits offered to employees to encourage them to remain with a company for an extended period of time. These incentives are typically designed to create a sense of loyalty and make it financially
-        difficult for employees to leave the organization.</p>
-        <p className="font-medium">Key Takeaways</p>
+        <p className="mt-2">Golden handcuffs are financial incentives or benefits offered to employees to encourage them to remain with a company for an extended period of time. These incentives are typically designed to create a sense of
+        loyalty and make it financially difficult for employees to leave the organization.</p>
+        <p className="font-medium mt-4">Key Takeaways</p>
         <ul className="list-disc ml-6">
-          <li>Golden handcuffs typically used to retain key employees, especially those with valuable skills, expertise, or knowledge. These incentives go beyond regular compensation and benefits and aim to provide additional financial motivation for employees.</li>
-          <li>The financial incentives offered as part of golden handcuffs often include stock options, restricted stock units (RSUs), performance bonuses, deferred compensation plans, and other long-term incentives. These rewards are typically tied to the employee&apos;s
-          tenure or the achievement of specific performance targets.</li>
-          <li>Golden handcuffs often involve vesting schedules, which outline the duration an employee must stay with the company before being eligible to receive the full benefits of the incentives. Vesting periods can range from several years to a decade or more. If an
-          employee leaves the company before completing the vesting period, they may forfeit a portion or all of the promised incentives.</li>
-          <li>While golden handcuffs can be attractive and rewarding, they can also have drawbacks. Employees may feel obligated to stay with a company even if they are unhappy or if better opportunities arise elsewhere. The benefits of golden handcuffs may also be tied
-          to the company&apos;s performance, meaning that if the company struggles, the value of the incentives may diminish.</li>
+          <li>Golden handcuffs typically used to retain key employees, especially those with valuable skills, expertise, or knowledge. These incentives go beyond regular compensation and benefits and aim to provide additional financial
+          motivation for employees.</li>
+          <li>The financial incentives offered as part of golden handcuffs often include stock options, restricted stock units (RSUs), performance bonuses, deferred compensation plans, and other long-term incentives. These rewards are typically
+          tied to the employee&apos;s tenure or the achievement of specific performance targets.</li>
+          <li>Golden handcuffs often involve vesting schedules, which outline the duration an employee must stay with the company before being eligible to receive the full benefits of the incentives. Vesting periods can range from several years
+          to a decade or more. If an employee leaves the company before completing the vesting period, they may forfeit a portion or all of the promised incentives.</li>
+          <li>While golden handcuffs can be attractive and rewarding, they can also have drawbacks. Employees may feel obligated to stay with a company even if they are unhappy or if better opportunities arise elsewhere. The benefits of golden
+          handcuffs may also be tied to the company&apos;s performance, meaning that if the company struggles, the value of the incentives may diminish.</li>
         </ul>
       </>
     ),
@@ -642,21 +837,21 @@ const definitionsG: Definition[] = [
   {
     id: 2,
     name: 'Gold Standard',
-    cardContent: (
+    content: (
       <>
-        <p className="mb-2">The gold standard is a monetary system where the value of a country&apos;s currency is directly linked to a fixed quantity of gold. Under the gold standard, each unit of currency represents a specific amount of gold, and the currency can be freely
-        converted into gold at a fixed exchange rate.</p>
-        <p className="font-medium">Key Takeaways</p>
+        <p className="mt-2">The gold standard is a monetary system where the value of a country&apos;s currency is directly linked to a fixed quantity of gold. Under the gold standard, each unit of currency represents a specific amount of gold, and
+        the currency can be freely converted into gold at a fixed exchange rate.</p>
+        <p className="font-medium mt-4">Key Takeaways</p>
         <ul className="list-disc ml-6">
-          <li>One of the defining features of the gold standard is convertibility. It means that individuals or central banks can exchange their paper currency for gold at a fixed rate. This convertibility provides confidence and stability to the currency, as it is backed by
-          a tangible and valuable asset.</li>
+          <li>One of the defining features of the gold standard is convertibility. It means that individuals or central banks can exchange their paper currency for gold at a fixed rate. This convertibility provides confidence and stability to the
+          currency, as it is backed by a tangible and valuable asset.</li>
           <li>Since the currency&apos;s value is linked to a fixed amount of gold, the supply of money is inherently limited by the availability of gold reserves. This tends to keep inflation in check and promotes price stability over the long term.</li>
-          <li>Under the gold standard, exchange rates between different currencies are fixed. Countries set their currency&apos;s value in terms of gold, and the exchange rates between currencies are determined by their respective gold equivalencies. This reduces currency
-          volatility and facilitates international trade and investment.</li>
-          <li>The gold standard imposes discipline on monetary authorities. Since the money supply is tied to the availability of gold, governments are limited in their ability to create money at will. This constraint helps prevent excessive money printing and the associated
-          risks of inflation and currency devaluation.</li>
-          <li>The gold standard has been largely abandoned by countries around the world. The shift away from the gold standard began in the early 20th century, and today, most countries operate on a fiat currency system, where the value of money is not directly linked to a
-          physical commodity like gold. Critics argue that the gold standard limits a government&apos;s ability to respond to economic crises and that it can restrict economic growth and flexibility.</li>
+          <li>Under the gold standard, exchange rates between different currencies are fixed. Countries set their currency&apos;s value in terms of gold, and the exchange rates between currencies are determined by their respective gold equivalencies.
+          This reduces currency volatility and facilitates international trade and investment.</li>
+          <li>The gold standard imposes discipline on monetary authorities. Since the money supply is tied to the availability of gold, governments are limited in their ability to create money at will. This constraint helps prevent excessive money
+          printing and the associated risks of inflation and currency devaluation.</li>
+          <li>The gold standard has been largely abandoned by countries around the world. The shift away from the gold standard began in the early 20th century, and today, most countries operate on a fiat currency system, where the value of money is not
+          directly linked to a physical commodity like gold. Critics argue that the gold standard limits a government&apos;s ability to respond to economic crises and that it can restrict economic growth and flexibility.</li>
         </ul>
       </>
     ),
@@ -664,12 +859,12 @@ const definitionsG: Definition[] = [
   {
     id: 3,
     name: 'Gross Domestic Product',
-    cardContent: (
+    content: (
       <>
-        <p className="mb-2">Gross Domestic Product (GDP) is a measure that represents the total value of all goods and services produced within a country&apos;s borders
+        <p className="mt-2">Gross Domestic Product (GDP) is a measure that represents the total value of all goods and services produced within a country&apos;s borders
         over a specific period, typically a year. It serves as a key indicator of a country&apos;s economic performance and is used to assess and compare the size and
         growth of economies.</p>
-        <p className="font-medium">Key Takeaways</p>
+        <p className="font-medium mt-4">Key Takeaways</p>
         <ul className="list-disc ml-6">
           <li>GDP measures the total economic output of a country. It takes into account the value of goods and services
             produced by various sectors, including agriculture, manufacturing, services, and construction.</li>
@@ -687,12 +882,12 @@ const definitionsG: Definition[] = [
   {
     id: 4,
     name: 'Growth Stock',
-    cardContent: (
+    content: (
       <>
-        <p className="mb-2">A growth stock refers to a publicly traded company whose earnings and revenues are expected to
+        <p className="mt-2">A growth stock refers to a publicly traded company whose earnings and revenues are expected to
         increase at an above-average rate compared to the overall market. Growth stocks typically reinvest their earnings back
         into the company to fuel expansion, rather than distributing dividends to shareholders.</p>
-        <p className="font-medium">Key Takeaways</p>
+        <p className="font-medium mt-4">Key Takeaways</p>
         <ul className="list-disc ml-6">
           <li>Growth stocks  often operate in sectors or industries experiencing rapid expansion or have disruptive business
             models that drive substantial growth.</li>
@@ -717,12 +912,12 @@ const definitionsH: Definition[] = [
   {
     id: 1,
     name: 'Hold',
-    cardContent: (
+    content: (
       <>
-        <p className="mb-2">&quot;Hold&quot; is a term commonly used in investing to indicate the decision to retain an investment for an extended
+        <p className="mt-2">&quot;Hold&quot; is a term commonly used in investing to indicate the decision to retain an investment for an extended
         period rather than selling it. It suggests a long-term investment strategy where investors hold onto their positions with the expectation
         of benefiting from potential future gains.</p>
-        <p className="font-medium">Key Takeaways</p>
+        <p className="font-medium mt-4">Key Takeaways</p>
         <ul className="list-disc ml-6">
           <li>Investors who hold believe in the potential growth and value appreciation of the investment over time, rather than attempting to
             time the market or take advantage of short-term price fluctuations.</li>
@@ -742,12 +937,12 @@ const definitionsH: Definition[] = [
   {
     id: 2,
     name: 'HODL',
-    cardContent: (
+    content: (
       <>
-        <p className="mb-2">&quot;HODL&quot; is a term derived from a misspelling of the word &quot;hold&quot; and is commonly used in the cryptocurrency community. It
+        <p className="mt-2">&quot;HODL&quot; is a term derived from a misspelling of the word &quot;hold&quot; and is commonly used in the cryptocurrency community. It
         refers to the strategy of holding onto cryptocurrencies for an extended period, regardless of short-term price fluctuations or market volatility.
         HODLing is often associated with a long-term investment approach and a belief in the future growth and adoption of cryptocurrencies.</p>
-        <p className="font-medium">Key Takeaways</p>
+        <p className="font-medium mt-4">Key Takeaways</p>
         <ul className="list-disc ml-6">
           <li>HODLers often demonstrate emotional resilience by remaining steadfast in their commitment to holding cryptocurrencies, even during periods of
             market downturns or negative sentiment. They avoid making impulsive decisions based on market noise or fear, recognizing that cryptocurrencies
@@ -767,12 +962,12 @@ const definitionsH: Definition[] = [
   {
     id: 3,
     name: 'Homeowners Association',
-    cardContent: (
+    content: (
       <>
-        <p className="mb-2">A homeowners association (HOA) is an organization that governs and manages a residential community, such as a condo or a
+        <p className="mt-2">A homeowners association (HOA) is an organization that governs and manages a residential community, such as a condo or a
         planned neighborhood. HOAs are typically established to maintain common areas, enforce community rules and regulations, and collect fees or dues
             from homeowners to fund various services and maintenance activities.</p>
-        <p className="font-medium">Key Takeaways</p>
+        <p className="font-medium mt-4">Key Takeaways</p>
         <ul className="list-disc ml-6">
           <li>HOAs establish and enforce rules and regulations to help maintain a certain standard of living and preserve property values. They often have
             a board of directors or elected officials responsible for making decisions and managing the association&apos;s affairs.</li>
@@ -793,12 +988,12 @@ const definitionsH: Definition[] = [
   {
     id: 4,
     name: 'Hyperinflation',
-    cardContent: (
+    content: (
       <>
-        <p className="mb-2">Hyperinflation refers to an extremely rapid and uncontrollable increase in the general price level of goods and services in
+        <p className="mt-2">Hyperinflation refers to an extremely rapid and uncontrollable increase in the general price level of goods and services in
         an economy. It typically occurs when a country experiences a significant and sustained increase in its money supply, leading to a loss of confidence
         in the currency and a decline in its purchasing power.</p>
-        <p className="font-medium">Key Takeaways</p>
+        <p className="font-medium mt-4">Key Takeaways</p>
         <ul className="list-disc ml-6">
           <li>During periods of hyperinflation, the value of money erodes and prices skyrocket. Individuals and businesses struggle to meet basic needs, and
             savings quickly lose value, leading to a decline in the overall standard of living.</li>
@@ -827,7 +1022,7 @@ const definitionsI: Definition[] = [
   {
     id: 1,
     name: 'Index Fund',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">An index fund is a type of mutual fund that aims to replicate the performance of a specific market index, such as the S&P 500. It does this by holding a diversified portfolio of securities
         that closely matches the composition of the target index. Index funds offer investors broad market exposure, low costs, and a passive investment approach.</p>
@@ -847,7 +1042,7 @@ const definitionsI: Definition[] = [
   {
     id: 2,
     name: 'Inflation',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">Inflation refers to the sustained increase in the general price level of goods and services in an economy over a period of time. It means that, on average, prices are rising, and the purchasing power of money is decreasing.</p>
         <ul className="list-disc ml-6">
@@ -867,7 +1062,7 @@ const definitionsI: Definition[] = [
   {
     id: 3,
     name: 'Initial Public Offering',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">An Initial Public Offering (IPO) is the process where a private company offers its shares to the public for the first time, becoming a publicly traded company. In an IPO, the company
         sells a portion of its ownership to investors in exchange for capital, and the shares are listed on a stock exchange, allowing them to get bought and sold by the public.</p>
@@ -889,7 +1084,7 @@ const definitionsI: Definition[] = [
   {
     id: 4,
     name: 'Insider Trading',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">Insider trading refers to the buying or selling of stocks, bonds, or other financial securities based on material, non-public information about the company. It occurs when individuals with privileged access to confidential
         information about a publicly traded company use that information to make trades and gain an unfair advantage in the market.</p>
@@ -911,7 +1106,7 @@ const definitionsI: Definition[] = [
   {
     id: 5,
     name: 'Institutional Investor',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">An institutional investor is an organization or entity that pools together large amounts of money to invest in various financial markets and securities on behalf of its clients or members. These investors are typically professional
         financial institutions, such as pension funds, insurance companies, mutual funds, hedge funds, endowments, and investment banks.</p>
@@ -929,7 +1124,7 @@ const definitionsI: Definition[] = [
   {
     id: 6,
     name: 'Interest',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">Interest is the cost or fee paid for borrowing money or the return earned on an investment. It is essentially the price of using someone else&apos;s funds or the compensation received for lending money to someone else.</p>
         <ul className="list-disc ml-6">
@@ -946,7 +1141,7 @@ const definitionsI: Definition[] = [
   {
     id: 7,
     name: 'Interest Rate',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">An interest rate refers to the percentage of the loan amount or investment principal that is charged or earned over a specific period. It represents the cost of borrowing money or the return earned on an investment.</p>
         <ul className="list-disc ml-6">
@@ -969,7 +1164,7 @@ const definitionsJ: Definition[] = [
   {
     id: 1,
     name: 'Joint Account',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">A joint account is a bank or investment account owned and operated by 2+ individuals. Each account holder has equal rights and access to the funds within the
         account. Joint accounts are commonly used by couples, family members, or business partners to manage shared finances and facilitate convenient access to funds.</p>
@@ -989,7 +1184,7 @@ const definitionsJ: Definition[] = [
   {
     id: 2,
     name: 'Joint Credit',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">Joint credit is a financial arrangement where 2+ individuals are jointly responsible for repaying a loan or credit account. When applying for joint credit, both parties share the responsibility for the debt and are equally liable for making payments.
         This arrangement allows individuals to combine their financial resources and creditworthiness to obtain larger loan amounts or better interest rates.</p>
@@ -1008,7 +1203,7 @@ const definitionsJ: Definition[] = [
   {
     id: 3,
     name: 'Joint Tenancy',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">Joint tenancy is a form of property ownership where 2+ individuals, known as joint tenants, have an equal and undivided interest in the property. It can be a popular form of property ownership among couples, famly members, or business partners as it
         offers benefits like the avoidance of probate, seamless transfer of ownership, and simplified estate planning. In joint tenancy, each tenant holds an equal share of ownership and an equal right to occupy and use the entire property.</p>
@@ -1027,7 +1222,7 @@ const definitionsJ: Definition[] = [
   {
     id: 4,
     name: 'Jumbo Loan',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">A jumbo loan is a type of mortgage loan that exceeds the limits set by government-sponsored enterprises (GSEs) such as Fannie Mae and Freddie Mac. These limits are established to regulate the maximum loan amount that these entities will purchase or guarantee.</p>
         <p className="font-medium">Key Takeaways</p>
@@ -1045,7 +1240,7 @@ const definitionsJ: Definition[] = [
   {
     id: 5,
     name: 'Junk Bond',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">Junk bonds, also known as speculative-grade bonds, are fixed-income securities issued by companies with lower credit ratings. These bonds tend to offer higher rates than other bonds
         to compensate investors for taking on more risk.</p>
@@ -1068,7 +1263,7 @@ const definitionsJ: Definition[] = [
   {
     id: 6,
     name: 'Junk Fees',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">Junk fees, in the context of financial transactions and specifically mortgage lending, refer to additional or excessive fees charged to borrowers beyond the legitimate and necessary costs associated with the loan. These fees are
         often considered unnecessary, inflated, or non-transparent, and they can significantly increase the overall cost of borrowing.</p>
@@ -1089,7 +1284,7 @@ const definitionsK: Definition[] = [
   {
     id: 1,
     name: 'Key Performance Indicator',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">Key Performance Indicators (KPIs) are quantifiable metrics used to measure the performance and progress of an individual, team, department, or organization towards achieving specific goals or objectives. They provide a way to track performance,
         identify areas for improvement, and make data-driven decisions.</p>
@@ -1107,7 +1302,7 @@ const definitionsK: Definition[] = [
   {
     id: 2,
     name: 'Keynesian Economics',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">Keynesian economics is an economic theory and policy approach developed by the British economist John Maynard Keynes during the early 1900s. It focuses on the government&apos;s role in stabilizing and managing the economy, particularly during a recession
         or depression.</p>
@@ -1129,7 +1324,7 @@ const definitionsK: Definition[] = [
   {
     id: 3,
     name: 'Kickback',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">A kickback refers to a form of illicit payment or commission given to someone in a position of power or influence, often in exchange for favorable treatment or the awarding of a contract or business opportunity. Kickbacks are generally considered unethical
         and illegal, as they involve bribery and corruption. They can distort fair competition, undermine trust, and have severe legal and reputational consequences.</p>
@@ -1148,7 +1343,7 @@ const definitionsK: Definition[] = [
   {
     id: 4,
     name: 'Knowledge Economy',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">The knowledge economy emphasizes producing, distributing, and utilizing knowledge, information, and intellectual assets. In this type of economy, the primary driver of growth and innovation is the creation and application of knowledge, rather than traditional
         factors of production like raw materials or physical labor.</p>
@@ -1170,7 +1365,7 @@ const definitionsL: Definition[] = [
   {
     id: 1,
     name: 'Level 2 Data',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">Level 2 data, also known as market depth or order book data, provides detailed information about the current buy and sell orders for a particular security on an exchange. It reveals the quantity and price at different bid and ask levels,
         allowing traders to gauge market liquidity, identify supply and demand dynamics, and make more informed trading decisions.</p>
@@ -1189,7 +1384,7 @@ const definitionsL: Definition[] = [
   {
     id: 2,
     name: 'Lien',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">A lien is a legal claim or encumbrance on a property or asset, typically used as collateral for a debt or obligation. It gives the lienholder the right to possess the property or asset if the debt is not repaid or the obligation is not fulfilled
         according to the agreed terms. A lien provides security to the creditor or the party owed the debt, ensuring they have a legal interest in the property or asset until the debt is satisfied.</p>
@@ -1208,7 +1403,7 @@ const definitionsL: Definition[] = [
   {
     id: 3,
     name: 'Limit Order',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">A limit order is a type of order placed by an investor to buy or sell a security at a specific price or better. Unlike a market order that executes immediately at the current market price, a limit order instructs the broker to execute the
         trade at a set price point. Limit orders provide control over the execution price but do not guarantee immediate execution.</p>
@@ -1230,7 +1425,7 @@ const definitionsL: Definition[] = [
   {
     id: 4,
     name: 'Liquidity',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">Liquidity refers to the ease with which an asset or security can be bought or sold in the market without causing significant price movements. It represents the ability to convert an asset into cash quickly
         and at a fair price. High liquidity is desirable as it allows for efficient trading, while low liquidity can result in challenges when buying or selling assets.</p>
@@ -1259,7 +1454,7 @@ const definitionsM: Definition[] = [
   {
     id: 1,
     name: 'Margin',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">Margin, in the context of investing and trading, refers to borrowing funds from a broker to leverage investments and increase potential returns. It allows investors to buy more securities than they could afford
         with their own capital. Margin trading involves using the investor&apos;s own funds as well as borrowed funds, and it carries both the potential for higher profits and increased risks.</p>
@@ -1281,7 +1476,7 @@ const definitionsM: Definition[] = [
   {
     id: 2,
     name: 'Market Capitalization',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">Market capitalization, also known as market cap, measures a company&apos;s value in the stock market. It is calculated by multiplying the company&apos;s total outstanding shares by the current market price per share.</p>
         <p className="font-medium">Key Takeaways</p>
@@ -1304,7 +1499,7 @@ const definitionsM: Definition[] = [
   {
     id: 3,
     name: 'Market Order',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">A market order is an instruction given by an investor to buy or sell a security at the current market price. When a market order is placed, the order is executed as quickly as possible at the prevailing market price, ensuring
         a prompt execution but without guaranteeing a specific price.</p>
@@ -1325,7 +1520,7 @@ const definitionsM: Definition[] = [
   {
     id: 4,
     name: 'Mortgage',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">A mortgage is a type of loan specifically designed for purchasing or refinancing real estate. It is typically used by individuals or households to finance the purchase of a home, where the property itself serves as collateral for the loan.</p>
         <p className="font-medium">Key Takeaways</p>
@@ -1346,7 +1541,7 @@ const definitionsM: Definition[] = [
   {
     id: 5,
     name: 'Mutual Fund',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">A mutual fund is an investment vehicle that pools money from multiple investors to invest in a diversified portfolio of securities, such as stocks, bonds, or other assets. Managed by professional fund managers, mutual funds
         offer individuals an opportunity to access a diversified investment portfolio with relatively small investment amounts.</p>
@@ -1375,7 +1570,7 @@ const definitionsN: Definition[] = [
   {
     id: 1,
     name: 'NASDAQ',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">NASDAQ, which stands for the National Association of Securities Dealers Automated Quotations, is a global electronic marketplace for buying and selling securities, primarily stocks. It is one of the largest stock exchanges
         in the world, known for its focus on technology and growth-oriented companies.</p>
@@ -1396,7 +1591,7 @@ const definitionsN: Definition[] = [
   {
     id: 2,
     name: 'Net Worth',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">Net worth refers to the measure of an individual&apos;s or entity&apos;s financial value by calculating the difference between their assets and liabilities. It is a comprehensive assessment of one&apos;s financial position
         and serves as an indicator of wealth or financial health.</p>
@@ -1418,7 +1613,7 @@ const definitionsN: Definition[] = [
   {
     id: 3,
     name: 'New York Stock Exchange',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">The New York Stock Exchange (NYSE) is one of the world&apos;s largest and most well-known stock exchanges. It is located on Wall Street in New York City and has a long history dating back to its establishment in 1792. The NYSE provides
         a platform for buying and selling stocks, bonds, exchange-traded funds (ETFs), and other financial instruments.</p>
@@ -1437,7 +1632,7 @@ const definitionsN: Definition[] = [
   {
     id: 3,
     name: 'Non-Accredited Investor',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">A non-accredited investor refers to an individual or entity that does not meet the criteria set by regulatory bodies, such as the Securities and Exchange Commission (SEC), to participate in certain investment opportunities
         that are limited to accredited investors.</p>
@@ -1460,7 +1655,7 @@ const definitionsO: Definition[] = [
   {
     id: 1,
     name: 'Option',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">An option is a financial derivative contract that gives the holder the right, but not the obligation, to buy (call option) or sell (put option) an underlying asset at a predetermined price (strike price) within a specific period of time (expiration date).</p>
         <p className="font-medium">Key Takeaways</p>
@@ -1483,7 +1678,7 @@ const definitionsO: Definition[] = [
   {
     id: 2,
     name: 'Overbought',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">When a financial asset is deemed overbought, it means that its price has risen too quickly and too high, potentially signaling a possible reversal or correction in the near future.</p>
         <p className="font-medium">Key Takeaways</p>
@@ -1503,7 +1698,7 @@ const definitionsO: Definition[] = [
   {
     id: 3,
     name: 'Oversold',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">When a financial asset is considered oversold, it means that its price has experienced a significant and rapid decline, potentially indicating a buying opportunity or a potential price rebound.</p>
         <p className="font-medium">Key Takeaways</p>
@@ -1520,7 +1715,7 @@ const definitionsO: Definition[] = [
   {
     id: 4,
     name: 'Overvalued',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">When a financial asset is considered overvalued, it means that its current price is perceived to be higher than its intrinsic or fundamental value, suggesting that it may be due for a price correction or a period of underperformance.</p>
         <p className="font-medium">Key Takeaways</p>
@@ -1543,7 +1738,7 @@ const definitionsP: Definition[] = [
   {
     id: 1,
     name: 'Passive Income',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">Passive income refers to earnings that are generated with minimal effort or active involvement. It is income earned from investments, business ventures, or assets that generate ongoing cash flow without requiring constant or direct participation.</p>
         <p className="font-medium">Key Takeaways</p>
@@ -1566,7 +1761,7 @@ const definitionsP: Definition[] = [
   {
     id: 2,
     name: 'Personal Loan',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">A personal loan is a type of loan that individuals can obtain from banks, credit unions, or online lenders to meet their personal financial needs. It is typically an unsecured loan, meaning it does not require collateral, and the borrower
         receives a lump sum of money that is repaid over a fixed period with interest.</p>
@@ -1589,7 +1784,7 @@ const definitionsP: Definition[] = [
   {
     id: 3,
     name: 'Personal Property',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">Personal property refers to movable assets that individuals own, excluding real estate or land. It includes tangible items such as vehicles, furniture, electronics, jewelry, collectibles, and other possessions that are not permanently affixed to a property.</p>
         <p className="font-medium">Key Takeaways</p>
@@ -1609,7 +1804,7 @@ const definitionsP: Definition[] = [
   {
     id: 4,
     name: 'Property Tax',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">Property tax is imposed by local governments, usch as municipalities or counties, on the value of real estate or immovable property owned by individuals or entities. It is typically based on the property&apos; assessed value and is used to fund local services and public infrastructure.</p>
         <p className="font-medium">Key Takeaways</p>
@@ -1634,7 +1829,7 @@ const definitionsQ: Definition[] = [
   {
     id: 1,
     name: 'Quality of Life',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">Quality of life refers to the overall well-being and satisfaction experienced by individuals or communities in various aspects of their lives. It encompasses a wide range of factors that contribute to a person&apos;s happiness, health, social connections, personal fulfillment,
         and enjoyment of life.</p>
@@ -1655,7 +1850,7 @@ const definitionsQ: Definition[] = [
   {
     id: 2,
     name: 'Quantitative Easing',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">Quantitative easing (QE) is a monetary policy tool central banks use to stimulate the economy and increase the money supply. It involves the central bank buying government bonds or other financial assets from commercial banks and injecting money into the financial system.</p>
         <p className="font-medium">Key Takeaways</p>
@@ -1675,7 +1870,7 @@ const definitionsQ: Definition[] = [
   {
     id: 3,
     name: 'Quarter',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">A fiscal quarter, also known as a financial quarter or simply a quarter, refers to a specific 3-month period on a company&apos;s financial calendar. It is commonly used to organize and report financial information, track performance, and make financial decisions.</p>
         <p className="font-medium">Key Takeaways</p>
@@ -1693,7 +1888,7 @@ const definitionsQ: Definition[] = [
   {
     id: 4,
     name: 'Quote',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">In the context of trading and investing, a quote refers to the current price at which a financial instrument, such as a stock, bond, commodity, or currency pair, is being bought or sold in the market. It provides information about the current market value
         of the asset and is typically displayed as a bid and ask price.</p>
@@ -1714,7 +1909,7 @@ const definitionsR: Definition[] = [
   {
     id: 1,
     name: 'Rate of Return',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">Rate of return refers to the gain or loss on an investment relative to the amount invested, expressed as a percentage. It measures an investment&apos;s profitability or performance over a specific period of time.</p>
         <p className="font-medium">Key Takeaways</p>
@@ -1735,7 +1930,7 @@ const definitionsR: Definition[] = [
   {
     id: 2,
     name: 'Raw Materials',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">Raw materials refer to basic, unprocessed substances or resources used in the production of goods or services. They are the fundamental building blocks of various industries and play a crucial role in economic activities.</p>
         <p className="font-medium">Key Takeaways</p>
@@ -1757,7 +1952,7 @@ const definitionsR: Definition[] = [
   {
     id: 3,
     name: 'Real Estate Investment Trust',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">A Real Estate Investment Trust (REIT) is a company that owns, operates, or finances income-generating real estate properties. REITs provide individuals with the opportunity to invest in real estate without directly owning and managing properties.
         They typically focus on specific sectors such as residential, commercial, retail, or industrial real estate.</p>
@@ -1779,7 +1974,7 @@ const definitionsR: Definition[] = [
   {
     id: 4,
     name: 'Recession',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">A recession is a significant decline in economic activity that lasts for an extended period, typically marked by a contraction in gross domestic product (GDP), increased unemployment rates, reduced consumer spending, and a general slowdown in business activity.</p>
         <p className="font-medium">Key Takeaways</p>
@@ -1798,7 +1993,7 @@ const definitionsR: Definition[] = [
   {
     id: 5,
     name: 'Refinance',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">Refinancing refers to the process of replacing an existing loan with a new loan, typically with better terms or conditions. It is commonly done for mortgages, but it can also apply to other types of loans, such as auto loans or student loans.</p>
         <p className="font-medium">Key Takeaways</p>
@@ -1820,7 +2015,7 @@ const definitionsR: Definition[] = [
   {
     id: 6,
     name: 'Rent Control',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">Rent control refers to government regulations that limit the amount landlords can charge for rental properties. These regulations are typically implemented to protect tenants from excessive rent increases and to ensure affordable housing options are available in certain areas.</p>
         <p className="font-medium">Key Takeaways</p>
@@ -1839,7 +2034,7 @@ const definitionsR: Definition[] = [
   {
     id: 7,
     name: 'Retail Investor',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">A retail investor refers to an individual or small-scale investor who buys and sells securities, such as stocks, bonds, or mutual funds, for their personal investment portfolio. Retail investors typically invest their own money rather than managing investments on
         behalf of others, as institutional investors do.</p>
@@ -1862,7 +2057,7 @@ const definitionsS: Definition[] = [
   {
     id: 1,
     name: 'Scalper',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">A scalper refers to an individual or entity that engages in short-term trading strategies to profit from small price fluctuations in financial markets. Scalpers aim to make quick trades, often taking advantage of high-frequency trading technology and leveraging
         high trading volumes.</p>
@@ -1883,7 +2078,7 @@ const definitionsS: Definition[] = [
   {
     id: 2,
     name: 'Share',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">A share refers to a unit of ownership in a company, typically represented by a certificate or digital record. When individuals or entities purchase shares of a company, they become shareholders and hold a proportionate ownership stake in the company.</p>
         <p className="font-medium">Key Takeaways</p>
@@ -1902,7 +2097,7 @@ const definitionsS: Definition[] = [
   {
     id: 3,
     name: 'Short',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">Shorting, or short selling, refers to a trading strategy where an investor borrows shares of a security from a broker and sells them on the market, aiming to buy them back at a lower price in the future. By shorting a stock, traders can profit from a decline in its price.</p>
         <p className="font-medium">Key Takeaways</p>
@@ -1923,7 +2118,7 @@ const definitionsS: Definition[] = [
   {
     id: 4,
     name: 'Sinking Fund',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">Sinking funds are similar to emergency funds in that they are both meant to act as financial safety nets and keep you on track to reach your financial goals. But, sinking funds are a more tactical way to save money.</p>
         <p className="font-medium">Key Takeaways</p>
@@ -1941,7 +2136,7 @@ const definitionsS: Definition[] = [
   {
     id: 5,
     name: 'SPAC',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">A Special Acquisition Company (SPAC) is a publicly traded company formed with the purpose of raising capital through an initial public offering (IPO) to acquire or merge with an existing operating company. SPACs have a specific timeframe within which they must
         identify and complete a merger or acquisition transaction, often within two years. They provide an alternative route for companies to go public and allow investors to participate in early-stage investments.</p>
@@ -1962,7 +2157,7 @@ const definitionsS: Definition[] = [
   {
     id: 6,
     name: 'Stock',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">Stocks represent ownership in a company. When an investor purchases shares of stocks, they become partial owners of the company and have the potential to profit from the company&apos;s growth and success. Stocks are traded on stock exchanges, and their prices
         fluctuate based on market supply and demand.</p>
@@ -1986,7 +2181,7 @@ const definitionsS: Definition[] = [
   {
     id: 7,
     name: 'Swing Trade',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">Swing trading is a short-to-medium-term trading strategy that aims to capture price movements or &quot;swings&quot; within a broader trend. Swing traders typically hold positions for a few days to several weeks, taking advantage of short-term price fluctuations.
         The strategy involves identifying potential entry and exit points based on technical analysis, market patterns, and momentum indicators.</p>
@@ -2006,7 +2201,7 @@ const definitionsS: Definition[] = [
   {
     id: 8,
     name: 'S&P500',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">The S&P 500 is a widely followed stock market index that measures the performance of 500 large-cap U.S. companies. It is a market-capitalization-weighted index, meaning that the companies with higher market values have a greater impact on the index&apos;s
         performance. The S&P 500 is often used as a benchmark for the overall performance of the U.S. stock market.</p>
@@ -2029,7 +2224,7 @@ const definitionsT: Definition[] = [
   {
     id: 1,
     name: 'Target-Date Fund',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">A target date fund, also known as a lifecycle fund or retirement date fund, is an investment fund that automatically adjusts its asset allocation over time based on a target retirement date. The fund starts with a more aggressive allocation of stocks and gradually
         shifts towards a more conservative allocation as the target date approaches.</p>
@@ -2049,7 +2244,7 @@ const definitionsT: Definition[] = [
   {
     id: 2,
     name: 'Technical Analysis',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">Technical analysis is a method used to evaluate investments by analyzing statistical trends and patterns in price and volume data. It focuses on studying historical market data, such as charts and indicators, to make predictions about future price movements.
         Technical analysts believe that past price behavior can provide insights into future price movements and use various tools and techniques to identify potential buying or selling opportunities.</p>
@@ -2070,7 +2265,7 @@ const definitionsT: Definition[] = [
   {
     id: 3,
     name: 'Too Big to Fail',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">&quot;Too big to fail&quot; refers to the concept that certain large financial institutions are considered so vital to the economy that their failure would have severe and widespread consequences. These institutions are often seen as having implicit
         government support or guarantees due to their systemic importance.</p>
@@ -2092,7 +2287,7 @@ const definitionsT: Definition[] = [
   {
     id: 4,
     name: 'Trade Deficit',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">A trade deficit occurs when a country&apos;s imports exceed its exports, resulting in a negative balance of trade. It represents the difference between the value of goods and services a country imports from other countries and the value of goods and services
         it exports. A persistent trade deficit can have economic implications, such as affecting currency exchange rates, domestic industries, and overall economic growth.</p>
@@ -2113,7 +2308,7 @@ const definitionsT: Definition[] = [
   {
     id: 5,
     name: 'Trade Surplus',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">A trade surplus occurs when a country&apos;s exports exceed its imports, resulting in a positive balance of trade. It represents the difference between the value of goods and services a country exports to other countries and the value of goods and services
         it imports. A trade surplus can have economic implications, such as increasing foreign exchange reserves, supporting domestic industries, and potentially stimulating economic growth.</p>
@@ -2134,7 +2329,7 @@ const definitionsT: Definition[] = [
   {
     id: 6,
     name: 'Trade War',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">A trade war refers to a situation where countries impose tariffs, trade barriers, or other restrictive measures on each other&apos;s imports and exports, leading to escalated trade tensions. Trade wars can have wide-ranging economic consequences, such as higher
         costs for businesses and consumers, disrupted supply chains, reduced global trade, and potential impacts on economic growth and geopolitical relations.</p>
@@ -2157,7 +2352,7 @@ const definitionsT: Definition[] = [
   {
     id: 7,
     name: 'Trust Fund',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">A trust fund is a legal entity that holds assets, such as money, property, or investments, on behalf of beneficiaries. It is created by a grantor or settlor who designates a trustee to manage the assets according to specific terms and conditions outlined in a
         trust agreement. Trust funds are commonly used for estate planning, wealth management, charitable purposes, and ensuring the financial well-being of beneficiaries.</p>
@@ -2182,7 +2377,7 @@ const definitionsU: Definition[] = [
   {
     id: 1,
     name: 'Unbanked',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">The term &quot;unbanked&quot; refers to individuals or households that do not have access to traditional banking services, such as a bank account, credit cards, or other financial products offered by regulated financial institutions. Unbanked individuals often
         rely on alternative financial services, such as cash transactions, prepaid cards, or informal savings methods. The unbanked population is typically underserved by the formal banking sector and may face challenges in accessing financial services and participating fully in the formal economy.</p>
@@ -2204,7 +2399,7 @@ const definitionsU: Definition[] = [
   {
     id: 2,
     name: 'Underperform',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">Underperforming refers to a situation in which an investment, company, or individual fails to meet expected or desired performance levels. In the context of investments, an underperforming asset or investment portfolio generates lower returns than anticipated or
         lags behind comparable investments or benchmarks.</p>
@@ -2224,7 +2419,7 @@ const definitionsU: Definition[] = [
   {
     id: 3,
     name: 'Underwater Mortgage',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">An underwater mortgage refers to a situation where the outstanding balance on a mortgage loan exceeds the current market value of the property securing the loan. In other words, the homeowner owes more on the mortgage than the home is worth.</p>
         <p className="font-medium">Key Takeaways</p>
@@ -2245,7 +2440,7 @@ const definitionsU: Definition[] = [
   {
     id: 4,
     name: 'Unemployment Rate',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">The unemployment rate is a key economic indicator that measures the percentage of the labor force that is actively seeking employment but currently without a job. It is commonly used to assess an economy&apos;s health and the overall employment situation. The
         unemployment rate provides insights into the level of joblessness in a given period and serves as a barometer for economic conditions.</p>
@@ -2273,7 +2468,7 @@ const definitionsV: Definition[] = [
   {
     id: 1,
     name: 'VA Loan',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">A VA loan is a mortgage loan program offered by the U.S. Department of Veterans Affairs (VA) to provide financial assistance to eligible veterans, active-duty service members, and their surviving spouses. The VA loan program aims to make homeownership
         more accessible and affordable for those who have served or are serving in the military.</p>
@@ -2291,7 +2486,7 @@ const definitionsV: Definition[] = [
   {
     id: 2,
     name: 'Venture Capital',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">Venture capital (VC) refers to a form of private equity financing provided to early-stage or high-growth potential companies by investors, known as venture capitalists. These investments are typically made in exchange for equity ownership in the company. Venture
         capital plays a vital role in funding and supporting entrepreneurial ventures, fueling innovation, and driving economic growth.</p>
@@ -2314,7 +2509,7 @@ const definitionsV: Definition[] = [
   {
     id: 3,
     name: 'Vesting Schedule',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">A vesting schedule is a timeline or set of conditions that determine when an individual or employee has the right to fully own or access certain assets or benefits, typically related to employer-provided incentives, such as stock options, retirement plans, or
         employer-matched contributions.</p>
@@ -2335,7 +2530,7 @@ const definitionsV: Definition[] = [
   {
     id: 4,
     name: 'Volatility',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">Volatility refers to the degree of fluctuation or variability in the price or value of a financial instrument, such as stocks, bonds, or commodities, over a certain period of time. It measures the rate at which prices move up and down, indicating the level of
         uncertainty or risk in the market.</p>
@@ -2358,7 +2553,7 @@ const definitionsW: Definition[] = [
   {
     id: 1,
     name: 'W-2',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">A W-2 form is a document provided by an employer to an employee, typically on an annual basis, to report the employee&apos;s wages, salary, and other compensation for the purpose of income tax filing. It includes information such as
         total earnings, taxes withheld, and contributions to retirement plans or other benefits.</p>
@@ -2377,7 +2572,7 @@ const definitionsW: Definition[] = [
   {
     id: 2,
     name: 'Whale',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">In financial markets, a &quot;whale&quot; refers to an individual or entity that possesses a significant amount of capital, allowing them to make large trades or investments that can potentially influence market prices.</p>
         <p className="font-medium">Key Takeaways</p>
@@ -2399,7 +2594,7 @@ const definitionsW: Definition[] = [
   {
     id: 3,
     name: 'Wall Street',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">Wall Street refers to the financial district in Lower Manhattan, New York City, where the New York Stock Exchange (NYSE) and many other financial institutions are located. It is synonymous with the U.S. financial industry and is often
         used as a metonym for the broader financial markets and the activities associated with them.</p>
@@ -2420,7 +2615,7 @@ const definitionsW: Definition[] = [
   {
     id: 4,
     name: 'Welfare State',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">In a welfare state, the government plays an active role in promoting the economic and social well-being of its citizens. It typically involves the provision of various social programs and benefits aimed at ensuring a minimum standard of living, healthcare,
         education, and social security for the population.</p>
@@ -2442,7 +2637,7 @@ const definitionsX: Definition[] = [
   {
     id: 1,
     name: 'Xenocurrency',
-    cardContent: (
+    content: (
       <>
         <p className="mt-4 mb-2">Xenocurrency refers to currency traded in markets outside of its domestic borders. The term &quot;zeno&quot; refers to something foreign or different.</p>
         <p className="font-medium">Key Takeaways</p>
@@ -2462,7 +2657,7 @@ const definitionsY: Definition[] = [
   {
     id: 1,
     name: 'Year-Over-Year',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">Year-over-year (YOY) is a financial comparison method used to analyze data or measure performance over a 12-month period. It refers to comparing data or metrics from the same time period in consecutive years to identify trends, changes, or growth rates.</p>
         <p className="font-medium">Key Takeaways</p>
@@ -2477,7 +2672,7 @@ const definitionsY: Definition[] = [
   {
     id: 2,
     name: 'Year to Date',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">Year to date (YTD) is a financial term used to describe the period from the beginning of the current calendar year up to the present date. It provides a snapshot of performance or data for the time elapsed since the start of the year.</p>
         <p className="font-medium">Key Takeaways</p>
@@ -2492,7 +2687,7 @@ const definitionsY: Definition[] = [
   {
     id: 3,
     name: 'Yield',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">Yield refers to the return on investment or the income generated by an investment relative to its cost. It represents the percentage or rate of return that an investor receives from an investment.</p>
         <p className="font-medium">Key Takeaways</p>
@@ -2510,7 +2705,7 @@ const definitionsY: Definition[] = [
   {
     id: 4,
     name: 'Yuppie',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">Yuppie is a term used to describe young urban professionals who are typically characterized by their youth, affluence, and business success. They are often driven individuals who have achieved financial stability at a relatively young age.
         Yuppies are commonly associated with a preppy style and a desire to display their success through their appearance and possessions.</p>
@@ -2529,7 +2724,7 @@ const definitionsZ: Definition[] = [
   {
     id: 1,
     name: 'Zero-Based Budgeting',
-    cardContent: (
+    content: (
       <>
         <p className="mb-2">Zero-based budgeting (ZBB) is a financial management approach where budgeting starts from a base of zero for each budgeting period. ZBB requires every expense to be justified and approved from scratch. The primary objective
         is to optimize resource allocation, eliminate unnecessary expenses, and ensure that every dollar spent aligns with the organization&apos;s priorities.</p>
@@ -2547,7 +2742,7 @@ const definitionsZ: Definition[] = [
   {
     id: 2,
     name: 'Zero-Sum Game',
-    cardContent: (
+    content: (
       <>
         <p className="mt-4 mb-2">A &quot;zero-sum game&quot; refers to a situation in which the gains of one participant or entity are exactly offset by the losses of another participant or entity. In other words, the total gains and losses within the system balance out,
         resulting in a net sum of zero.</p>
@@ -2563,7 +2758,7 @@ const definitionsZ: Definition[] = [
   {
     id: 3,
     name: 'Zone of Resistance',
-    cardContent: (
+    content: (
       <>
         <p className="mt-4 mb-2">The &quot;zone of resistance&quot; refers to a price range or level in technical analysis where a financial asset or security faces significant selling pressure. It is a zone where the price historically struggles to break through or
         sustain upward movement, potentially leading to a reversal or a slowdown in price appreciation.</p>
@@ -2582,7 +2777,7 @@ const definitionsZ: Definition[] = [
   {
     id: 4,
     name: 'Zone of Support',
-    cardContent: (
+    content: (
       <>
         <p className="mt-4 mb-2">The &quot;zone of support&quot; refers to a price range or level in technical analysis where a financial asset or security encounters significant buying interest. It is a zone where the price historically finds support and experiences
         a rebound or a slowdown in price decline.</p>
@@ -2603,8 +2798,6 @@ const definitionsZ: Definition[] = [
 ]
 
 export default function HomePage() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-
   const navigation = [
     { name: 'Learn', href: 'learn' },
     { name: 'Dictionary', href: 'dictionary' },
@@ -2687,11 +2880,11 @@ export default function HomePage() {
 
         {selectedDefinition && (
           <Dialog
-            open={true}
-            onClose={() => setSelectedDefinition(null)}
-            className="fixed inset-0 z-50 overflow-y-auto"
-            aria-labelledby="dialog-title"
-            aria-describedby="dialog-description"
+          open={true}
+          onClose={() => setSelectedDefinition(null)}
+          className="fixed inset-0 z-50 overflow-y-auto"
+          aria-labelledby="dialog-title"
+          aria-describedby="dialog-description"
           >
             <div className="flex items-center justify-center min-h-screen">
               <Dialog.Overlay className="inset-0 bg-black opacity-10 static" />
@@ -2700,7 +2893,7 @@ export default function HomePage() {
                 <Dialog.Title id="dialog-title" className="text-lg font-medium text-gray-900">{selectedDefinition.name}</Dialog.Title>
 
                 <div className="flex justify-between">
-                  <p className="text-gray-500">{selectedDefinition.cardContent}</p>
+                  <p className="text-gray-500">{selectedDefinition.content}</p>
                 </div>
 
                 <div className="mt-2 flex justify-end">
@@ -2713,6 +2906,7 @@ export default function HomePage() {
             </div>
           </Dialog>
         )}
+
       </div>
 
       <Footer />

@@ -6,10 +6,16 @@ function DefinitionList({ title, definitions, setSelectedDefinition }) {
       <h2 className="text-2xl font-bold text-gray-800">{title}</h2>
       <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
         {definitions.map((definition) => (
-          <div
+          <a
             key={definition.id}
+            href={definition.url}
+            target="_blank"
+            rel="noopener noreferrer"
             className="group relative cursor-pointer rounded-lg overflow-hidden shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
-            onClick={() => setSelectedDefinition(definition)}
+            onClick={(e) => {
+              e.preventDefault();
+              setSelectedDefinition(definition);
+            }}
           >
             <div className="mt-4 px-4 pb-2 flex justify-center items-center">
               <div>
@@ -18,7 +24,7 @@ function DefinitionList({ title, definitions, setSelectedDefinition }) {
                 </h3>
               </div>
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </div>
@@ -26,3 +32,5 @@ function DefinitionList({ title, definitions, setSelectedDefinition }) {
 }
 
 export default DefinitionList;
+
+
