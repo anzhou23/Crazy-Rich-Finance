@@ -2131,7 +2131,7 @@ const products5: Product[] = [
     },
 ]
 
-export default function HomePage() {
+export default function Learn() {
   const navigation = [
     { name: 'Learn', href: 'learn' },
     { name: 'Dictionary', href: 'dictionary' },
