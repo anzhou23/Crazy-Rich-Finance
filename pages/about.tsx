@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar"
 import Image from 'next/image'
 import Footer from "../components/Footer"
 
-export default function HomePage() {
+export default function About() {
   const navigation = [
     { name: 'Learn', href: 'learn' },
     { name: 'Dictionary', href: 'dictionary' },
@@ -39,7 +39,7 @@ export default function HomePage() {
       <div>
         <div className="py-5 px-10 flex flex-col md:flex-row">
           <div className="md:w-2/5 md:pr-5">
-            <h2 className="text-md text-gray-600">Core behaviors</h2>
+            <h2 className="text-md text-gray-600">Core Values</h2>
             <p className="mt-2.5 text-2xl font-bold">Every day is an opportunity.</p>
           </div>
 

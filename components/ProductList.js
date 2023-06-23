@@ -6,11 +6,12 @@ function ProductList({ products, setSelectedProduct }) {
       {products.map((product) => (
         <div
           key={product.id}
-          className="group relative cursor-pointer rounded-lg overflow-hidden shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
+          className="group relative cursor-pointer rounded-lg overflow-hidden shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 mx-auto"
           onClick={(e) => {
             e.preventDefault(); // prevent the default behavior of the hyperlink
             setSelectedProduct(product);
           }}
+          style={{ width: "300px" }} // Limit max width of the card
         >
           <div className="min-h-80 aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
             <Image
@@ -36,6 +37,13 @@ function ProductList({ products, setSelectedProduct }) {
           </div>
         </div>
       ))}
+      <style jsx>{`
+        @media (max-width: 768px) {
+          .group {
+            margin: 0 auto;
+          }
+        }
+      `}</style>
     </div>
   );
 }

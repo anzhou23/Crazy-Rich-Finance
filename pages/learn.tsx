@@ -2147,27 +2147,27 @@ export default function Learn() {
       <div className="bg-white">
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
           {/* How to Bank */}
-          <h2 className="text-2xl font-bold tracking-tight text-gray-900">How to Bank</h2>
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900">How to Bank</h2>
           <ProductList products={products} setSelectedProduct={setSelectedProduct} />
 
           {/* Credit 101 */}
-          <h2 className="text-2xl font-bold tracking-tight text-gray-900 mt-20">Breaking Down Credit</h2>
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 mt-20">Breaking Down Credit</h2>
           <ProductList products={products2} setSelectedProduct={setSelectedProduct} />
 
           {/* Budgeting Strategies */}
-          <h2 className="text-2xl font-bold tracking-tight text-gray-900 mt-20">Budgeting Strategies to Reclaim Control Over Your Finances</h2>
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 mt-20">Budgeting Strategies to Reclaim Control Over Your Finances</h2>
           <ProductList products={products3} setSelectedProduct={setSelectedProduct} />
 
           {/* The First-Time Homebuyer's Journey */}
-          <h2 className="text-2xl font-bold tracking-tight text-gray-900 mt-20">The First-Time Homebuyer&apos;s Journey</h2>
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 mt-20">The First-Time Homebuyer&apos;s Journey</h2>
           <ProductList products={products4} setSelectedProduct={setSelectedProduct} />
 
           {/* Setting Yourself Up For Success Series */}
-          <h2 className="text-2xl font-bold tracking-tight text-gray-900 mt-20">Setting Yourself Up For Financial Success</h2>
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 mt-20">Setting Yourself Up For Financial Success</h2>
           <ProductList products={products5} setSelectedProduct={setSelectedProduct} />
 
           {/* Assets and Markets */}
-          <h2 className="text-2xl font-bold tracking-tight text-gray-900 mt-20">Assets and Markets</h2>
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 mt-20">Assets and Markets</h2>
           <ProductList products={products6} setSelectedProduct={setSelectedProduct} />
 
           {selectedProduct && selectedProduct.hasTabs !== undefined && selectedProduct.hasTabs && (

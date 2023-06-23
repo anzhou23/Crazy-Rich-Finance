@@ -57,8 +57,8 @@ export default function Dictionary() {
 
       <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
         <div id="section-a">
-          <h2 className="text-3xl font-medium text-center mb-4">A</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-xl text-center">
+          <h2 className="text-3xl font-bold text-gray-800 flex items-center justify-center mx-auto mb-4">A</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-lg text-center">
             <Link className="hover:text-blue-300 hover:underline" href="/accredited-investor">Accredited Investor</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/amortization">Amortization</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/angel-investing">Angel Investing</Link>
@@ -69,11 +69,12 @@ export default function Dictionary() {
             <Link className="hover:text-blue-300 hover:underline" href="/appreciation">Appreciation</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/asset">Asset</Link>
           </div>
+          <hr className="mt-10 mb-10 w-3/5 text-gray-500 mx-auto" />
         </div>
 
         <div id="section-b">
-          <h2 className="text-3xl font-medium text-center mb-4 mt-6">B</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-xl text-center">
+          <h2 className="text-3xl font-bold text-gray-800 flex items-center justify-center mx-auto mb-4">B</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-lg text-center">
             <Link className="hover:text-blue-300 hover:underline" href="/balance-sheet">Balance Sheet</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/bankruptcy">Bankruptcy</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/bear-market">Bear Market</Link>
@@ -83,11 +84,12 @@ export default function Dictionary() {
             <Link className="hover:text-blue-300 hover:underline" href="/bull-market">Bull Market</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/buy-and-hold">Buy and Hold</Link>
           </div>
+          <hr className="mt-10 mb-10 w-3/5 text-gray-500 mx-auto" />
         </div>
 
         <div id="section-c">
-          <h2 className="text-3xl font-medium text-center mb-4 mt-6">C</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-xl text-center">
+          <h2 className="text-3xl font-bold text-gray-800 flex items-center justify-center mx-auto mb-3">C</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-lg text-center">
             <Link className="hover:text-blue-300 hover:underline" href="/capital-gain">Capital Gain</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/cash-flow">Cash Flow</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/certificate-of-deposit">Certificate of Deposit</Link>
@@ -96,11 +98,12 @@ export default function Dictionary() {
             <Link className="hover:text-blue-300 hover:underline" href="/cost-basis">Cost Basis</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/credit-score">Credit Score</Link>
           </div>
+          <hr className="mt-10 mb-10 w-3/5 text-gray-500 mx-auto" />
         </div>
 
         <div id="section-d">
-          <h2 className="text-3xl font-medium text-center mb-4 mt-6">D</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-xl text-center">
+          <h2 className="text-3xl font-bold text-gray-800 flex items-center justify-center mx-auto mb-4">D</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-lg text-center">
             <Link className="hover:text-blue-300 hover:underline" href="/day-trading">Day Trading</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/debt">Debt</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/debt-to-income-ratio">Debt-to-Income Ratio</Link>
@@ -109,22 +112,24 @@ export default function Dictionary() {
             <Link className="hover:text-blue-300 hover:underline" href="/dividend">Dividend</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/dollar-cost-averaging">Dollar Cost Averaging</Link>
           </div>
+          <hr className="mt-10 mb-10 w-3/5 text-gray-500 mx-auto" />
         </div>
 
         <div id="section-e">
-          <h2 className="text-3xl font-medium text-center mb-4 mt-6">E</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-xl text-center">
+          <h2 className="text-3xl font-bold text-gray-800 flex items-center justify-center mx-auto mb-4">E</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-lg text-center">
             <Link className="hover:text-blue-300 hover:underline" href="/economy">Economy</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/emergency-fund">Emergency Fund</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/equity">Equity</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/exchange-traded-fund">Exchange-Traded Fund</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/expense-ratio">Expense Ratio</Link>
           </div>
+          <hr className="mt-10 mb-10 w-3/5 text-gray-500 mx-auto" />
         </div>
 
         <div id="section-f">
-          <h2 className="text-3xl font-medium text-center mb-4 mt-6">F</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-xl text-center">
+          <h2 className="text-3xl font-bold text-gray-800 flex items-center justify-center mx-auto mb-4">F</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-lg text-center">
             <Link className="hover:text-blue-300 hover:underline" href="/federal-reserve">Federal Reserve</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/fiscal-policy">Fiscal Policy</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/flexible-spending-account">Flexible Spending Account</Link>
@@ -132,32 +137,35 @@ export default function Dictionary() {
             <Link className="hover:text-blue-300 hover:underline" href="/forex">Forex</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/fundamental-analysis">Fundamental Analysis</Link>
           </div>
+          <hr className="mt-10 mb-10 w-3/5 text-gray-500 mx-auto" />
         </div>
 
         <div id="section-g">
-          <h2 className="text-3xl font-medium text-center mb-4 mt-6">G</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-xl text-center">
+          <h2 className="text-3xl font-bold text-gray-800 flex items-center justify-center mx-auto mb-4">G</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-lg text-center">
             <Link className="hover:text-blue-300 hover:underline" href="/golden-handcuffs">Golden Handcuffs</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/gold-standard">Gold Standard</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/gdp">Gross Domestic Product</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/growth-stock">Growth Stock</Link>
           </div>
+          <hr className="mt-10 mb-10 w-3/5 text-gray-500 mx-auto" />
         </div>
 
         <div id="section-h">
-          <h2 className="text-3xl font-medium text-center mb-4 mt-6">H</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-xl text-center">
+          <h2 className="text-3xl font-bold text-gray-800 flex items-center justify-center mx-auto mb-4">H</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-lg text-center">
             <Link className="hover:text-blue-300 hover:underline" href="/hsa">Health Savings Account</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/hold">Hold</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/hodl">HODL</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/homeowners-association">Homeowners Association</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/hyperinflation">Hyperinflation</Link>
           </div>
+          <hr className="mt-10 mb-10 w-3/5 text-gray-500 mx-auto" />
         </div>
 
         <div id="section-i">
-          <h2 className="text-3xl font-medium text-center mb-4 mt-6">I</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-xl text-center">
+          <h2 className="text-3xl font-bold text-gray-800 flex items-center justify-center mx-auto mb-4">I</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-lg text-center">
             <Link className="hover:text-blue-300 hover:underline" href="/index-fund">Index Fund</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/inflation">Inflation</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/ipo">Initial Public Offering</Link>
@@ -166,11 +174,12 @@ export default function Dictionary() {
             <Link className="hover:text-blue-300 hover:underline" href="/interest">Interest</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/interest-rate">Interest Rate</Link>
           </div>
+          <hr className="mt-10 mb-10 w-3/5 text-gray-500 mx-auto" />
         </div>
 
         <div id="section-j">
-          <h2 className="text-3xl font-medium text-center mb-4 mt-6">J</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-xl text-center">
+          <h2 className="text-3xl font-bold text-gray-800 flex items-center justify-center mx-auto mb-4">H</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-lg text-center">
             <Link className="hover:text-blue-300 hover:underline" href="/joint-account">Joint Account</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/joint-credit">Joint Credit</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/joint-tenancy">Joint Tenancy</Link>
@@ -178,63 +187,69 @@ export default function Dictionary() {
             <Link className="hover:text-blue-300 hover:underline" href="/junk-bond">Junk Bond</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/junk-fees">Junk Fees</Link>
           </div>
+          <hr className="mt-10 mb-10 w-3/5 text-gray-500 mx-auto" />
         </div>
 
         <div id="section-k">
-          <h2 className="text-3xl font-medium text-center mb-4 mt-6">K</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-xl text-center">
+          <h2 className="text-3xl font-bold text-gray-800 flex items-center justify-center mx-auto mb-4">K</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-lg text-center">
             <Link className="hover:text-blue-300 hover:underline" href="/kpi">Key Performance Indicator</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/keynesian">Keynesian Economics</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/kickback">Kickback</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/knowledge-economy">Knowledge Economy</Link>
           </div>
+          <hr className="mt-10 mb-10 w-3/5 text-gray-500 mx-auto" />
         </div>
 
         <div id="section-l">
-          <h2 className="text-3xl font-medium text-center mb-4 mt-6">L</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-xl text-center">
+          <h2 className="text-3xl font-bold text-gray-800 flex items-center justify-center mx-auto mb-4">L</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-lg text-center">
             <Link className="hover:text-blue-300 hover:underline" href="/level2">Level 2 Data</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/lien">Lien</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/limit-order">Limit Order</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/liquidity">Liquidity</Link>
           </div>
+          <hr className="mt-10 mb-10 w-3/5 text-gray-500 mx-auto" />
         </div>
 
         <div id="section-m">
-          <h2 className="text-3xl font-medium text-center mb-4 mt-6">M</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-xl text-center">
+          <h2 className="text-3xl font-bold text-gray-800 flex items-center justify-center mx-auto mb-4">M</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-lg text-center">
             <Link className="hover:text-blue-300 hover:underline" href="/margin">Margin</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/market-cap">Market Capitalization</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/market-order">Market Order</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/mortgage">Mortgage</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/mutual-fund">Mutual Fund</Link>
           </div>
+          <hr className="mt-10 mb-10 w-3/5 text-gray-500 mx-auto" />
         </div>
 
         <div id="section-n">
-          <h2 className="text-3xl font-medium text-center mb-4 mt-6">N</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-xl text-center">
+          <h2 className="text-3xl font-bold text-gray-800 flex items-center justify-center mx-auto mb-4">N</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-lg text-center">
             <Link className="hover:text-blue-300 hover:underline" href="/nasdaq">NASDAQ</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/net-worth">Net Worth</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/nyse">NYSE</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/non-accredited-investor">Non-Accredited Investor</Link>
           </div>
+          <hr className="mt-10 mb-10 w-3/5 text-gray-500 mx-auto" />
         </div>
 
         <div id="section-o">
-          <h2 className="text-3xl font-medium text-center mb-4 mt-6">O</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-xl text-center">
+          <h2 className="text-3xl font-bold text-gray-800 flex items-center justify-center mx-auto mb-4">O</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-lg text-center">
             <Link className="hover:text-blue-300 hover:underline" href="/option">Option</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/overbought">Overbought</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/overdraft-fee">Overdraft Fee</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/oversold">Oversold</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/overvalued">Overvalued</Link>
           </div>
+          <hr className="mt-10 mb-10 w-3/5 text-gray-500 mx-auto" />
         </div>
 
         <div id="section-p">
-          <h2 className="text-3xl font-medium text-center mb-4 mt-6">P</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-xl text-center">
+          <h2 className="text-3xl font-bold text-gray-800 flex items-center justify-center mx-auto mb-4">P</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-lg text-center">
             <Link className="hover:text-blue-300 hover:underline" href="/passive-income">Passive Income</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/personal-loan">Personal Loan</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/personal-property">Personal Property</Link>
@@ -244,21 +259,23 @@ export default function Dictionary() {
             <Link className="hover:text-blue-300 hover:underline" href="/principal-balance">Principal Balance</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/property-tax">Property Tax</Link>
           </div>
+          <hr className="mt-10 mb-10 w-3/5 text-gray-500 mx-auto" />
         </div>
 
         <div id="section-q">
-          <h2 className="text-3xl font-medium text-center mb-4 mt-6">Q</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-xl text-center">
+          <h2 className="text-3xl font-bold text-gray-800 flex items-center justify-center mx-auto mb-4">Q</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-lg text-center">
             <Link className="hover:text-blue-300 hover:underline" href="/quality-of-life">Quality of Life</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/quantitative-easing">Quantitative Easing</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/quarter">Quarter</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/quote">Quote</Link>
           </div>
+          <hr className="mt-10 mb-10 w-3/5 text-gray-500 mx-auto" />
         </div>
 
         <div id="section-r">
-          <h2 className="text-3xl font-medium text-center mb-4 mt-6">R</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-xl text-center">
+          <h2 className="text-3xl font-bold text-gray-800 flex items-center justify-center mx-auto mb-4">R</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-lg text-center">
             <Link className="hover:text-blue-300 hover:underline" href="/rate-of-return">Rate of Return</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/raw-materials">Raw Materials</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/reit">Real Estate Investment Trust</Link>
@@ -270,11 +287,12 @@ export default function Dictionary() {
             <Link className="hover:text-blue-300 hover:underline" href="/roi">Return on Investment</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/roth-ira">Roth IRA</Link>
           </div>
+          <hr className="mt-10 mb-10 w-3/5 text-gray-500 mx-auto" />
         </div>
 
         <div id="section-s">
-          <h2 className="text-3xl font-medium text-center mb-4 mt-6">S</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-xl text-center">
+          <h2 className="text-3xl font-bold text-gray-800 flex items-center justify-center mx-auto mb-4">S</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-lg text-center">
             <Link className="hover:text-blue-300 hover:underline" href="/scalper">Scalper</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/share">Share</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/short">Short</Link>
@@ -284,11 +302,12 @@ export default function Dictionary() {
             <Link className="hover:text-blue-300 hover:underline" href="/swing-trade">Swing Trade</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/sp-500">S&P500</Link>
           </div>
+          <hr className="mt-10 mb-10 w-3/5 text-gray-500 mx-auto" />
         </div>
 
         <div id="section-t">
-          <h2 className="text-3xl font-medium text-center mb-4 mt-6">T</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-xl text-center">
+          <h2 className="text-3xl font-bold text-gray-800 flex items-center justify-center mx-auto mb-4">T</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-lg text-center">
             <Link className="hover:text-blue-300 hover:underline" href="/tax-credit">Tax Credit</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/target-date-fund">Target Date Fund</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/tax-loss-harvesting">Tax Loss Harvesting</Link>
@@ -301,61 +320,66 @@ export default function Dictionary() {
             <Link className="hover:text-blue-300 hover:underline" href="/trade-war">Trade War</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/traditional-ira">Traditional IRA</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/trust-fund">Trust Fund</Link>
-
           </div>
+          <hr className="mt-10 mb-10 w-3/5 text-gray-500 mx-auto" />
         </div>
 
         <div id="section-u">
-          <h2 className="text-3xl font-medium text-center mb-4 mt-6">U</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-xl text-center">
+          <h2 className="text-3xl font-bold text-gray-800 flex items-center justify-center mx-auto mb-4">U</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-lg text-center">
             <Link className="hover:text-blue-300 hover:underline" href="/unbanked">Unbanked</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/underperform">Underperform</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/underwater-mortgage">Underwater Mortgage</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/unemployment-rate">Unemployment Rate</Link>
           </div>
+          <hr className="mt-10 mb-10 w-3/5 text-gray-500 mx-auto" />
         </div>
 
         <div id="section-v">
-          <h2 className="text-3xl font-medium text-center mb-4 mt-6">V</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-xl text-center">
+          <h2 className="text-3xl font-bold text-gray-800 flex items-center justify-center mx-auto mb-4">V</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-lg text-center">
             <Link className="hover:text-blue-300 hover:underline" href="/va-loan">VA Loan</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/valuation">Valuation</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/venture-capital">Venture Capital</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/vesting-schedule">Vesting Schedule</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/volatility">Volatility</Link>
           </div>
+          <hr className="mt-10 mb-10 w-3/5 text-gray-500 mx-auto" />
         </div>
 
         <div id="section-w">
-          <h2 className="text-3xl font-medium text-center mb-4 mt-6">W</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-xl text-center">
+          <h2 className="text-3xl font-bold text-gray-800 flex items-center justify-center mx-auto mb-4">W</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-lg text-center">
             <Link className="hover:text-blue-300 hover:underline" href="/w2">W-2</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/whale">Whale</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/wall-street">Wall Street</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/welfare-state">Welfare State</Link>
           </div>
+          <hr className="mt-10 mb-10 w-3/5 text-gray-500 mx-auto" />
         </div>
 
         <div id="section-x">
-          <h2 className="text-3xl font-medium text-center mb-4 mt-6">X</h2>
-          <div className="grid grid-cols-1 text-xl text-center">
+          <h2 className="text-3xl font-bold text-gray-800 flex items-center justify-center mx-auto mb-4">X</h2>
+          <div className="grid grid-cols-1 text-lg text-center">
             <Link className="hover:text-blue-300 hover:underline" href="/xenocurrency">Xenocurrency</Link>
           </div>
+          <hr className="mt-10 mb-10 w-3/5 text-gray-500 mx-auto" />
         </div>
 
         <div id="section-y">
-          <h2 className="text-3xl font-medium text-center mb-4 mt-6">Y</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-xl text-center">
+          <h2 className="text-3xl font-bold text-gray-800 flex items-center justify-center mx-auto mb-4">Y</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-lg text-center">
             <Link className="hover:text-blue-300 hover:underline" href="/year-over-year">Year Over Year</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/year-to-date">Year to Date</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/yield">Yield</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/yuppie">Yuppie</Link>
           </div>
+          <hr className="mt-10 mb-10 w-3/5 text-gray-500 mx-auto" />
         </div>
 
         <div id="section-z">
-          <h2 className="text-3xl font-medium text-center mb-4 mt-6">Z</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-xl text-center">
+          <h2 className="text-3xl font-bold text-gray-800 flex items-center justify-center mx-auto mb-4">Z</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-lg text-center">
             <Link className="hover:text-blue-300 hover:underline" href="/zero-based-budgeting">Zero-Based Budgeting</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/zero-sum-game">Zero-Sum Game</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/zone-of-resistance">Zone of Resistance</Link>
