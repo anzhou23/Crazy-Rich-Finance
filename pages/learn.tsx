@@ -287,37 +287,41 @@ const products: Product[] = [
           there are often limitations on the number of withdrawals or transfers you can make per month due to federal regulations.</p>
 
           <p className="font-medium mt-4">What are the pros and cons?</p>
-          <p className="mb-2">HYSAs typically do not have monthly fees or minimum balance requirements. They are insured by the FDIC (currently $250,000 per depositor, per insured bank) and allow you to earn more interest. However, the interest rates constantly fluctuate and are meant
-          to help with short-term savings goals rather than long-term investing.</p>
+          <p className="mb-2">HYSAs typically do not have monthly fees or minimum balance requirements. They are insured by the FDIC (currently $250,000 per depositor, per insured bank) and allow you to earn more interest. However,
+          the interest rates constantly fluctuate and are meant to help with short-term savings goals rather than long-term investing.</p>
         </TabPanel>
 
         <TabPanel>
           <p className="font-medium mt-4">What is a health savings account?</p>
           <p className="mb-2">A health savings account (HSA) is a type of savings account specifically designed to help individuals with high-deductible health insurance plans save money for medical expenses. HSAs are meant to cover eligible medical expenses, which include a wide range
           of healthcare costs such as doctor visits, prescription medications, hospital stays, and certain medical procedures.</p>
-          <p className="mb-2">HSAs are portable, meaning the funds in the account are yours to keep even if you change jobs or switch health insurance plans. The account stays with you, and you can continue to use the funds for eligible medical expenses.</p>
-          <p>The funds in your HSA grow tax-free. This means that any interest, dividends, or capital gains earned within the account are not subject to federal income tax. Additionally, when you use the funds for qualified medical expenses, withdrawals are tax-free as well.</p>
+          <p className="mb-2">HSAs are portable, meaning the funds in the account are yours to keep even if you change jobs or switch health insurance plans. The account stays with you, and you can continue to use the funds for
+          eligible medical expenses.</p>
+          <p>The funds in your HSA grow tax-free. This means that any interest, dividends, or capital gains earned within the account are not subject to federal income tax. Additionally, when you use the funds for qualified
+          medical expenses, withdrawals are tax-free as well.</p>
 
           <p className="font-medium mt-4">How do you open a HSA?</p>
           <p className="mb-2">To open and contribute to an HSA, you must have a high-deductible health insurance plan, which is defined by the IRS as a plan with a minimum annual deductible and maximum out-of-pocket expenses.</p>
           <p>The money you contribute to an HSA is typically made on a pre-tax basis, which means it is deducted from your gross income before taxes are applied. This reduces your taxable income and can result in potential tax savings.</p>
 
           <p className="font-medium mt-4">Are there contribution limits?</p>
-          <p className="mb-2">Each year, there are contribution limits set by the IRS that determine how much you can contribute to your HSA. These limits may change over time. Additionally, contributions to an HSA can be made by both you and your employer, if applicable.</p>
+          <p className="mb-2">Each year, there are contribution limits set by the IRS that determine how much you can contribute to your HSA. These limits may change over time. Additionally, contributions to an HSA can be made
+          by both you and your employer, if applicable.</p>
         </TabPanel>
 
         <TabPanel>
           <p className="font-medium mt-4">What is a money market account?</p>
-          <p className="mb-2">A money market account (MMA) is a high-interest savings account that comes with certain features of checking accounts. They generally offer higher interest rates than standard savings accounts and are designed to help your savings grow at a faster rate.
-          However, MMAs may require a higher minimum deposit compared to regular savings accounts.</p>
+          <p className="mb-2">A money market account (MMA) is a high-interest savings account that comes with certain features of checking accounts. They generally offer higher interest rates than standard savings accounts
+          and are designed to help your savings grow at a faster rate. However, MMAs may require a higher minimum deposit compared to regular savings accounts.</p>
 
           <p className="font-medium mt-4">Do you need a money market account?</p>
           <p className="mb-2">MMAs are popular for individuals who have short-term goals or want to maintain an emergency fund. They provide easy access to your funds and are generally considered low-risk investments.</p>
 
           <p className="font-medium mt-4">What are the pros and cons?</p>
-          <p className="mb-2">Money market accounts typically pay more interest, with rates between those of a certificate of deposit (CD) and a traditional savings account. As long as you bank at an FDIC-insured financial institution or an NCUA insured credit union, your money market
-          account will be insured for up to $250,000. Most accounts also allow you to write checks and withdraw cash, and some even offer a debit card.</p>
-          <p>However, some banks may limit the number of transactions you can have on the account every month. Additionally, the interest rates may fluctuate, so confirm that the rates offered are permanent and not a promotional rate. Additionally, MMAs may not be insured at certain institutions.</p>
+          <p className="mb-2">Money market accounts typically pay more interest, with rates between those of a certificate of deposit (CD) and a traditional savings account. As long as you bank at an FDIC-insured financial
+          institution or an NCUA insured credit union, your money market account will be insured for up to $250,000. Most accounts also allow you to write checks and withdraw cash, and some even offer a debit card.</p>
+          <p>However, some banks may limit the number of transactions you can have on the account every month. Additionally, the interest rates may fluctuate, so confirm that the rates offered are permanent and not a promotional
+          rate. Additionally, MMAs may not be insured at certain institutions.</p>
         </TabPanel>
       </Tabs>
     ),
@@ -340,14 +344,15 @@ const products: Product[] = [
         </TabList>
         <TabPanel>
           <p className="font-medium mt-4">What is a certificate of deposit?</p>
-          <p className="mb-2">A certificate of deposit (CD) is a financial product offered by banks and credit unions. It is a type of time deposit where you deposit a fixed amount of money for a specified period, known as the term or maturity. In return for depositing your money, the
-          financial institution pays you interest on the CD.</p>
-          <p>You choose the term or duration of the CD, which can range from a few months to several years. Common terms include 6 months, 1 year, 2 years, and 5 years. Once the CD reaches its maturity date, the term ends. At this point, you can choose to withdraw the money or
-          renew the CD for another term. If you decide to withdraw the money, you&apos;ll receive the initial deposit amount plus the interest earned.</p>
+          <p className="mb-2">A certificate of deposit (CD) is a financial product offered by banks and credit unions. It is a type of time deposit where you deposit a fixed amount of money for a specified period, known as
+          the term or maturity. In return for depositing your money, the financial institution pays you interest on the CD.</p>
+          <p>You choose the term or duration of the CD, which can range from a few months to several years. Common terms include 6 months, 1 year, 2 years, and 5 years. Once the CD reaches its maturity date, the term ends. At
+          this point, you can choose to withdraw the money or renew the CD for another term. If you decide to withdraw the money, you&apos;ll receive the initial deposit amount plus the interest earned.</p>
 
           <p className="font-medium mt-4">What are the pros and cons?</p>
-          <p>CDs offer safety and a fixed interest rate, providing predictable returns. They are considered low-risk investments as they are insured by the FDIC (Federal Deposit Insurance Corporation) up to certain limits, providing protection for your principal deposit. However, CDs have
-          limited liquidity as funds are typically locked in for the duration of the term, and early withdrawal penalties may apply. There is also a potential opportunity cost if interest rates rise during the CD term, and minimum deposit requirements may exist.</p>
+          <p>CDs offer safety and a fixed interest rate, providing predictable returns. They are considered low-risk investments as they are insured by the FDIC (Federal Deposit Insurance Corporation) up to certain limits,
+          providing protection for your principal deposit. However, CDs have limited liquidity as funds are typically locked in for the duration of the term, and early withdrawal penalties may apply. There is also a potential
+          opportunity cost if interest rates rise during the CD term, and minimum deposit requirements may exist.</p>
 
           <p className="font-medium mt-4">What are CDs best for?</p>
           <p>They are suitable for individuals looking to save money for a specific financial goal and are willing to have their funds locked in for a set period of time.</p>
@@ -355,33 +360,37 @@ const products: Product[] = [
 
         <TabPanel>
           <p className="font-medium mt-4">Liquid CD</p>
-          <p>This type of CD offers flexibility and early access to funds. While there may be a waiting period before you can withdraw your money, typically around 6 days, it allows you to reinvest or withdraw your funds without incurring penalties. However, liquid CDs often
-          have shorter terms and may offer lower interest rates compared to traditional CDs.</p>
+          <p>This type of CD offers flexibility and early access to funds. While there may be a waiting period before you can withdraw your money, typically around 6 days, it allows you to reinvest or withdraw your funds without
+          incurring penalties. However, liquid CDs often have shorter terms and may offer lower interest rates compared to traditional CDs.</p>
 
           <p className="font-medium mt-4">Add-On CD</p>
-          <p>An add-on CD allows you to make additional deposits to your existing CD over time. This feature is beneficial if you want to increase your savings gradually. Some banks may require minimum deposit amounts or that the funds come from another account you hold with
-          them. Add-on CDs generally have lower interest rates and may have different opening deposit requirements.</p>
+          <p>An add-on CD allows you to make additional deposits to your existing CD over time. This feature is beneficial if you want to increase your savings gradually. Some banks may require minimum deposit amounts or that
+          the funds come from another account you hold with them. Add-on CDs generally have lower interest rates and may have different opening deposit requirements.</p>
 
           <p className="font-medium mt-4">Step-Up CD</p>
-          <p>Step-up CDs offer the advantage of potentially increasing interest rates over the CD&apos;s term. This means that if market rates rise, your CD&apos;s interest rate will also increase accordingly, providing better returns. However, if market rates do not go up,
-          you may not benefit from higher rates and could end up with a lower return compared to a fixed-rate CD.</p>
+          <p>Step-up CDs offer the advantage of potentially increasing interest rates over the CD&apos;s term. This means that if market rates rise, your CD&apos;s interest rate will also increase accordingly, providing
+          better returns. However, if market rates do not go up, you may not benefit from higher rates and could end up with a lower return compared to a fixed-rate CD.</p>
 
           <p className="font-medium mt-4">IRA CD</p>
-          <p>IRA CDs are designed specifically for retirement savings. They can be either traditional or Roth IRAs. Traditional IRA CDs offer potential tax benefits such as deferring taxes on contributions and the ability to deduct qualifying contributions. However, early
-          withdrawals before the minimum retirement age may incur tax penalties. Roth IRA CDs provide the advantage of tax-free withdrawals during retirement as long as the account has been open for at least 5 years.</p>
+          <p>IRA CDs are designed specifically for retirement savings. They can be either traditional or Roth IRAs. Traditional IRA CDs offer potential tax benefits such as deferring taxes on contributions and the ability
+          to deduct qualifying contributions. However, early withdrawals before the minimum retirement age may incur tax penalties. Roth IRA CDs provide the advantage of tax-free withdrawals during retirement as long as
+          the account has been open for at least 5 years.</p>
         </TabPanel>
 
         <TabPanel>
           <p className="mb-2">When it comes to investing in CDs, there are different strategies you can consider to optimize your earnings and flexibility.</p>
 
           <p className="font-medium mt-4">Laddering</p>
-          <p>This strategy involves purchasing multiple CDs with staggered maturity dates. By diversifying your investments across different time frames, you can ensure that you have access to funds periodically. Short-term CDs provide liquidity, while longer-term CDs offer potentially higher interest rates. Laddering helps you avoid investing all your money at once and allows you to take advantage of changing interest rate environments.</p>
+          <p>This strategy involves purchasing multiple CDs with staggered maturity dates. By diversifying your investments across different time frames, you can ensure that you have access to funds periodically. Short-term
+            CDs provide liquidity, while longer-term CDs offer potentially higher interest rates. Laddering helps you avoid investing all your money at once and allows you to take advantage of changing interest rate environments.</p>
 
           <p className="font-medium mt-4">Bullet Strategy</p>
-          <p>With this approach, you invest your money in a single CD that aligns with your specific financial goal or timeline. The CD matures when you need the funds, allowing you to have a lump sum available for a major expense or investment opportunity. This strategy provides the potential for higher returns compared to a regular savings account, while still maintaining accessibility to your funds at a specific date.</p>
+          <p>With this approach, you invest your money in a single CD that aligns with your specific financial goal or timeline. The CD matures when you need the funds, allowing you to have a lump sum available for a major
+            expense or investment opportunity. This strategy provides the potential for higher returns compared to a regular savings account, while still maintaining accessibility to your funds at a specific date.</p>
 
           <p className="font-medium mt-4">Barbell Approach</p>
-          <p>The barbell strategy involves investing in both short-term and long-term CDs while skipping medium-term CDs. This approach allows you to take advantage of attractive short-term interest rates while still benefiting from the potentially higher yields of long-term CDs. By avoiding medium-term CDs, you have the flexibility to adjust your investments based on market conditions and interest rate fluctuations.</p>
+          <p>The barbell strategy involves investing in both short-term and long-term CDs while skipping medium-term CDs. This approach allows you to take advantage of attractive short-term interest rates while still benefiting
+            from the potentially higher yields of long-term CDs. By avoiding medium-term CDs, you have the flexibility to adjust your investments based on market conditions and interest rate fluctuations.</p>
         </TabPanel>
       </Tabs>
     ),
@@ -389,6 +398,256 @@ const products: Product[] = [
 ]
 
 const products2: Product[] = [
+  {
+    id: 1,
+    name: 'Limiting Money Beliefs',
+    href: '#',
+    imageSrc:'/images/roll-of-money.png',
+    imageAlt: 'hand holding a roll of money',
+    step: '1',
+    description: 'Challenge common money beliefs',
+    hasTabs: true,
+    cardContent: (
+      <Tabs>
+        <TabList>
+          <Tab>Intro</Tab>
+          <Tab>Challenge Limiting Beliefs</Tab>
+          <Tab>Visualize Your Dream Life</Tab>
+          <Tab>Take Action</Tab>
+        </TabList>
+        <TabPanel>
+        <p className="font-medium mt-4">What are limiting money beliefs?</p>
+        <p>Limiting money beliefs are deeply ingrained thoughts, attitudes, and beliefs that can hinder our financial success and hold us back from achieving our full potential. These
+        beliefs often stem from past experiences, societal influences, or negative messages we&apos;ve internalized about money. They create mental barriers and self-imposed limitations
+        that impact our financial behaviors and overall well-being.</p>
+
+        <p className="font-medium mt-4">What are examples of common limiting money beliefs?</p>
+        <p>&quot;Money is the root of all evil.&quot;</p>
+        <p>&quot;I&apos;ll never be good with money.&quot;</p>
+        <p>&quot;I don&apos;t deserve to be wealthy.&quot;</p>
+        <p>&quot;Rich people are greedy.&quot;</p>
+        <p>&quot;I can&apos;t make a living doing what I love.&quot;</p>
+        <p>&quot;I&apos;ll never get out of debt.&quot;</p>
+        <p>&quot;Money is scarce and hard to come by.&quot;</p>
+        </TabPanel>
+
+        <TabPanel>
+          <p className="font-medium mt-4">What are ways to challenge limiting money beliefs?</p>
+          <p className="mb-2">Begin by becoming aware of your limiting money beliefs. Reflect on your thoughts, emotions, and behaviors around money. Pay attention to recurring patterns or negative
+          self-talk. Acknowledge that these beliefs are not fixed truths but conditioned perceptions.</p>
+          <p className="mb-2">Ask yourself: &apos;Is this belief based on facts or assumptions?&apos; Look for evidence that contradicts your limiting beliefs. Seek out success stories of people
+          who have achieved financial abundance despite similar circumstances. Question the source and accuracy of your beliefs.</p>
+          <p className="mb-2">Explore alternative perspectives. Read books, listen to podcasts, or engage in discussions with people who have a positive and empowering money mindset. Surround yourself
+          with people who inspire you to think differently about money.</p>
+          <p className="mb-2">Practice cognitive restructuring. Cognitive restructuring involves consciously replacing negative or limiting thoughts with positive and empowering ones. When you catch
+          yourself thinking a limiting belief, pause and reframe it. For example, if you catch yourself thinking, &quot;I&apos;ll never be good with money,&quot; reframe it as, &quot;I am capable of learning
+          and improving my financial skills.&quot;</p>
+          <p>Embrace affirmations to reinforce positive money beliefs. For example, if you struggle with the belief that &quot;money is scarce,&quot; affirm, &quot;I am open to receiving
+          abundant financial opportunities and resources.&quot;</p>
+        </TabPanel>
+
+        <TabPanel>
+          <p className="font-medium mt-4">What are ways to reframe your money mindset?</p>
+          <p className="mb-2">Visualization and emotional rehearsal techniques are powerful tools for reprogramming your mindset. By engaging your imagination and emotions, you can create a vivid mental picture of
+          your ideal life, thereby reinforcing positive beliefs and attitudes towards money.</p>
+          <p className="mb-2">Take a few moments each day to visualize yourself achieving your financial goals. See yourself with a healthy bank account, enjoying financial freedom, and experiencing your ideal lifestyle.
+          Imagine the emotions associated with financial success—joy, confidence, security—and immerse yourself in those feelings.</p>
+          <p className="mb-2">To enhance the effectiveness, incorporate sensory details into your practice. Imagine the sights, sounds, smells, and even physical sensations that accompany your desired financial reality.
+          The more vivid and immersive you can make the visualization, the more impact it will have on your subconscious mind.</p>
+          <p>Emotional rehearsal goes hand in hand with visualization. It involves not only picturing the desired outcomes but also actively experiencing the positive emotions associated with those outcomes. As you
+          visualize your financial success, tap into the feelings of gratitude, abundance, and empowerment. Allow yourself to fully feel and embody those emotions.</p>
+        </TabPanel>
+
+        <TabPanel>
+          <p className="font-medium mt-4">How can I take action against limiting money beliefs?</p>
+          <p className="mb-2">Define clear and specific financial goals that align with your aspirations. Setting goals helps you shift your focus from limiting beliefs to actionable steps that move you forward. Break down
+          your goals into smaller milestones to make progress more tangible and attainable.</p>
+          <p className="mb-2">Limiting money beliefs often stem from a fear of taking risks or stepping out of your comfort zone. Overcome this fear by gradually taking calculated risks. Start with small steps that push you
+          beyond your perceived limitations. Whether it&apos;s starting a side business, investing in assets, or negotiating a better salary, taking risks helps you challenge and overcome your limiting beliefs.</p>
+          <p className="mb-2">Acknowledge and celebrate each small win along your financial journey. By celebrating progress, you reinforce positive beliefs and build confidence in your ability to overcome limitations. Recognize
+          that every step forward is a step away from your limiting beliefs and towards financial empowerment.</p>
+          <p>If you&apos;re feeling overwhelmed, consider seeking help from a financial coach, therapist, or counselor. They can provide guidance, support, and techniques tailored to your specific challenges, helping you navigate
+          and overcome your limiting beliefs more effectively.</p>
+        </TabPanel>
+      </Tabs>
+    ),
+  },
+  {
+    id: 2,
+    name: 'Financial Fears and Anxiety',
+    href: '#',
+    imageSrc:'/images/fears.png',
+    imageAlt: 'person jumping off a cliff',
+    step: '2',
+    description: 'Repair your relationship with money',
+    hasTabs: true,
+    cardContent: (
+      <Tabs>
+        <TabList>
+          <Tab>Intro</Tab>
+          <Tab>Overcoming Your Fears</Tab>
+          <Tab>Taking Targeted Action</Tab>
+        </TabList>
+        <TabPanel>
+          <p className="font-medium mt-4">How do financial fears and anxiety impact you?</p>
+          <p className="mb-2">Financial fears can lead to heightened levels of stress, anxiety, and even depression. Constantly worrying about money can cause sleep disturbances, irritability, mood swings, and difficulty
+          concentrating. These fears can also manifest into physical symptoms, such as high blood pressure, heart problems, and compromised immune function.</p>
+          <p className="mb-2">The fear of making the wrong choice or losing money can paralyze you from making important decisions, lead to indecision and missed opportunities for financial growth. Fear and anxiety can also
+          hinder your willingness to explore new opportunities or take the necessary steps for financial growth, whether it&apos;s negotiationg a higher salary, starting a business, or investing in yourself.</p>
+          <p className="mb-2">Fear of loss may prevent you from taking calculated risks that could yield higher returns. This can limit your ability to build wealth and achieve long-term financial security. On the other hand,
+          financial anxiety can also lead to impulsive financial decisions. When overwhelmed by fear, you may be driven to seek immediate relief or reassurance, which can result in impulsive spending, excessive borrowing, or
+          getting scammed. These actions can exacerbate financial difficulties and perpetuate the cycle of fear and anxiety.</p>
+          <p>Money-related stress can lead to conflicts, disagreements, and a lack of open communication about financial matters. The emotional burden of financial anxiety can impact the overall quality of your relationships
+          and create additional sources of stress.</p>
+        </TabPanel>
+
+        <TabPanel>
+          <p className="font-medium mt-4">What are specific strategies you can take to overcome financial fears and anxiety?</p>
+          <p className="mb-2">If you have a fear of debt, educate yourself about different types of debt and their pros and cons. Create a plan to tackle your existing debt by prioritizing high-interest debts and developing a
+          repayment strategy. Consider seeking guidance from a credit counselor who can provide personalized advice and help you create a debt management plan.</p>
+          <p className="mb-2">If you&apos;re anxious about not having enough money for emergencies, set up automated savings. Allocate a portion of your income to a separate emergency fund or savings account. Having a financial
+          safety net can alleviate anxiety about unexpected expenses.</p>
+          <p className="mb-2">If investing makes you nervous, focus on diversification. Spread your investments across different asset classes and sectors to minimize risk. Start with low-risk options such as index funds or
+          exchange-traded funds (ETFs) before gradually exploring more complex investments.</p>
+          <p>If you are worried about not being able to retire comfortably, create a retirement plan that factors in your desired lifestyle, expenses, and savings goals. Use retirement calculators to estimate how much you need
+          to save and explore investment vehicles like employer-sponsored retirement accounts or individual retirement accounts (IRAs). Adjust your plan periodically to ensure you stay on track.</p>
+        </TabPanel>
+
+        <TabPanel>
+          <p className="font-medium mt-4">What are ways you can take targeted action?</p>
+          <p className="mb-2">Avoid setting unrealistic financial goals that may create unnecessary pressure and anxiety. Set specific and measurable goals that are attainable and aligned with your current financial situation.
+          Break them down into smaller milestones and celebrate each achievement along the way. Tracking progress and achieving realistic goals boosts confidence and reduces anxiety.</p>
+          <p className="mb-2">To ease financial anxiety related to unexpected expenses, prioritize building an emergency fund. Start by saving a small amount each month and gradually increase it over time. Aim to accumulate at
+          least 3 to six months&apos; worth of living expenses in your emergency fund. Having this buffer can provide peace of mind and mitigate financial worries during challenging times.</p>
+          <p className="mb-2">If you lack confidence in your financial skills, invest in your financial education, whether it&apos;s attending works, taking courses, or even watching YouTube videos. Knowledge and skills empower
+          you to make informed decisions and reduce anxiety.</p>
+          <p>Financial worries can take a toll on your overall well-being. Prioritize self-care activities that help reduce stress, such as regular exercise, engaging in hobbies, and spending quality time with loved ones.
+          Establishing a self-care routine ensures that you maintain a healthy balance between managing your finances and taking care of yourself.</p>
+        </TabPanel>
+      </Tabs>
+    ),
+  },
+  {
+    id: 3,
+    name: 'An Abundance Mindset',
+    href: '#',
+    imageSrc:'/images/abundance.png',
+    imageAlt: 'person holding a hand of cards',
+    step: '3',
+    description: 'Cultivate and reinforce an abundance mindset',
+    hasTabs: true,
+    cardContent: (
+      <Tabs>
+        <TabList>
+          <Tab>Intro</Tab>
+          <Tab>Rewiring Your Thoughts</Tab>
+          <Tab>Open Yourself Up</Tab>
+        </TabList>
+        <TabPanel>
+          <p className="font-medium mt-4">What is an abundance mindset and how does it relate to personal finance?</p>
+          <p className="mb-2">Having an abundance mindset means adopting a positive and empowered outlook when it comes to money. It involves cultivating beliefs and attitudes that promote financial well-being,
+          growth, and abundance. You are confident in your own abilities to manage money, make sound financial decisions, and create financial success. You trust in your skills, knowledge, and resourcefulness.</p>
+          <p className="mb-2">The first step is to believe that there are plenty of opportunities for wealth and financial success. Instead of seeing money as scarce or limited, you believe that there is enough for
+          everyone and that you can create wealth and prosperity in your own life.</p>
+          <p className="mb-2">An abundance mindset is rooted in a growth mindset. You focus on the opportunities for financial growth rather than dwelling on limitations or obstacles. Instead of being discouraged by
+          failures, you view them as learning lessons and stepping stones to success. You maintain an optimistic perspective, seeking out potential avenues for increasing your income and expanding your financial knowledge.</p>
+          <p className="mb-2">You appreciate what you have, recognizing the progress you have made and the resources available to you. Gratitude attracts more abundance into your life and helps you develop a positive
+          relationship with money</p>
+          <p className="mb-2">Investing time, effort, and resources can lead to greater returns and opportunities for wealth creation. Instead of viewing others as competitors, you seek out opportunities
+          for cooperation and creating value for others. There is enough success and wealth to go around and by serving others and meeting their needs, you also create opportunities for yourself.</p>
+        </TabPanel>
+
+        <TabPanel>
+          <p className="font-medium mt-4">How can you transform your relationship with money through an abundance mindset?</p>
+          <p className="mb-2">Become aware of any limiting beliefs you hold about money, such as beliefs around scarcity, lack, or unworthiness. Challenge these beliefs by examining the evidence supporting them and
+          seeking alternative perspectives. Replace them with empowering beliefs that align with abundance, such as &quot;There is always enough money available to me&quot; or &quot;I am deserving of financial success.&auot;</p>
+          <p className="mb-2">Use visualization techniques to vividly imagine your financial goals as already achieved. Create a mental image of yourself living a life of financial abundance and success. Pair this visualization
+          with positive affirmations that reinforce your beliefs in abundance and prosperity. This practice helps align your subconscious mind with your conscious desires and enhances your ability to manifest abundance.</p>
+          <p className="mb-2">Embrace the concept of giving and sharing, even when you feel like you have limited resources. Practice acts of generosity, whether through charitable donations, supporting others&apos; financial goals,
+          or simply sharing your knowledge and expertise. By giving, you open yourself up to receiving and create a positive flow of abundance in your life.</p>
+          <p className="mb-2">Pay attention to the language you use when talking about money and your financial situation. Replace negative or scarcity-oriented phrases with positive, empowering statements. Be mindful of your
+          self-talk and ensure that it reflects an abundance mindset. Speak affirmations of abundance and wealth regularly to reinforce your new beliefs.</p>
+          <p>Trust the process and have faith in your ability to manifest abundance into your life. Avoid comparing your financial journey to others&apos;, as each person&apos;s path is unique.</p>
+        </TabPanel>
+
+        <TabPanel>
+          <p className="font-medium mt-4">What are examples of actions you can take to practice having an abundance mindset?</p>
+          <p className="mb-2">Keep a journal or use a budgeting app to track your financial progress regularly. Document your achievements, no matter how small, and celebrate them. This practice helps you shift your focus from
+          what&apos;s lacking to what you have accomplished.</p>
+          <p className="mb-2">Incorporate abundance rituals into your daily routine. For example, create a gratitude jar where you write down something financially positive that happened each day and read them periodically. Engage
+          in visualization exercises where you imagine yourself surrounded by abundance and financial success.</p>
+          <p className="mb-2">Look for abundance and prosperity in other areas of your life, such as relationships, health, and personal growth. By recognizing abundance in various aspects of life, you shift your overall mindset to
+          one that expects and attracts abundance in all areas.</p>
+          <p className="mb-2">Assess your attitudes and behaviors around money. Are you treating money with respect and gratitude, or do you harbor negative emotions towards it? Develop a healthy relationship with money by practicing
+          responsible financial habits, such as budgeting, saving, and mindful spending. Treat money as a tool for creating a better life rather than a source of stress or anxiety.</p>
+          <p>Shift your perspective from envy or comparison to celebrating the financial success of others. Recognize that their success does not diminish your own potential for abundance. Instead, use their achievements as
+          inspiration and evidence that abundance is possible for everyone, including yourself.</p>
+        </TabPanel>
+      </Tabs>
+    ),
+  },
+  {
+    id: 4,
+    name: 'Mindful Spending',
+    href: '#',
+    imageSrc:'/images/mindful-spending.png',
+    imageAlt: 'person meditating',
+    step: '4',
+    description: 'Align your finances with your personal values',
+    hasTabs: true,
+    cardContent: (
+      <Tabs>
+        <TabList>
+          <Tab>Intro</Tab>
+          <Tab>Benefits of Mindfulness</Tab>
+          <Tab>Practicing Mindfulness</Tab>
+        </TabList>
+        <TabPanel>
+          <p className="font-medium mt-4">What is mindful spending?</p>
+          <p className="mb-2">Mindful spending is a conscious and intentional approach to managing your money and making purchasing decisions. It involves being fully present and aware of your financial choices,
+          considering their impact on your overall financial well-being and aligning your spending with your values and priorities.</p>
+          <p className="mb-2">Start by developing awareness of your financial situation, income, expenses, and financial goals. By regularly reviewing your finances and understanding your financial picture, you
+          gain clarity on where your money is going and can make more informed spending decisions.</p>
+          <p className="mb-2">It&apos;s about making deliberate and purposeful choices about how you allocate your money. Instead of impulsive or unconscious spending, time to consider whether a purchase aligns with
+          your values, goals, and priorities.</p>
+          <p className="mb-2">Before making a purchase, ask yourself whether it brings genuine value and satisfaction to your life. Consider the long-term benefits and impact of the purchase, rather than focusing
+          solely on immediate gratification.</p>
+          <p>Mindful spending involves differentiating between needs and wants. Prioritize spending on essential needs like housing, food, healthcare, and debt repayment, ensuring that these areas are adequately
+            covered. Evaluate your wants and desires carefully, considering whether they align with your financial goals and whether there are more affordable alternatives.</p>
+        </TabPanel>
+
+        <TabPanel>
+          <p className="font-medium mt-4">What are some benefits of mindful spending?</p>
+          <p className="mb-2">By being present and attuned to your thoughts, emotions, and actions related to money, you gain a clearer understanding of your financial situation. This awareness allows you to identify
+          areas for improvement and align your spending with what truly matters to you. You become more intentional and deliberate in your purchasing decisions, focusing on value rather than impulsive desires. This can
+          lead to more mindful and responsible spending habits, ultimately helping you save more and avoid unnecessary debt.</p>
+          <p className="mb-2">Mindfulness encourages gratitude for what you have, contentment with your current financial situation, and a sense of sufficiency. By practicing mindfulness, you can develop a mindset of
+          abundance and appreciation for the resources and opportunities available to you, leading to a more balanced and fulfilling relationship with money.</p>
+          <p className="mb-2">Practices like meditation or deep breathing exercises cultivate emotional regulation skills, allowing you to manage stress, anxiety, and other negative emotions that may trigger impulsive
+          or unhealthy financial behaviors. Instead of relying on retail therapy or emotional spending, mindfulness helps you develop healthier coping mechanisms, focus on the present, and control your emotions.</p>
+          <p>Mindfulness supports effective financial planning by promoting a focus on the present moment while keeping long-term goals in mind. It allows you to allocate your financial resources thoughtfully and develop
+            strategic plans to achieve your objectives.</p>
+        </TabPanel>
+
+        <TabPanel>
+          <p className="font-medium mt-4">What are ways to practice mindful spending?</p>
+          <p className="mb-2">Conduct research and comparison shopping before making major purchases. Take the time to explore different options, read reviews, and compare prices to ensure you are getting the best value
+          for your money.</p>
+          <p className="mb-2">Embracing delayed gratification. Instead of giving in to impulsive purchases, take a step back and give yourself time to consider whether the purchase is truly necessary and aligned with your
+          financial goals. This helps you avoid buyer&apos;s remorse and make more thoughtful decisions. For example, before making a purchase online, leave the item(s) in your cart for a few days to avoid impulse purchases.</p>
+          <p className="mb-2">Incorporate mindfulness into your budgeting process. Create a budget that reflects your financial goals and values, and regularly review and adjust it as needed. Be mindful of your spending habits
+          and track your expenses to ensure they align with your budget.</p>
+          <p className="mb-2">Cultivate a sense of gratitude and contentment with what you already have. Practice appreciating the things you own and the experiences you&apos;ve had, rather than constantly seeking external
+          sources of happiness through material possessions.</p>
+          <p>Mindful spending involves being aware of your emotional triggers and avoiding using retail therapy or impulsive spending as a means to cope with stress, boredom, or other emotions. Instead, explore healthier ways
+            to address your emotional needs that don&apos;t involve spending money.</p>
+        </TabPanel>
+      </Tabs>
+    ),
+  },
+]
+
+const products3: Product[] = [
   {
     id: 1,
     name: 'Types of Credit',
@@ -681,7 +940,7 @@ const products2: Product[] = [
   },
 ]
 
-const products3: Product[] = [
+const products4: Product[] = [
   {
     id: 1,
     name: '50/30/20 Budget Rule',
@@ -968,7 +1227,7 @@ const products3: Product[] = [
   },
 ]
 
-const products4: Product[] = [
+const products5: Product[] = [
   {
     id: 1,
     name: 'Getting Started',
@@ -1037,7 +1296,7 @@ const products4: Product[] = [
   },
   {
     id: 2,
-    name: 'Breaking Down the Home-Buying Process',
+    name: 'The Home-Buying Process',
     href: '#',
     imageSrc: '/images/modern-home.png',
     imageAlt: "outdoor lamps turned on outside of home",
@@ -1221,7 +1480,7 @@ const products4: Product[] = [
   },
 ]
 
-const products5: Product[] = [
+const products6: Product[] = [
   {
     id: 1,
     name: 'Emergency Funds and Sinking Funds',
@@ -1577,7 +1836,7 @@ const products5: Product[] = [
     },
   ]
 
-  const products6: Product[] = [
+  const products7: Product[] = [
     {
       id: 1,
       name: 'Cash',
@@ -2146,29 +2405,36 @@ export default function Learn() {
 
       <div className="bg-white">
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+          <h1 className="text-4xl font-bold text-center">Learning Hub</h1>
+
           {/* How to Bank */}
           <h2 className="text-3xl font-bold tracking-tight text-gray-900">How to Bank</h2>
           <ProductList products={products} setSelectedProduct={setSelectedProduct} />
+          <div className="mb-20" />
+
+          {/* Money Mindset Makeover */}
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900">Money Mindset Makeover</h2>
+          <ProductList products={products2} setSelectedProduct={setSelectedProduct} />
 
           {/* Credit 101 */}
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 mt-20">Breaking Down Credit</h2>
-          <ProductList products={products2} setSelectedProduct={setSelectedProduct} />
+          <ProductList products={products3} setSelectedProduct={setSelectedProduct} />
 
           {/* Budgeting Strategies */}
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 mt-20">Budgeting Strategies to Reclaim Control Over Your Finances</h2>
-          <ProductList products={products3} setSelectedProduct={setSelectedProduct} />
+          <ProductList products={products4} setSelectedProduct={setSelectedProduct} />
 
           {/* The First-Time Homebuyer's Journey */}
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 mt-20">The First-Time Homebuyer&apos;s Journey</h2>
-          <ProductList products={products4} setSelectedProduct={setSelectedProduct} />
+          <ProductList products={products5} setSelectedProduct={setSelectedProduct} />
 
           {/* Setting Yourself Up For Success Series */}
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 mt-20">Setting Yourself Up For Financial Success</h2>
-          <ProductList products={products5} setSelectedProduct={setSelectedProduct} />
+          <ProductList products={products6} setSelectedProduct={setSelectedProduct} />
 
           {/* Assets and Markets */}
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 mt-20">Assets and Markets</h2>
-          <ProductList products={products6} setSelectedProduct={setSelectedProduct} />
+          <ProductList products={products7} setSelectedProduct={setSelectedProduct} />
 
           {selectedProduct && selectedProduct.hasTabs !== undefined && selectedProduct.hasTabs && (
             <Dialog
@@ -2203,6 +2469,7 @@ export default function Learn() {
               </div>
             </Dialog>
           )}
+
         </div>
       </div>
 
