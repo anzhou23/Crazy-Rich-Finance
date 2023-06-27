@@ -2390,6 +2390,447 @@ const products6: Product[] = [
     },
 ]
 
+const products8: Product[] = [
+  {
+    id: 1,
+    name: 'Types of Student Loans',
+    href: '#',
+    imageSrc: '/images/designer-sketching.png',
+    imageAlt: 'Designer sketching wireframes',
+    step: '1',
+    description: 'Understanding how student loans work',
+    hasTabs: true,
+    cardContent: (
+      <Tabs>
+        <TabList>
+          <Tab>Intro</Tab>
+          <Tab>Federal Loans</Tab>
+          <Tab>Private Loans</Tab>
+          <Tab>Subsidized vs Unsubsidized</Tab>
+        </TabList>
+        <TabPanel>
+          <p className="font-medium">What are student loans?</p>
+          <p className="mb-2">Student loans are financial aid provided to students to help them pay for their education expenses, including tuition, fees, books, supplies, and living expenses. These loans are
+          typically offered by government entities, such as the federal government, or by private lenders, such as banks or credit unions.</p>
+          <p className="mb-2">There are 2 main types of student loans: federal student loans and private student loans. Students apply for student loans by submitting a Free Application for Federal Student Aid
+          (FAFSA) in the case of federal loans. Private student loans may have separate application processes through individual lenders, though some universities and colleges will include some options in your
+          financial aid package.</p>
+          <p className="mb-2">Once the application is processed, the student receives a financial aid package that includes different loan offers. Federal loans are typically awarded based on financial need, while
+          private loans may consider creditworthiness and other factors. The student reviews the loan offers and accepts the loans they wish to borrow based on the terms, interest rates, and repayment options. The
+          loan funds are the disbursed either directly to the school (for tuition and fees) or to the student (for other education-related expenses).</p>
+        </TabPanel>
+
+        <TabPanel>
+          <p className="font-medium">What are federal loans?</p>
+          <p className="mb-2">These loans are offered by the U.S. Department of Education and backed by the federal government. They generally offer more favorable terms and benefits compared to private loans.
+          There are different types of federal loans, including:</p>
+          <ul className="list-disc ml-6">
+            <li>Direct subsidized loans are available to undergraduate students with demonstrated financial need. The government pays the interest on the loan while the student is in school, during the grace period,
+            and during deferment periods.</li>
+            <li>Direct unsubsidized loans are available to undergraduate and graduate students regardless of financial need. Interest begins accruing as soon as the loan is disbursed, and students are responsible for
+            paying the interest while in school or allowing it to accrue and be added to the loan balance.</li>
+            <li>Direct PLUS loans are available to graduate students or parents of dependent undergraduate students. They require a credit check and may have higher interest rates compared to other federal loans.</li>
+            <li>Federal Perkins loans are for students with exceptional financial need. They are administered by individual schools and have limited funding availability.</li>
+          </ul>
+          <p>Federal student loans have fixed interest rates, meaning the interest rate remains the same for the life of the loan. They also offer income-driven repayment plans, which calculate monthly payments based on
+          the borrower&apos;s income and family size.</p>
+        </TabPanel>
+
+        <TabPanel>
+          <p className="font-medium mt-4">What are private loans?</p>
+          <p className="mb-2">These loans are offered by private lenders, such as banks, credit unions, or online lenders. Unlike federal student loans, private student loans are not subsidized or guaranteed by the federal
+          government. Instead, they are based on the borrower&apos;s creditworthiness and generally have higher interest rates and stricter repayment terms. Private loans may require a credit check and a co-signer
+          if the borrower has limited credit history or income.</p>
+          <p className="mb-2">To obtain a private student loan, borrowers need to apply directly with a private lender. The application process usually involves submitting financial information, including credit history and
+          income, to determine loan eligibility and interest rates.</p>
+          <p className="mb-2">Private student loans often have variable interest rates, meaning the interest rate can change over time based on market conditions, though some private lenders also offer fixed interest rate
+          options. There are also different borrowing limits depending on the lender and the borrower&apos;s creditworthiness. These limits may vary from lender to lender and are usually higher than the limits for federal
+          loans. Borrowers should carefully consider their borrowing needs and only take out the amount necessary to cover educational expenses.</p>
+          <p className="mb-2">Additionally, private student loans have varying repayment terms, ranging from 5 to 20 years. Unlike federal loans, which offer flexible repayment options, private loans often have less flexible
+           terms and fewer options for repayment assistance.</p>
+        </TabPanel>
+
+        <TabPanel>
+          <p className="font-medium">What is the difference between subsidized and unsubsidized loans?</p>
+          <p className="mb-2">The main difference between subsidized and unsubsidized loans lies in how the interest on the loans is handled during certain periods.</p>
+          <p className="mb-2">Subsidized loans are available to undergraduate students with demonstrated financial need, which is determined by the information provided on the Free Application for Federal Student Aid
+          (FAFSA). The government pays the interest on subsidized loans while the borrower is enrolled in school at least half-time, during the grace period (usually 6 months after leaving school), and during authorized deferment
+          periods. This means the loan balance does not increase during these periods. However, there are annual and aggregate loan limits for subsidized loans, meaning there is a maximum amount that can be borrowed. Additionally,
+          because eligibility for subsidized loans is determined based on financial need, not all students may qualify for them.</p>
+          <p className="mb-2">Unsubsidized loans are available to undergraduate, graduate, and professional students regardless of financial need. Interest on unsubsidized loans starts accruing from the time the loan is disbursed
+          to the borrower. Borrowers have the option to pay the interest while in school, during deferment, and during the grace period. If the interest is not paid, it will be capitalized (added to the loan balance) at the end of
+          the grace period or deferment. These loans have higher annual and aggregate loan limits than subsidized loans, though the exact limits depend on the student&apos;s year in school and dependency status. Because eligibility
+          for unsubsidized loans is not based on financial need, most students are eligible to borrow them.</p>
+        </TabPanel>
+      </Tabs>
+    ),
+  },
+  {
+    id: 2,
+    name: 'Student Loan Repayment Plans',
+    href: '#',
+    imageSrc: '/images/person-holding-books.png',
+    imageAlt: 'Student holding a stack of books',
+    step: '2',
+    description: 'Creating a student loan repayment plan',
+    hasTabs: true,
+    cardContent: (
+      <Tabs>
+        <TabList>
+          <Tab>Intro</Tab>
+          <Tab>Loan Payments</Tab>
+          <Tab>Factors to Consider</Tab>
+        </TabList>
+        <TabPanel>
+          <p className="font-medium">What are the different types of repayment options?</p>
+          <p className="mb-2">There are several student loan repayment options available to borrowers, offering flexibility in managing their loan payments based on their financial situation. Here are some of the most common ones:</p>
+          <ul className="list-disc ml-6">
+            <li>Standard Repayment Plan: This is the default repayment plan for federal student loans. It involves fixed monthly payments over a 10-year period. The monthly payments are calculated to ensure the loan is fully repaid by the end of the term. This plan typically
+            results in higher monthly payments but allows borrowers to pay off their loans more quickly, minimizing interest costs.</li>
+            <li>Graduated Repayment Plan: Under this plan, borrowers start with lower monthly payments that gradually increase over time, usually every 2 years. The repayment term is typically 10 years, but it can be extended up to 30 years for consolidated loans. This plan may be
+            suitable for borrowers who anticipate increasing income over time.</li>
+            <li>Extended Repayment Plan: This plan extends the repayment term beyond the standard 10-year period, usually up to 25 years, depending on the loan balance. Monthly payments can be fixed or graduated, offering lower monthly payments compared to the standard plan. However,
+            extending the repayment term results in paying more interest over the loan&apos;s lifetime.</li>
+            <li>Income-Driven Repayment (IDR) Plans: IDR plans are designed to make loan payments more affordable based on the borrower&apos;s income and family size. There are several IDR plans available, including income-based repayment (IBR), pay as you earn (PAYE), revised pay as
+            you earn (REPAYE), and income-contingent repayment (ICR).</li>
+            <li>Income-Sensitive Repayment: This option is available for federal loans only and allows borrowers to make monthly payments based on their income, which is recalculated annually based on income changes. The repayment term is typically up to 10 years.</li>
+          </ul>
+        </TabPanel>
+
+        <TabPanel>
+          <p className="font-medium">How do you calculate monthly loan payments using different repayment plans?</p>
+          <p className="mb-2">Calculating monthly loan payments under different repayment plans involves considering various factors, such as the loan balance, interest rate, repayment term, and the specific repayment plan&apos;s requirements.</p>
+          <ul className="list-disc ml-6">
+            <li>Standard Repayment Plan: To calculate the monthly payment, divide the loan balance by the number of months in the repayment term. For example, if the loan balance is $30,000 and the repayment term is 10 years (120 months), the monthly payment would be $250 ($30,000 / 120).</li>
+            <li>Graduated Repayment Plan: Calculating the monthly payments for this plan can be more complex, as it involves projecting future income and payments. Generally, loan servicers provide information on how payments will increase over time.</li>
+            <li>Extended Repayment Plan: To calculate the monthly payment, divide the loan balance by the number of months in the extended term. For example, if the loan balance is $40,000 and the repayment term is 25 years (300 months), the monthly payment would be approximately
+            $133.33 ($40,000 / 300).</li>
+            <li>Income-Driven Repayment (IDR) Plans: To calculate the monthly payment, determine the borrower&apos;s discretionary income, which is usually calculated as the difference between the borrower&apos;s adjusted gross income and 1.5X the poverty guideline for the borrower&apos;s
+            family size. Multiply the discretionary income by the repayment percentage specified in the plan. For example, if the discretionary income is $30,000 and the repayment percentage is 10%, the annual payment amount would be $3,000. Divide the annual payment amount by 12 to calculate
+            the monthly payment. In this example, the monthly payment would be $250 ($3,000 / 12).</li>
+          </ul>
+        </TabPanel>
+
+        <TabPanel>
+          <p className="font-medium mt-4">What are factors you should consider when choosing a repayment plan based on individual financial circumstances?</p>
+          <p className="mb-2">Consider your current income and potential future income. If you have a low income or anticipate a lower income in the near term, an income-driven repayment plan may provide more affordable monthly payments. If your income is stable or expected to increase,
+          a standard or graduated repayment plan may be better.</p>
+          <p className="mb-2">If you have dependents, a plan that considers family size may result in lower monthly payments, as the calculation factors in the number of dependents you support. If you have a significant loan balance, a longer repayment term or an income-driven repayment
+          plan can help lower monthly payments. However, keep in mind that longer repayment terms can result in paying more interest over the life of the loan.</p>
+          <p className="mb-2">Take into account the interest rates on your loans. If you have loans with higher interest rates, paying them off faster through a standard repayment plan or by making additional payments may save you money in interest over the long run.</p>
+          <p className="mb-2">Consider your overall financial goals. If you have other financial priorities, such as saving for retirement or paying off higher-interest debt, you may opt for a repayment plan that allows you to allocate more funds towards those goals by providing lower
+          monthly payments.</p>
+          <p>Evaluate the flexibility and repayment options available under each plan. Income-driven repayment plans typically offer more flexibility, such as deferment or forbearance options during financial hardships. If you anticipate potential challenges in meeting your monthly
+          payments consistently, a more flexible plan may be preferable.</p>
+        </TabPanel>
+      </Tabs>
+    ),
+  },
+  {
+    id: 3,
+    name: 'Consolidation and Refinancing',
+    href: '#',
+    imageSrc: '/images/person-looking-at-laptop.png',
+    imageAlt: 'Birds eye view of person looking at latop',
+    step: '3',
+    description: 'Exploring loan consolidation and refinancing options',
+    hasTabs: true,
+    cardContent: (
+      <Tabs>
+        <TabList>
+          <Tab>Federal Loans</Tab>
+          <Tab>Private Loans</Tab>
+          <Tab>Pros and Cons</Tab>
+        </TabList>
+        <TabPanel>
+          <p className="font-medium">What are the loan consolidation options for federal loans?</p>
+          <p className="mb-2">Federal student loan consolidation allows borrowers to combine multiple federal student loans into a single loan with one monthly payment. Here are the main loan consolidation options for federal loans:</p>
+          <p className="mb-2">The Direct Consolidation Loan program is offered by the U.S. Department of Education. It allows borrowers to consolidate most types of federal loans. Some of its key features include:</p>
+          <ul className="list-disc ml-6 mb-2">
+            <li>Simplified repayment: Consolidating loans combines them into one loan, resulting in a single monthly payment instead of multiple payments to different loan servicers.</li>
+            <li>Fixed interest rate: The interest rate on a Direct Consolidation Loan is fixed and based on the weighted average of the interest rates of the loans being consolidated, rounded up to the nearest 1/8th of a percent.</li>
+            <li>Extended repayment term: Direct Consolidation Loans offer repayment terms of up to 30 years, depending on the loan balance.</li>
+            <li>Access to additional repayment plans: Consolidation allows borrowers to access income-driven repayment plans and other repayment options that may not have been available on their original loans.</li>
+          </ul>
+          <p className="mb-2">Federal Family Education Loan (FFEL) Consolidation Loan: This consolidation option is for borrowers who have FFEL Loans, which were originated by private lenders but are backed by the federal government. These loans are no longer available
+          to new borrowers, but existing borrowers may still be eligible to consolidate them. They offer similar benefits as Direct Consolidation Loans, including simplified repayment, fixed interest rates based on weighted averages, and extended repayment terms.</p>
+          <p>Private Consolidation Loans: These loans are offered by private lenders and are used to consolidate both federal and private student loans. They have different terms and conditions compared to federal consolidation loans, including variable interest rates,
+          credit checks, and eligibility requirements set by the lender.</p>
+        </TabPanel>
+
+        <TabPanel>
+          <p className="font-medium">What are the loan consolidation options for private loans?</p>
+          <p className="mb-2">Loan consolidation options for private student loans involve refinancing with a private lender rather than consolidating through a federal program. Private student loan refinancing, also known as private consolidation, allows borrowers to combine multiple
+          private student loans into a single loan with a new private lender. Here&apos;s how it works:</p>
+          <ul className="list-disc ml-6">
+            <li>Find a lender: Research and compare private lenders that offer student loan refinancing. Consider factors such as interest rates, repayment terms, fees, and borrower benefits.</li>
+            <li>Application and eligibility: Apply for refinancing with the chosen lender. Lenders typically assess factors like creditworthiness, income, and employment history to determine eligibility and the interest rate you qualify for.</li>
+            <li>Loan repayment terms: If approved, you&apos;ll receive a new loan with a fixed or variable interest rate, depending on the lender and your preference. You may have the option to choose a new repayment term, such as 5, 10, 15, or 20 years.</li>
+            <li>Consolidation and repayment: The new loan pays off your existing private student loans, effectively consolidating them. Going forward, you make a single monthly payment to the new lender based on the terms of the refinanced loan.</li>
+          </ul>
+          <p className="mt-2 mb-2">Direct Consolidation Loan (Private): These loans function similarly to private student loan refinancing, allowing borrowers to combine multiple private student loans into a single loan with new terms. The process involves applying for a consolidation loan
+          with the lender, going through an underwriting process, and receiving a new loan that pays off the original loans.</p>
+          <p>Personal Loan: In some cases, borrowers may choose to consolidate their private student loans using a personal loan obtained from a bank or credit union. This option involves taking out a personal loan with a fixed interest rate and using the funds to pay off the existing
+          private student loans.</p>
+          <p></p>
+        </TabPanel>
+
+        <TabPanel>
+          <p className="font-medium">What are the benefits and drawbacks of loan consolidation?</p>
+          <p className="mb-2">Pros of Loan Consolidation:</p>
+          <ul className="list-disc ml-6">
+            <li>Simplified Repayment: Consolidating multiple loans into a single loan can make tracking and managing your loans more convenient, helping you stay organized and reduce the chances of missing payments.</li>
+            <li>Potentially Lower Monthly Payments: Loan consolidation can result in lower monthly payments, especially if you extend the repayment term. This can provide short-term relief and make your monthly payments more manageable.</li>
+            <li>Access to Additional Repayment Options: Consolidating federal loans through the Direct Consolidation Loan program can grant you access to various repayment plans, including income-driven repayment options.</li>
+            <li>Fixed Interest Rate: Consolidating variable-rate loans into a new loan with a fixed interest rate can provide stability and protect you from potential interest rate increases in the future. It allows for predictable monthly payments throughout the loan term.</li>
+          </ul>
+          <p className="mt-2 mb-2">Cons of Loan Consolidation:</p>
+          <ul className="list-disc ml-6">
+            <li>Extended Repayment Term: If you choose to extend your repayment term when consolidating, it can result in a longer time to pay off your loans. While this can lower your monthly payments, it may also increase the total interest paid over the life of the loan.</li>
+            <li>Loss of Benefits: When you consolidate loans, you may lose certain borrower benefits, such as interest rate discounts, principal rebates, or loan forgiveness options that were associated with your original loans.</li>
+            <li>Potential Higher Total Interest: Consolidating loans may result in paying more interest over the life of the loan, particularly if you extend the repayment term.</li>
+            <li>Ineligibility For Federal Loan Benefits: If you consolidate federal loans into a private consolidation loan, you may lose access to federal loan benefits like loan forgiveness programs, income-driven repayment plans, deferment, or forbearance options. Private
+            consolidation options typically do not offer the same level of borrower protections and repayment flexibility as federal loans.</li>
+            <li>Impact on Credit: Opening a new consolidation loan will result in a hard inquiry on your credit report, which can cause a slight dip in your credit score.</li>
+          </ul>
+        </TabPanel>
+      </Tabs>
+    ),
+  },
+  {
+    id: 4,
+    name: 'Loan Forgiveness Programs',
+    href: '#',
+    imageSrc: '/images/long-sleeves.png',
+    imageAlt: 'Girl wearing long sleeve shirt looking at laptop',
+    step: '4',
+    description: 'Overview of federal loan forgivemenss programs',
+    hasTabs: true,
+    cardContent: (
+      <Tabs>
+        <TabList>
+          <Tab>Intro</Tab>
+          <Tab>Pros and Cons</Tab>
+          <Tab>Alternatives</Tab>
+        </TabList>
+        <TabPanel>
+          <p className="font-medium">What are the different types of federal loan forgiveness programs?</p>
+          <p className="mb-2">There are several federal loan forgiveness programs available to borrowers who meet specific criteria. Here are some of the main types:</p>
+          <ul className="list-disc ml-6">
+            <li>Public Service Loan Forgiveness (PSLF) is designed for borrowers who work full-time for a qualifying employer, such as government organizations or eligible non-profits. To be eligible for PSLF, you must make 120 qualifying payments while working
+            for a qualifying employer. After meeting these requirements, the remaining balance on your Direct Loans may be forgiven.</li>
+            <li>Teacher Loan Forgiveness plans are available to teachers who work full-time for 5 consecutive years in a low-income elementary or secondary school, or educational service agency. Eligible teachers can receive forgiveness of up to $17,500 on their
+            Direct Subsidized and Unsubsidized Loans or Subsidized and Unsubsidized Federal Stafford Loans.</li>
+            <li>Income-Driven Repayment (IDR) Forgivenes plans, such as Income-Based Repayment (IBR), Pay As You Earn (PAYE), and Revised Pay As You Earn (REPAYE), offer loan forgiveness after a certain number of qualifying payments. The forgiveness amount is based
+            on the repayment plan and the remaining balance after the repayment term. For example, for undergraduate loans, forgiveness is available after 20 or 25 years of qualifying payments depending on the specific plan.</li>
+            <li>If your school closes while you&apos;re enrolled or soon after you withdraw, you may be eligible for a discharge of your federal student loans. This discharge program applies to Direct Loans, Federal Family Education Loans (FFEL), and Perkins Loans.</li>
+            <li>Borrowers who have a total and permanent disability that prevents them from working and repaying their loans may be eligible for a discharge. This program applies to Direct Loans, FFEL Loans, and Perkins Loans.</li>
+            <li>The Borrower Defense to Repayment program provides loan forgiveness to borrowers who can demonstrate that their school misled or defrauded them. You may be eligible of your school engaged in deceptive practices, violated certain laws, or made false promises.</li>
+          </ul>
+        </TabPanel>
+
+        <TabPanel>
+          <p className="font-medium">What are the pros and cons of pursuing loan forgiveness?</p>
+          <p className="mb-2">Pros of Pursuing Loan Forgiveness</p>
+          <ul className="list-disc ml-6">
+            <li>Debt Reduction: Loan forgiveness programs offer the opportunity to have a portion or all of your student loan debt forgiven. This can provide significant financial relief and help you achieve a debt-free future.</li>
+            <li>Financial Flexibility: Loan forgiveness can free up your financial resources, allowing you to allocate money towards other financial goals, such as saving for retirement, buying a home, or starting a business.</li>
+            <li>Income-Based Repayment: Many loan forgiveness programs base your monthly payments on your income and family size. This can make your payments more affordable, especially if you have a low income relative to your loan balance.</li>
+            <li>Potential Tax Benefits: Under current tax laws, loan amounts forgiven through certain federal loan forgiveness programs, such as PSLF, are not considered taxable income. This means you won&apos;t have to pay income tax on the forgiven amount.</li>
+          </ul>
+          <p className="mb-2">Cons of Pursuing Loan Forgiveness</p>
+          <ul className="list-disc ml-6">
+            <li>Lengthy Process: Loan forgiveness programs often have specific requirements and lengthy waiting periods before you can qualify for forgiveness. It may take years or even decades of meeting the eligibility criteria and making payments before you can receive it.</li>
+            <li>Limited Eligibility: Loan forgiveness programs have specific eligibility requirements, such as working in certain fields or for qualifying employers. Not everyone may meet the criteria, limiting the availability of loan forgiveness options.</li>
+            <li>Uncertain Future Changes: Loan forgiveness programs can be subject to changes in legislation and policy. There is a possibility that the eligibility criteria, repayment terms, or even the availability of loan forgiveness programs may change in the future.</li>
+            <li>Tax Consequences: While forgiven amounts may not be taxable under current laws, there is always the possibility of future changes in tax regulations. If tax laws change, you may be required to pay income tax on the forgiven amount.</li>
+          </ul>
+          <p className="mb-2"></p>
+        </TabPanel>
+
+        <TabPanel>
+          <p className="font-medium">What are alternative strategies for loan repayment?</p>
+          <p className="mb-2">Consider making additional payments towards your principal balance whenever possible. This reduces the overall interest you&apos;ll pay and shortens the repayment term. Alternatively, instead of making monthly payments, switch to biweekly payments to
+          accelerate your repayment. By doing so, you&apos;ll make 26 half-payments each year, which is equivalent to 13 full payments.</p>
+          <p className="mb-2">If you have good credit and stable income, you may be eligible to refinance your student loans. Refinancing involves obtaining a new loan with a lower interest rate to replace your existing loans. This can potentially lower your monthly payments or reduce
+          the total interest paid over the life of the loan.</p>
+          <p className="mb-2">If your monthly loan payments are burdensome, consider enrolling in an income-driven repayment plan offered by the federal government. These plans adjust your monthly payments based on your income and family size, making them more affordable.</p>
+          <p className="mb-2">Use the debt snowball method. List your student loans from the smallest balance to the largest. Make minimum payments on all loans, but allocate any additional funds towards the loan with the smallest balance. Once the smallest loan is paid off, move on
+          to the next smallest, and so on. This method provides a psychological boost as you see loans being paid off one by one.</p>
+          <p className="mb-2">Another option is to use the debt avalanche method. List your loans based on the interest rate, starting with the highest interest rate first. Make minimum payments on all loans, but direct any extra funds towards the loan with the highest interest rate.
+          Once that loan is paid off, move on to the next highest rate loan. This method saves you the most money in interest over the long term.</p>
+          <p>Some employers offer student loan repayment assistance as part of their employee benefits package. Check if your employer provides any programs or incentives to help employees pay off their student loans.</p>
+        </TabPanel>
+      </Tabs>
+    ),
+  },
+  {
+    id: 5,
+    name: 'Budgeting and Financial Planning',
+    href: '#',
+    imageSrc: '/images/study-area.png',
+    imageAlt: 'Laptop, cup of cofee, and a pen and notepad',
+    step: '5',
+    description: 'How to budget and plan for student loan repayment',
+    hasTabs: true,
+    cardContent: (
+      <Tabs>
+        <TabList>
+          <Tab>Intro</Tab>
+          <Tab>Strategies</Tab>
+          <Tab>Prioritization</Tab>
+          <Tab></Tab>
+        </TabList>
+        <TabPanel>
+          <p className="font-medium">How can you develop a budget that includes student loan payments?</p>
+          <p className="mb-2">Developing a budget that includes student loan payments is crucial for effectively managing your finances and staying on track with your repayment goals. Here are some steps to help you develop a budget that incorporates your student loan payments:</p>
+          <ul className="list-disc ml-6">
+            <li>Determine your total monthly income, including your salary, wages, self-employment income, and any additional income sources.</li>
+            <li>Record all your expenses for a defined period, typically one month. Categorize your expenses into needs (such as rent, utilities, groceries, and transportation) and wants (such as entertainment, subscription services, and dining out).</li>
+            <li>Determine the monthly amount you need to pay towards your student loans. This can be obtained from your loan servicer or by referring to your loan documents. Take note of the interest rate, repayment term, and any other pertinent details.</li>
+            <li>Identify your essential expenses that must be paid each month, such as rent/mortgage, utilities, groceries, transportation, and healthcare. These are non-negotiable expenses that should be covered before allocating funds to other categories.</li>
+            <li>Deduct your student loan payment amount from your total monthly income to ensure that your student loan payment is accounted for.</li>
+            <li>Assess your expenses to identify areas where you can make adjustments or cut back. Look for opportunities to reduce unnecessary spending, such as dining out less frequently, finding more affordable entertainment options, or cutting back on subscription services.</li>
+            <li>Allocate a portion of your income towards savings, including an emergency fund. Building an emergency fund helps protect you from unexpected expenses and financial setbacks. Aim to save at least 3 to 6 months&apos; worth of living expenses.</li>
+            <li>Regularly review your budget to ensure it remains aligned with your financial goals. Track your actual spending and compare it to your budgeted amounts. Make adjustments as necessary to stay on track with your student loan payments and other financial objectives.</li>
+          </ul>
+        </TabPanel>
+
+        <TabPanel>
+          <p className="font-medium mt-4">What are strategies for prioritizing loan payments within a budget?</p>
+          <p className="mb-2">Start by identifying loans with the highest interest rates. These loans typically cost you more in the long run. Focus on paying off these loans first as they have a greater impact on your overall interest savings.</p>
+          <p className="mb-2">Ensure that you meet the minimum payment requirements for all your loans. Missing payments can result in late fees, penalties, and damage to your credit score. Make it a priority to cover at least the minimum payment for each loan to stay on track.</p>
+          <p className="mb-2">Evaluate your monthly cash flow and determine how much you can allocate towards loan payments. Look for opportunities to free up additional funds by cutting back on discretionary expenses or increasing your income through side hustles or freelance work.</p>
+          <p className="mb-2">If you&apos;re struggling to prioritize loan payments or manage your budget effectively, consider seeking advice from a financial advisor or credit counselor. They can provide personalized guidance based on your specific financial situation and help you
+          develop a repayment plan that aligns with your goals.</p>
+          <p>Remember, budgeting is an ongoing process. Regularly review and adjust your budget as your financial situation changes. Stay disciplined and committed to your budget to effectively manage your student loan payments and achieve your financial goals.</p>
+        </TabPanel>
+
+        <TabPanel>
+          <p className="font-medium">What are income-expense ratios and how can you reduce expenses or increase income?</p>
+          <p className="mb-2">Income-expense ratios are financial metrics that compare your total income to your total expenses. They help you evaluate the proportion of your income that goes towards covering your expenses. 2 common income-expense ratios are:</p>
+          <ul className="list-disc ml-6">
+            <li>Debt-to-Income Ratio (DTI): This ratio compares your monthly debt payments to your monthly gross income. It provides insight into your ability to manage your debt obligations. The formula is: DTI = (Total Monthly Debt Payments / Monthly Gross Income) x 100</li>
+            <li>Savings Ratio: This ratio measures the percentage of your income that you save each month. It indicates your ability to save for emergencies, future goals, and financial stability. The formula is: Savings Ratio = (Monthly Savings / Monthly Gross Income) x 100</li>
+          </ul>
+          <p className="mt-2 mb-2">To reduce expenses or increase income and improve your income-expense ratios, consider the following strategies:</p>
+          <ul className="list-disc ml-6">
+            <li>Contact service providers such as utilities, insurance companies, or cable/internet providers to negotiate better rates or seek discounts.</li>
+            <li>Evaluate your discretionary spending, such as eating out, entertainment, and subscriptions. Consider reducing or eliminating these expenses temporarily to free up more money for savings or debt repayment.</li>
+            <li>Compare prices, look for sales, and use coupons when shopping for groceries, household items, or other necessary purchases. Consider buying in bulk or purchasing generic brands to save money.</li>
+            <li>Invest in yourself by acquiring new skills or pursuing further education that can enhance your career prospects and earning potential. This may open up opportunities for promotions or higher-paying jobs. If you&apos;re employed, research salary ranges for your position
+            and industry and prepare a case for a salary increase.</li>
+            <li>Explore part-time job opportunities or freelance gigs to supplement your income. You can consider side hustles or freelancing in your areas of expertise or hobbies. Investing in rental properties, stocks, bonds, or creating digital products are another option.</li>
+          </ul>
+        </TabPanel>
+      </Tabs>
+    ),
+  },
+  {
+    id: 6,
+    name: 'Early Repayment',
+    href: '#',
+    imageSrc: '/images/pointing.png',
+    imageAlt: 'People pointing at the laptop screen',
+    step: '6',
+    description: 'Dealing with financial hardship and loan repayment challenges',
+    hasTabs: true,
+    cardContent: (
+      <Tabs>
+        <TabList>
+          <Tab>Intro</Tab>
+          <Tab>Strategies</Tab>
+          <Tab>Types</Tab>
+        </TabList>
+        <TabPanel>
+          <p className="font-medium">What are the benefits of early loan repayment?</p>
+          <p className="mb-2">One of the most significant benefits of early loan repayment is the reduction in overall interest paid. By paying off your loan sooner, you minimize the time the loan accrues interest, resulting in substantial interest savings over
+          the loan&apos; lifetime. This can potentially save you thousands or even tens of thousands of dollars, depending on the loan amount and interest rate.</p>
+          <p className="mb-2">Eliminating debt early brings a sense of financial freedom and relief. By becoming debt-free, you free up your monthly budget, allowing you to allocate funds towards other financial goals, such as saving for emergencies, investing, or
+          pursuing other personal aspirations.</p>
+          <p className="mb-2">Early loan repayment positively impacts your credit score. It demonstrates responsible financial behavior and a strong repayment history, which can enhance your creditworthiness. A higher credit score can benefit you in future borrowing
+          opportunities, such as obtaining low-interest rates on mortgages, car loans, or credit cards.</p>
+          <p className="mb-2">Carrying the burden of debt can cause stress and anxiety. By paying off your loans early, you alleviate this financial stress and gain peace of mind. It provides a sense of accomplishment and removes the weight of debt from your financial journey.</p>
+          <p className="mb-2">When you no longer have loan payments to make, your monthly cash flow improves. This extra money can be used for various purposes, such as building savings, investing, pursuing additional education, or enjoying a higher quality of life.</p>
+          <p className="mb-2">You will have greater financial flexibility, allowing you to seize opportunities that may come your way, such as starting a business, changing careers, or pursuing further education. Being debt-free opens up more options and increases your
+          financial freedom to make choices aligned with your goals and values.</p>
+          <p>Repaying your loan early shortens the overall repayment term. This means you can eliminate the burden of debt sooner, giving you the ability to allocate your resources towards other financial goals, such as homeownership, retirement savings, or travel.</p>
+        </TabPanel>
+
+        <TabPanel>
+          <p className="font-medium">What are some strategies for early loan repayment?</p>
+          <p className="mb-2">One of the simplest and most effective strategies is to increase your monthly loan payments. By paying more than the minimum required payment each month, you can reduce the principal balance faster and ultimately shorten the repayment term.
+          Even a small increase in your monthly payment can make a significant difference over time.</p>
+          <p className="mb-2">Instead of making monthly payments, consider switching to biweekly payments. This strategy allows you to make 26 half-payments throughout the year, which is equivalent to 13 full monthly payments. By doing this, you can effectively make an
+          extra payment each year and accelerate the loan repayment process.</p>
+          <p className="mb-2">Whenever you receive unexpected windfalls, such as tax refunds, work bonuses, or cash gifts, use a portion or all of the money to make a lump sum payment towards your loans. Applying these extra funds directly to your principal balance can
+          significantly reduce the remaining loan term.</p>
+          <p className="mb-2">If you have good credit and qualify for a lower interest rate, refinance your loans. By refinancing, you can save money on interest and potentially reduce your monthly payments, allowing you to allocate more funds towards principal repayment.</p>
+          <p className="mb-2">Maintain motivation by tracking your progress and celebrating milestones along the way. Use tools like loan calculators and debt payoff trackers to visualize your progress and stay focused on your goal of early loan repayment.</p>
+          <p>Set up automatic payments to ensure that you never miss a payment. Automatic payments help you stay disciplined and avoid late fees. Some lenders even offer interest rate reductions for borrowers who enroll in autopay.</p>
+        </TabPanel>
+
+        <TabPanel>
+          <p className="font-medium">What is the difference between the snowball vs. avalanche method for paying off multiple loans?</p>
+          <p className="mb-2">The snowball method and the avalanche method are 2 popular strategies for paying off multiple loans. They differ in how they prioritize which loans to pay off first.</p>
+          <p className="mb-2">The snowball method involves prioritizing loans based on their loan balance, regardless of interest rates. List all your loans in ascending order based on the outstanding loan balance, from smallest to largest. Make minimum payments on all loans and
+          then allocate any extra funds you have towards paying off the loan with the smallest balance. Once the smallest balance loan is paid off, take the amount you were paying towards it (including the minimum payment) and add it to the payment for the next smallest balance
+          loan. Keep doing this until all loans are repaid.</p>
+          <p className="mb-2">The avalanche method, on the other hand, prioritizes loans based on their interest rates, regardless of the loan balance. List all your loans in descending order based on their interest rates, from highest to lowest. Make minimum payments on all loans
+          and then allocate any extra funds you have towards paying off the loan with the highest interest rate. Once the highest interest rate loan is paid off, take the amount you were paying towards it (including the minimum payment) and add it to the payment for the loan with
+          the next highest interest rate. Repeat this process until all your debt is paid off.</p>
+          <p className="mb-2">If you are motivated by small victories and need the psychological boost of paying off loans quickly, the snowball method may be more suitable. It can help build momentum and keep you motivated throughout the debt repayment process.</p>
+          <p>If your primary focus is to save the most money on interest payments over the long term, the avalanche method is a more financially logical approach. It may take longer to see results, but it can potentially save you more money compared to the snowball method.</p>
+        </TabPanel>
+      </Tabs>
+    ),
+  },
+  {
+    id: 7,
+    name: 'Impact of Student Loans',
+    href: '#',
+    imageSrc: '/images/graduation-gown.png',
+    imageAlt: 'Graduation gown and diploma',
+    step: '7',
+    description: 'How student loans affect your credit and financial goals',
+    hasTabs: true,
+    cardContent: (
+      <Tabs>
+        <TabList>
+          <Tab>Intro</Tab>
+          <Tab>Strategies</Tab>
+        </TabList>
+        <TabPanel>
+          <p className="font-medium">How do student loans affect credit scores and credit history?</p>
+          <p className="mb-2">As long as you make your payments on time, your student loan account will be reported to the credit bureaus, showcasing your ability to handle credit responsibly. A long and positive credit history demonstrates your creditworthiness
+          and can benefit your overall credit profile. On the other hand, late payments, missed payments, or defaulting on your loans can severely damage your credit.</p>
+          <p className="mb-2">Student loans are installment loans, which are different from credit card debt (revolving credit). The balances of installment loans, including student loans, are not factored into your credit utilization ratio, which is the percentage
+          of available credit you&apos;re using. However, your credit utilization ratio can still impact your credit scores if you have high credit card balances relative to your credit limits.</p>
+          <p className="mb-2">Lenders may consider your student loan debt when evaluating your debt-to-income ratio, which is the percentage of your monthly income that goes towards debt payments. If your student loan payments are high relative to your income, it can
+          impact your ability to qualify for other types of credit, such as mortgages or car loans.</p>
+          <p className="mb-2">If you have credit cards, use them responsibly. Keep your credit card balances low relative to your credit limits to maintain a low credit utilization ratio. Aim to pay off your credit card balances in full each month to avoid accruing
+          high-interest debt.</p>
+          <p>Applying for new student loans or refinancing existing loans may result in a hard inquiry on your credit report. While a single inquiry may have a minimal impact on your credit scores, multiple inquiries within a short period can potentially lower your
+          scores. Be selective when applying for new loans to avoid excessive credit inquiries.</p>
+        </TabPanel>
+
+        <TabPanel>
+          <p className="font-medium">How can you build a positive credit history and manage credit responsibly while repaying student loans?</p>
+          <p className="mb-2"> If possible, pay more than the minimum required payment on your student loans. By paying extra, you can reduce the principal balance faster and potentially save on interest costs over the life of the loan. It will also reflect positively
+          on your credit history.</p>
+          <p className="mb-2">Defaulting on your student loans can have severe consequences for your credit. If you&apos;re experiencing financial difficulties, contact your loan servicer to explore alternative repayment options, such as income-driven repayment plans or
+          deferment/forbearance arrangements.</p>
+          <p className="mb-2">Regularly review your credit report from the major credit bureaus (Equifax, Experian, and TransUnion) to ensure accuracy and identify any potential errors or discrepancies. Report any inaccuracies promptly to the credit bureaus to have them corrected.</p>
+          <p className="mb-2">While managing student loans, consider diversifying your credit mix. This means having a healthy combination of different types of credit accounts, such as credit cards, auto loans, or a mortgage. A diverse credit mix can build your
+          credit scores and show lenders your ability to handle various types of credit responsibly.</p>
+          <p className="mb-2">If you have credit cards, use them responsibly. Keep your credit card balances low relative to your credit limits to maintain a low credit utilization ratio. Aim to pay off your credit card balances in full each month to avoid accruing high-interest debt.</p>
+          <p>Build an emergency fund to cover unexpected expenses. Having a financial cushion helps you avoid relying on credit cards or taking on additional debt during challenging times.</p>
+        </TabPanel>
+      </Tabs>
+    ),
+  },
+]
+
 export default function Learn() {
   const navigation = [
     { name: 'Learn', href: 'learn' },
@@ -2435,6 +2876,10 @@ export default function Learn() {
           {/* Assets and Markets */}
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 mt-20">Assets and Markets</h2>
           <ProductList products={products7} setSelectedProduct={setSelectedProduct} />
+
+          {/* Student Loans */}
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 mt-20">Navigating Student Loans</h2>
+          <ProductList products={products8} setSelectedProduct={setSelectedProduct} />
 
           {selectedProduct && selectedProduct.hasTabs !== undefined && selectedProduct.hasTabs && (
             <Dialog
