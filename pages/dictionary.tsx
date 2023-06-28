@@ -60,14 +60,21 @@ export default function Dictionary() {
           <h2 className="text-3xl font-bold text-gray-800 flex items-center justify-center mx-auto mb-4">A</h2>
           <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-lg text-center">
             <Link className="hover:text-blue-300 hover:underline" href="/accredited-investor">Accredited Investor</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/acquisition">Acquisition</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/american-dream">American Dream</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/amortization">Amortization</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/angel-investing">Angel Investing</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/annual-percentage-rate">Annual Percentage Rate</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/annual-percentage-yield">Annual Percentage Yield</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/annual-report">Annual Report</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/annuities">Annuities</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/antitrust">Antitrust</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/appraisal">Appraisal</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/appreciation">Appreciation</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/arbitrage">Arbitrage</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/asset">Asset</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/audit">Audit</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/average-return">Average Return</Link>
           </div>
           <hr className="mt-10 mb-10 w-3/5 text-gray-500 mx-auto" />
         </div>
@@ -75,10 +82,13 @@ export default function Dictionary() {
         <div id="section-b">
           <h2 className="text-3xl font-bold text-gray-800 flex items-center justify-center mx-auto mb-4">B</h2>
           <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-lg text-center">
+            <Link className="hover:text-blue-300 hover:underline" href="/basket-of-goods">Basket of Goods</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/balance-sheet">Balance Sheet</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/bankruptcy">Bankruptcy</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/bear-market">Bear Market</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/blue-chip-stocks">Blue Chip Stocks</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/bonds">Bonds</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/bottom-line">Bottom Line</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/brokerage">Brokerage</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/budget">Budget</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/bull-market">Bull Market</Link>
