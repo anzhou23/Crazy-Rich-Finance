@@ -61,18 +61,25 @@ export default function Dictionary() {
           <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-lg text-center">
             <Link className="hover:text-blue-300 hover:underline" href="/accredited-investor">Accredited Investor</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/acquisition">Acquisition</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/acquisition-cost">Acquisition Cost</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/active-management">Active Management</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="adjustable-rate-mortgage">Adjustable Rate Mortgage</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/algorithmic-trading">Algorithmic Trading</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/american-dream">American Dream</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/amortization">Amortization</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/angel-investing">Angel Investing</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/annual-percentage-rate">Annual Percentage Rate</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/annual-percentage-yield">Annual Percentage Yield</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/annual-report">Annual Report</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/annual-return">Annual Return</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/annuities">Annuities</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/antitrust">Antitrust</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/appraisal">Appraisal</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/appreciation">Appreciation</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/arbitrage">Arbitrage</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/asset">Asset</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/asset-allocation">Asset Allocation</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/asset-class">Asset Class</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/audit">Audit</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/average-return">Average Return</Link>
           </div>
@@ -82,10 +89,18 @@ export default function Dictionary() {
         <div id="section-b">
           <h2 className="text-3xl font-bold text-gray-800 flex items-center justify-center mx-auto mb-4">B</h2>
           <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-lg text-center">
-            <Link className="hover:text-blue-300 hover:underline" href="/basket-of-goods">Basket of Goods</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/bad-credit">Bad Credit</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/bad-debt">Bad Debt</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/bailout">Bailout</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/balance-sheet">Balance Sheet</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/bank-reserve">Bank Reserve</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/bank-statement">Bank Statement</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/bank-run">Bank Run</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/bankruptcy">Bankruptcy</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/basket-of-goods">Basket of Goods</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/bear-market">Bear Market</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/bid-ask-spread">Bid and Ask</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/black-swan">Black Swan</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/blue-chip-stocks">Blue Chip Stocks</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/bonds">Bonds</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/bottom-line">Bottom Line</Link>
