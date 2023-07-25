@@ -2890,10 +2890,33 @@ export default function Learn() {
               aria-describedby="dialog-description"
             >
               <div className="flex items-center justify-center min-h-screen">
-                <Dialog.Overlay className="inset-0 bg-black opacity-10 static" />
+                <Dialog.Overlay className="inset-0 bg-black opacity-60 static" />
 
-                <div className="bg-white rounded-lg max-w-5xl mx-auto p-6 shadow-lg">
-                  <Dialog.Title id="dialog-title" className="text-lg font-medium text-gray-900">{selectedProduct.name}</Dialog.Title>
+                <div className="bg-white rounded-lg max-w-5xl mx-auto p-6 shadow-lg w-full h-full">
+                  <div className="flex justify-between items-center">
+                    <Dialog.Title id="dialog-title" className="text-2xl font-medium text-gray-900">{selectedProduct.name}</Dialog.Title>
+                    <button
+                      type="button"
+                      className="text-gray-600 hover:text-gray-800 focus:outline-none relative"
+                      onClick={() => setSelectedProduct(null)}
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        className="h-9 w-9"
+                      >
+                        <circle cx="12" cy="12" r="10" fill="#D3D3D3" stroke="none" />
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={1}
+                          d="M8 16L16 8M8 8l8 8"
+                        />
+                      </svg>
+                    </button>
+                  </div>
 
                   <div className="mt-4 flex justify-between">
                     <p className="text-gray-800">{selectedProduct?.cardContent}</p>
@@ -2907,7 +2930,7 @@ export default function Learn() {
                         setSelectedProduct(null);
                       }}
                     >
-                      Close
+                      Done
                     </button>
                   </div>
                 </div>

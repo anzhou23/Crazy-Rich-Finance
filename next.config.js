@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  experimental: {
+    appDir: true,
+  },
 }
 
 module.exports = {
@@ -9,4 +12,3 @@ module.exports = {
     domains: ['tailwindui.com'],
   },
 };
-

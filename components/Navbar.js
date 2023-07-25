@@ -2,20 +2,20 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Dialog } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 function Navbar({ navigation }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <header className="absolute inset-x-0 top-0 z-50">
-      <nav className="h-16 bg-black flex items-center justify-between p-6 lg:px-8 border-b-2 border-gray-300" aria-label="Global">
+      <nav className="h-16 flex items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex items-center">
           <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Crazy Rich Finance</span>
             <Image
               src="/images/boba.png"
-              alt=""
+              alt="cup of boba"
               width={40}
               height={40}
             />
@@ -34,7 +34,7 @@ function Navbar({ navigation }) {
         <div className="hidden lg:flex lg:gap-x-5">
           {navigation.map((item) => (
             <Link href={item.href} key={item.name} passHref>
-              <button className="text-white hover:text-blue-300 font-bold py-1.5 px-4" onClick={() => console.log(item.name)}>
+              <button className="hover:text-blue-500 font-bold py-1.5 px-4" onClick={() => console.log(item.name)}>
                   {item.name}
               </button>
             </Link>
@@ -66,16 +66,16 @@ function Navbar({ navigation }) {
                     key={item.name}
                     href={item.href}
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                    >
-                      {item.name}
-                    </a>
-                  ))}
-                </div>
+                  >
+                    {item.name}
+                  </a>
+                ))}
               </div>
             </div>
-          </Dialog.Panel>
-        </Dialog>
-      </header>
+          </div>
+        </Dialog.Panel>
+      </Dialog>
+    </header>
     );
   }
 

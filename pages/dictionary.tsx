@@ -100,13 +100,37 @@ export default function Dictionary() {
         <div id="section-c">
           <h2 className="text-3xl font-bold text-gray-800 flex items-center justify-center mx-auto mb-3">C</h2>
           <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-lg text-center">
+            <Link className="hover:text-blue-300 hover:underline" href="/call-option">Call Option</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/candlestick">Candlestick</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/capital-gain">Capital Gain</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/cash-flow">Cash Flow</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/certificate-of-deposit">Certificate of Deposit</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/ch-11-bankruptcy">Chapter 11 Bankruptcy</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/checking-account">Checking Account</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/checks-and-balances">Checks and Balances</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/clearinghouse">Clearinghouse</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/collateral">Collateral</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/collusion">Collusion</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/commission">Commission</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/commodities">Commodities</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/communism">Communism</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/comparative-advantage">Comparative Advantage</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/complement">Complement</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/compound-interest">Compound Interest</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/consumer-credit">Consumer Credit</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/consumer-discretionary">Consumer Discretionary</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/consumer-goods">Consumer Goods</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/consumer-price-index">Consumer Price Index</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/cost-basis">Cost Basis</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/consumerism">Consumerism</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/contingency">Contingency</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/cost-of-living">Cost of Living</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/credit">Credit</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/credit-card">Credit Card</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/credit-limit">Credit Limit</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/credit-score">Credit Score</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/creditworthiness">Creditworthiness</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/currency">Currency</Link>
           </div>
           <hr className="mt-10 mb-10 w-3/5 text-gray-500 mx-auto" />
         </div>
