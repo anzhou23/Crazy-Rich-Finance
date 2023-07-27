@@ -157,9 +157,26 @@ export default function Dictionary() {
             <Link className="hover:text-blue-300 hover:underline" href="/debt">Debt</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/debt-to-income-ratio">Debt-to-Income Ratio</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/default">Default</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/deficit">Deficit</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/deficit-spending">Deficit Spending</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/deflation">Deflation</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/delinquent">Delinquent</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/demand">Demand</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/deposit">Deposit</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/depreciation">Depreciation</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/depression">Depression</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/deregulation">Deregulation</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/direct-deposit">Direct Deposit</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/disinflation">Disinflation</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/disposable-income">Disposable Income</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/diversification">Diversification</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/dividend">Dividend</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/dividend-aristocrat">Dividend Aristocrat</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/dividend-yield">Dividend Yield</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/dollar-cost-averaging">Dollar Cost Averaging</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/down-payment">Down Payment</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/dry-powder">Dry Powder</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/dink">Dual Income, No Kids</Link>
           </div>
           <hr className="mt-10 mb-10 w-3/5 text-gray-500 mx-auto" />
         </div>
@@ -167,11 +184,36 @@ export default function Dictionary() {
         <div id="section-e">
           <h2 className="text-3xl font-bold text-gray-800 flex items-center justify-center mx-auto mb-4">E</h2>
           <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-lg text-center">
+          <Link className="hover:text-blue-300 hover:underline" href="/earned-income">Earned Income</Link>
+          <Link className="hover:text-blue-300 hover:underline" href="/earnest-money">Earnest Money</Link>
+          <Link className="hover:text-blue-300 hover:underline" href="/earnings">Earnings</Link>
+          <Link className="hover:text-blue-300 hover:underline" href="/earnings-call">Earnings Call</Link>
+          <Link className="hover:text-blue-300 hover:underline" href="/earnings-report">Earnings Report</Link>
+          <Link className="hover:text-blue-300 hover:underline" href="/economic-growth">Economic Growth</Link>
+          <Link className="hover:text-blue-300 hover:underline" href="/economic-recovery">Economic Recovery</Link>
+          <Link className="hover:text-blue-300 hover:underline" href="/economic-shock">Economic Shock</Link>
+          <Link className="hover:text-blue-300 hover:underline" href="/economic-stimulus">Economic Stimulus</Link>
+          <Link className="hover:text-blue-300 hover:underline" href="/economies-of-scale">Economies of Scale</Link>
+          <Link className="hover:text-blue-300 hover:underline" href="/economist">Economist</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/economy">Economy</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/embargo">Embargo</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/embezzlement">Embezzlement</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/emergency-fund">Emergency Fund</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/encroachment">Encroachment</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/encumbrance">Encumbrance</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/endowment">Endowment</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/equity">Equity</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/equity-fund">Equity Fund</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/escrow">Escrow</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/estate">Estate</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/estate-planning">Estate Planning</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/european-union">European Union</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/exchange">Exchange</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/exchange-rate">Exchange Rate</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/exchange-traded-fund">Exchange-Traded Fund</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/expense-ratio">Expense Ratio</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/exponential-growth">Exponential Growth</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/extrinsic-value">Extrinsic Value</Link>
           </div>
           <hr className="mt-10 mb-10 w-3/5 text-gray-500 mx-auto" />
         </div>
