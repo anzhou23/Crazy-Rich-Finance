@@ -287,10 +287,27 @@ export default function Dictionary() {
         <div id="section-h">
           <h2 className="text-3xl font-bold text-gray-800 flex items-center justify-center mx-auto mb-4">H</h2>
           <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-lg text-center">
+            <Link className="hover:text-blue-300 hover:underline" href="/halo-effect">Halo Effect</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/hard-inquiry">Hard Inquiry</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/hazard-insurance">Hazard Insurance</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/health-insurance">Health Insurance</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/hsa">Health Savings Account</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/hedge-fund">Hedge Fund</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/heuristics">Heuristics</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/hnwi">High-Net-Worth Individuals</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/hold">Hold</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/hodl">HODL</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/home-equity">Home Equity</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/home-inspection">Home Inspection</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/homeowners-association">Homeowners Association</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/homeowners-insurance">Homeowners Insurance</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/hostile-takeover">Hostile Takeover</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/house-poor">House Poor</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/household-expenses">Household Expenses</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/household-income">Household Income</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/housing-bubble">Housing Bubble</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/human-capital">Human Capital</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/hyperdeflation">Hyperdeflation</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/hyperinflation">Hyperinflation</Link>
           </div>
           <hr className="mt-10 mb-10 w-3/5 text-gray-500 mx-auto" />

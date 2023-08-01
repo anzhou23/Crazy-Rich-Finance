@@ -24,7 +24,7 @@ export default function hyperinflation() {
 
                 <section>
                     <h1 className="text-3xl font-bold tracking-tight text-gray-900">Hyperinflation</h1>
-                    <p className="mt-4">Hyperinflation refers to an extremely rapid and uncontrollable increase in the general price level of goods and services in
+                    <p className="mt-4">Hyperinflation is an extremely rapid and uncontrollable increase in the general price level of goods and services in
                     an economy. It typically occurs when a country experiences a significant and sustained increase in its money supply, leading to a loss of confidence
                     in the currency and a decline in its purchasing power.</p>
                     <h2 className="text-2xl font-bold tracking-tight text-gray-900 mt-4">What You Need To Know</h2>
