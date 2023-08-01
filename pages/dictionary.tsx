@@ -254,10 +254,32 @@ export default function Dictionary() {
         <div id="section-g">
           <h2 className="text-3xl font-bold text-gray-800 flex items-center justify-center mx-auto mb-4">G</h2>
           <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-lg text-center">
-            <Link className="hover:text-blue-300 hover:underline" href="/golden-handcuffs">Golden Handcuffs</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/gamification">Gamification</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/gentrification">Gentrification</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/gig-economy">Gig Economy</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/gini-index">Gini Index</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/glass-ceiling">Glass Ceiling</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/globalization">Globalization</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/gold-standard">Gold Standard</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/golden-handcuffs">Golden Handcuffs</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/golden-parachute">Golden Parachute</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/goodwill">Goodwill</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/government-bond">Government Bond</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/grandfather-clause">Grandfather Clause</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/grant">Grant</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/great-depression">Great Depression</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/great-leap-forward">Great Leap Forward</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/great-recession">Great Recession</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/greenwashing">Greenwashing</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/gdp">Gross Domestic Product</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/gross-earnings">Gross Earnings</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/gross-income">Gross Income</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/gross-margin">Gross Margin</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/gross-profit">Gross Profit</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/growth-company">Growth Company</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/growth-rates">Growth Rates</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/growth-stock">Growth Stock</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/guarantor">Guarantor</Link>
           </div>
           <hr className="mt-10 mb-10 w-3/5 text-gray-500 mx-auto" />
         </div>
