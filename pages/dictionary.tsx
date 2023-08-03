@@ -294,7 +294,7 @@ export default function Dictionary() {
             <Link className="hover:text-blue-300 hover:underline" href="/hsa">Health Savings Account</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/hedge-fund">Hedge Fund</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/heuristics">Heuristics</Link>
-            <Link className="hover:text-blue-300 hover:underline" href="/hnwi">High-Net-Worth Individuals</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/hnwi">High Net Worth Individuals</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/hold">Hold</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/hodl">HODL</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/home-equity">Home Equity</Link>
@@ -316,13 +316,35 @@ export default function Dictionary() {
         <div id="section-i">
           <h2 className="text-3xl font-bold text-gray-800 flex items-center justify-center mx-auto mb-4">I</h2>
           <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-lg text-center">
+            <Link className="hover:text-blue-300 hover:underline" href="/identity-theft">Identity Theft</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/illiquid">Illiquid</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/impact-investing">Impact Investing</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/impeachment">Impeachment</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/imperfect-market">Imperfect Market</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/implicit-cost">Implicit Cost</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/import">Import</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/import-duty">Import Duty</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/income">Income</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/income-inequality">Income Inequality</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/income-tax">Income Tax</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/incorporation">Incorporation</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/independent-contractor">Independent Contractor</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/index-fund">Index Fund</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/individual-retirement-account">Individual Retirement Account</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/industry">Industry</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/inferior-goods">Inferior Goods</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/inflation">Inflation</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/inheritance-tax">Inheritance Tax</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/ipo">Initial Public Offering</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/insider-trading">Insider Trading</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/insolvency">Insolvency</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/installment-debt">Installment Debt</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/institutional-investor">Institutional Investor</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/insufficient-funds">Insufficient Funds</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/interest">Interest</Link>
             <Link className="hover:text-blue-300 hover:underline" href="/interest-rate">Interest Rate</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/intrinsic-value">Intrinsic Value</Link>
+            <Link className="hover:text-blue-300 hover:underline" href="/investment">Investment</Link>
           </div>
           <hr className="mt-10 mb-10 w-3/5 text-gray-500 mx-auto" />
         </div>
